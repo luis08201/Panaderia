@@ -1,0 +1,35 @@
+{
+  "id": "prd-006",
+  "slug": "pan-de-coco",
+  "name": "Pan de coco",
+  "categoryId": "cat-pan-dulce",
+  "shortDescription": "Suave, con coco rallado y un toque de leche de coco.",
+  "description": "Un clásico de la costa caribe que horneamos todos los días. Masa suave con leche de coco y coco rallado, ligeramente dulce.",
+  "price": 25,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/pan-de-coco.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Leche de coco",
+    "Coco rallado",
+    "Azúcar",
+    "Mantequilla",
+    "Levadura",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten",
+    "Leche",
+    "Coco"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 10,
+  "seoTitle": "",
+  "seoDescription": ""
+}

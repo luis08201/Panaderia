@@ -1,0 +1,16 @@
+{
+  "name": "panaderia-miga-y-horno",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Catálogo de panadería con HTML, CSS y JavaScript, administrado con Pages CMS.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "check": "node scripts/build-content.mjs --check",
+    "build:content": "node scripts/build-content.mjs",
+    "build": "node scripts/build-content.mjs && node scripts/build-site.mjs"
+  }
+}

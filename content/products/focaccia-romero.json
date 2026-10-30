@@ -1,0 +1,32 @@
+{
+  "id": "prd-005",
+  "slug": "focaccia-romero",
+  "name": "Focaccia de romero",
+  "categoryId": "cat-pan-artesanal",
+  "shortDescription": "Aceite de oliva, romero fresco y sal en escamas.",
+  "description": "Focaccia alta y aireada, con abundante aceite de oliva, romero fresco y sal en escamas. Se prepara en tandas pequeñas.",
+  "price": 160,
+  "unit": "Bandeja de 20 × 30 cm",
+  "currency": "NIO",
+  "image": "assets/images/products/focaccia-romero.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Agua",
+    "Aceite de oliva",
+    "Romero",
+    "Levadura",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "available": false,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 50,
+  "seoTitle": "",
+  "seoDescription": ""
+}

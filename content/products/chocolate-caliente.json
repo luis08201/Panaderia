@@ -1,0 +1,30 @@
+{
+  "id": "prd-026",
+  "slug": "chocolate-caliente",
+  "name": "Chocolate caliente",
+  "categoryId": "cat-bebidas",
+  "shortDescription": "Cacao nicaragüense, leche y un toque de canela.",
+  "description": "Chocolate preparado con cacao, leche entera y canela.",
+  "price": 60,
+  "unit": "Taza de 10 oz",
+  "currency": "NIO",
+  "image": "assets/images/products/chocolate-caliente.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Cacao",
+    "Leche",
+    "Azúcar",
+    "Canela"
+  ],
+  "allergens": [
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

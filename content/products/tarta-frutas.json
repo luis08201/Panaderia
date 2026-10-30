@@ -1,0 +1,34 @@
+{
+  "id": "prd-023",
+  "slug": "tarta-frutas",
+  "name": "Tartaleta de frutas",
+  "categoryId": "cat-reposteria",
+  "shortDescription": "Crema pastelera y fruta fresca de temporada.",
+  "description": "Base de masa sablée, crema pastelera de vainilla y fruta fresca. La fruta cambia según la temporada.",
+  "price": 85,
+  "unit": "Tartaleta individual",
+  "currency": "NIO",
+  "image": "assets/images/products/tarta-frutas.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Mantequilla",
+    "Leche",
+    "Huevo",
+    "Azúcar",
+    "Fruta de temporada"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": true,
+  "published": true,
+  "sortOrder": 50,
+  "seoTitle": "",
+  "seoDescription": ""
+}

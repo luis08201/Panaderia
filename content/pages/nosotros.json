@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "eyebrow": "Nosotros",
+    "title": "Una panadería de barrio, hecha con calma",
+    "text": "Horneamos cada día con ingredientes sencillos, tiempos largos de fermentación y el cuidado de las recetas de casa.",
+    "image": "assets/images/general/horno.webp",
+    "imageAlt": "Panadero sacando una bandeja de pan del horno"
+  },
+  "story": {
+    "title": "Nuestra historia",
+    "text": "Miga & Horno nació de una idea simple: hacer pan como se hacía en casa, sin apuros. Empezamos con unas pocas hogazas de masa madre y el pan dulce que acompañaba el café de la tarde.\n\nHoy seguimos horneando en tandas pequeñas, combinando técnicas de panadería artesanal con sabores nicaragüenses como el pan de coco y la cosa de horno."
+  },
+  "values": [
+    {
+      "title": "Ingredientes simples",
+      "text": "Harina, agua, sal y tiempo. Sin conservantes ni mejoradores."
+    },
+    {
+      "title": "Tandas pequeñas",
+      "text": "Horneamos varias veces al día para que el pan salga fresco."
+    },
+    {
+      "title": "Recetas de casa",
+      "text": "Mantenemos vivos los sabores de la repostería nicaragüense."
+    }
+  ],
+  "process": [
+    {
+      "title": "Masa madre",
+      "text": "Alimentamos nuestra masa madre a diario; es la base de los panes artesanales."
+    },
+    {
+      "title": "Fermentación lenta",
+      "text": "Las masas reposan entre 12 y 24 horas para ganar sabor y textura."
+    },
+    {
+      "title": "Formado a mano",
+      "text": "Cada pieza se pesa y se forma a mano antes de entrar al horno."
+    },
+    {
+      "title": "Horneado diario",
+      "text": "Horneamos a primera hora y por la tarde."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "assets/images/general/harina.webp",
+      "alt": "Harina cayendo sobre la masa en la mesa de trabajo"
+    },
+    {
+      "image": "assets/images/general/amasado.webp",
+      "alt": "Masa redonda formada a mano"
+    },
+    {
+      "image": "assets/images/general/vitrina-panes.webp",
+      "alt": "Vitrina con panes recién horneados"
+    }
+  ]
+}

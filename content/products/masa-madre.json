@@ -1,0 +1,30 @@
+{
+  "id": "prd-001",
+  "slug": "masa-madre",
+  "name": "Pan de masa madre",
+  "categoryId": "cat-pan-artesanal",
+  "shortDescription": "Corteza crujiente, miga húmeda y fermentación de 24 horas.",
+  "description": "Nuestra hogaza insignia. La masa fermenta durante 24 horas con masa madre propia, sin levadura comercial, y se hornea a alta temperatura para lograr una corteza gruesa y una miga abierta.\n\nSe conserva bien de tres a cuatro días envuelta en un paño. Para recuperarla, tuéstala unos minutos.",
+  "price": 180,
+  "unit": "Hogaza de 700 g",
+  "currency": "NIO",
+  "image": "assets/images/products/masa-madre.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Agua",
+    "Masa madre",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 10,
+  "seoTitle": "",
+  "seoDescription": ""
+}

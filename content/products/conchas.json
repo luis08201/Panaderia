@@ -1,0 +1,35 @@
+{
+  "id": "prd-007",
+  "slug": "conchas",
+  "name": "Conchas",
+  "categoryId": "cat-pan-dulce",
+  "shortDescription": "Pan de huevo con cubierta crujiente de vainilla o chocolate.",
+  "description": "Pan de huevo esponjoso con la tradicional cubierta azucarada. Hay de vainilla y de chocolate, según la tanda del día.",
+  "price": 25,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/conchas.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Huevo",
+    "Leche",
+    "Mantequilla",
+    "Azúcar",
+    "Vainilla",
+    "Cacao"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

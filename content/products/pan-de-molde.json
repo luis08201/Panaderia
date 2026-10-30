@@ -1,0 +1,33 @@
+{
+  "id": "prd-004",
+  "slug": "pan-de-molde",
+  "name": "Pan de molde casero",
+  "categoryId": "cat-pan-artesanal",
+  "shortDescription": "Suave y esponjoso, rebanado a pedido.",
+  "description": "Pan de molde de miga blanca y suave, sin conservantes. Si lo prefieres rebanado, pídelo al momento de recogerlo.",
+  "price": 120,
+  "unit": "Molde de 650 g",
+  "currency": "NIO",
+  "image": "assets/images/products/pan-de-molde.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Leche",
+    "Mantequilla",
+    "Azúcar",
+    "Levadura",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

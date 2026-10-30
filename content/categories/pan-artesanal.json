@@ -1,0 +1,9 @@
+{
+  "id": "cat-pan-artesanal",
+  "slug": "pan-artesanal",
+  "name": "Pan artesanal",
+  "description": "Hogazas, baguettes y panes de fermentación lenta para la mesa de todos los días.",
+  "image": "assets/images/categories/pan-artesanal.webp",
+  "position": 1,
+  "published": true
+}

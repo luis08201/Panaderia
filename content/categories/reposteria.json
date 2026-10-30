@@ -1,0 +1,9 @@
+{
+  "id": "cat-reposteria",
+  "slug": "reposteria",
+  "name": "Repostería",
+  "description": "Croissants, roles, empanadas y tartaletas de vitrina.",
+  "image": "assets/images/categories/reposteria.webp",
+  "position": 5,
+  "published": true
+}

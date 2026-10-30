@@ -1,0 +1,32 @@
+{
+  "id": "prd-021",
+  "slug": "empanada-pina",
+  "name": "Empanada de piña",
+  "categoryId": "cat-reposteria",
+  "shortDescription": "Masa quebrada rellena de dulce de piña casero.",
+  "description": "Empanada horneada de masa quebrada con relleno de piña cocida con canela.",
+  "price": 30,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/empanada-pina.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Mantequilla",
+    "Piña",
+    "Azúcar",
+    "Canela"
+  ],
+  "allergens": [
+    "Gluten",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

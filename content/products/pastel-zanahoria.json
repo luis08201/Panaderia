@@ -1,0 +1,36 @@
+{
+  "id": "prd-013",
+  "slug": "pastel-zanahoria",
+  "name": "Pastel de zanahoria",
+  "categoryId": "cat-pasteles",
+  "shortDescription": "Especiado, con nueces y frosting de queso crema.",
+  "description": "Bizcocho de zanahoria con canela y nueces, cubierto con frosting de queso crema.",
+  "price": 680,
+  "unit": "Pastel entero, 12 porciones",
+  "currency": "NIO",
+  "image": "assets/images/products/pastel-zanahoria.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Zanahoria",
+    "Nueces",
+    "Huevo",
+    "Azúcar",
+    "Canela",
+    "Queso crema"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche",
+    "Nueces"
+  ],
+  "available": false,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

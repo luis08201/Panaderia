@@ -1,0 +1,25 @@
+{
+  "id": "prd-024",
+  "slug": "cafe-filtrado",
+  "name": "Café filtrado",
+  "categoryId": "cat-bebidas",
+  "shortDescription": "Café nicaragüense de altura, preparado por goteo.",
+  "description": "Café de altura de productores nicaragüenses, tostado medio y preparado por goteo.",
+  "price": 45,
+  "unit": "Taza de 8 oz",
+  "currency": "NIO",
+  "image": "assets/images/products/cafe-filtrado.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Café"
+  ],
+  "allergens": [],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 10,
+  "seoTitle": "",
+  "seoDescription": ""
+}

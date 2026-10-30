@@ -1,0 +1,35 @@
+{
+  "id": "prd-003",
+  "slug": "pan-integral-semillas",
+  "name": "Pan integral de semillas",
+  "categoryId": "cat-pan-artesanal",
+  "shortDescription": "Harina integral con linaza, girasol y ajonjolí.",
+  "description": "Pan denso y sabroso, hecho con harina integral y una mezcla de semillas tostadas. Rinde muy bien en rebanadas finas para el desayuno.",
+  "price": 150,
+  "unit": "Pieza de 600 g",
+  "currency": "NIO",
+  "image": "assets/images/products/pan-integral-semillas.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina integral de trigo",
+    "Harina de trigo",
+    "Linaza",
+    "Semillas de girasol",
+    "Ajonjolí",
+    "Miel",
+    "Levadura",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten",
+    "Ajonjolí"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": true,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

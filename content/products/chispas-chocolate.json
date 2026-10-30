@@ -1,0 +1,34 @@
+{
+  "id": "prd-015",
+  "slug": "chispas-chocolate",
+  "name": "Galletas con chispas de chocolate",
+  "categoryId": "cat-galletas",
+  "shortDescription": "Bordes crujientes y centro suave.",
+  "description": "Galletas grandes con mantequilla, azúcar morena y chispas de chocolate semiamargo.",
+  "price": 120,
+  "unit": "Bolsa de 6 unidades",
+  "currency": "NIO",
+  "image": "assets/images/products/chispas-chocolate.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Mantequilla",
+    "Azúcar morena",
+    "Huevo",
+    "Chispas de chocolate",
+    "Vainilla"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 10,
+  "seoTitle": "",
+  "seoDescription": ""
+}

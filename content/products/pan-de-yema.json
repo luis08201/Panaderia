@@ -1,0 +1,33 @@
+{
+  "id": "prd-008",
+  "slug": "pan-de-yema",
+  "name": "Pan de yema",
+  "categoryId": "cat-pan-dulce",
+  "shortDescription": "Miga amarilla y suave, perfecto con café.",
+  "description": "Pan enriquecido con yemas de huevo y mantequilla, de miga tierna y color dorado.",
+  "price": 20,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/pan-de-yema.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Yema de huevo",
+    "Mantequilla",
+    "Azúcar",
+    "Levadura"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

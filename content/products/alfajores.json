@@ -1,0 +1,35 @@
+{
+  "id": "prd-018",
+  "slug": "alfajores",
+  "name": "Alfajores de dulce de leche",
+  "categoryId": "cat-galletas",
+  "shortDescription": "Dos tapas de maicena rellenas de dulce de leche.",
+  "description": "Tapas suaves de maicena, rellenas de dulce de leche y bañadas en coco rallado o chocolate.",
+  "price": 40,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/alfajores.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Maicena",
+    "Harina de trigo",
+    "Mantequilla",
+    "Huevo",
+    "Dulce de leche",
+    "Coco rallado"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche",
+    "Coco"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": true,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

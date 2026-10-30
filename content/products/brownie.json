@@ -1,0 +1,34 @@
+{
+  "id": "prd-022",
+  "slug": "brownie",
+  "name": "Brownie de chocolate",
+  "categoryId": "cat-reposteria",
+  "shortDescription": "Denso, húmedo y con costra brillante.",
+  "description": "Brownie de chocolate semiamargo con textura húmeda en el centro.",
+  "price": 50,
+  "unit": "Porción",
+  "currency": "NIO",
+  "image": "assets/images/products/brownie.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Chocolate",
+    "Mantequilla",
+    "Azúcar",
+    "Huevo",
+    "Harina de trigo",
+    "Cacao"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -1,0 +1,31 @@
+{
+  "id": "prd-027",
+  "slug": "fresco-cacao",
+  "name": "Fresco de cacao",
+  "categoryId": "cat-bebidas",
+  "shortDescription": "Bebida fría de cacao, arroz y canela.",
+  "description": "Fresco tradicional de cacao molido con arroz, canela y leche, servido con hielo.",
+  "price": 45,
+  "unit": "Vaso de 16 oz",
+  "currency": "NIO",
+  "image": "assets/images/products/fresco-cacao.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Cacao",
+    "Arroz",
+    "Leche",
+    "Azúcar",
+    "Canela"
+  ],
+  "allergens": [
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Panadería artesanal en Managua",
+    "title": "Pan recién horneado, todos los días",
+    "text": "Hogazas de masa madre, pan dulce de siempre y pasteles para compartir. Consulta el catálogo y escríbenos por WhatsApp para confirmar disponibilidad.",
+    "ctaLabel": "Ver catálogo",
+    "image": "assets/images/general/vitrina-panes.webp",
+    "imageAlt": "Estantes de madera con panes artesanales recién horneados"
+  },
+  "categories": {
+    "title": "Explora por categoría",
+    "text": "Del pan de la mañana al postre de la tarde."
+  },
+  "featured": {
+    "title": "Favoritos de la casa",
+    "text": "Los productos que más nos piden."
+  },
+  "fresh": {
+    "title": "Recién horneados",
+    "text": "Novedades que acabamos de sumar a la vitrina.",
+    "schedule": "Horneamos a las 6:00 a. m. y a las 3:00 p. m."
+  },
+  "promotions": {
+    "title": "Promociones",
+    "text": "Ofertas informativas, válidas en tienda."
+  },
+  "story": {
+    "eyebrow": "Nuestra historia",
+    "title": "Fermentación lenta y recetas de casa",
+    "text": "Trabajamos con harinas seleccionadas, masa madre propia y recetas nicaragüenses que aprendimos en familia. Horneamos en tandas pequeñas para que el pan llegue fresco a tu mesa.",
+    "image": "assets/images/general/amasado.webp",
+    "imageAlt": "Manos dando forma a una bola de masa sobre una mesa enharinada",
+    "linkLabel": "Conoce más"
+  },
+  "visit": {
+    "title": "Visítanos",
+    "text": "Te esperamos en tienda. Si buscas algo en particular, escríbenos antes para apartarlo."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prd-028",
+  "slug": "jugo-naranja",
+  "name": "Jugo de naranja",
+  "categoryId": "cat-bebidas",
+  "shortDescription": "Naranja recién exprimida, sin azúcar añadida.",
+  "description": "Jugo de naranja exprimido al momento.",
+  "price": 55,
+  "unit": "Vaso de 12 oz",
+  "currency": "NIO",
+  "image": "assets/images/products/jugo-naranja.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Naranja"
+  ],
+  "allergens": [],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": false,
+  "sortOrder": 50,
+  "seoTitle": "",
+  "seoDescription": ""
+}

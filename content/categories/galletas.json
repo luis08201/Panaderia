@@ -1,0 +1,9 @@
+{
+  "id": "cat-galletas",
+  "slug": "galletas",
+  "name": "Galletas",
+  "description": "Galletas horneadas por tandas, en bolsas listas para llevar o regalar.",
+  "image": "assets/images/categories/galletas.webp",
+  "position": 4,
+  "published": true
+}

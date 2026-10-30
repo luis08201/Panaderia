@@ -1,0 +1,32 @@
+{
+  "id": "prd-009",
+  "slug": "cosa-de-horno",
+  "name": "Cosa de horno",
+  "categoryId": "cat-pan-dulce",
+  "shortDescription": "Masa de maíz, queso seco y mantequilla, como en casa.",
+  "description": "Receta tradicional nicaragüense de maíz y queso seco, horneada hasta dorar los bordes. Dulce y salada a la vez.",
+  "price": 45,
+  "unit": "Porción",
+  "currency": "NIO",
+  "image": "assets/images/products/cosa-de-horno.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Masa de maíz",
+    "Queso seco",
+    "Mantequilla",
+    "Azúcar",
+    "Huevo"
+  ],
+  "allergens": [
+    "Leche",
+    "Huevo"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 40,
+  "seoTitle": "",
+  "seoDescription": ""
+}

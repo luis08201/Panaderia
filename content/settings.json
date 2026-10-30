@@ -1,0 +1,47 @@
+{
+  "businessName": "Miga & Horno",
+  "tagline": "Panadería artesanal",
+  "demoNotice": true,
+  "announcement": {
+    "enabled": true,
+    "text": "Sitio de demostración: nombre, precios y datos de contacto son de ejemplo.",
+    "linkLabel": "Ver catálogo",
+    "linkUrl": "catalogo.html"
+  },
+  "whatsapp": "50500000000",
+  "whatsappMessage": "Hola, quisiera información sobre sus productos.",
+  "phone": "+505 0000 0000",
+  "address": "Dirección pendiente, Managua, Nicaragua",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Managua%2C%20Nicaragua",
+  "hours": [
+    {
+      "days": "Lunes a viernes",
+      "time": "6:30 a. m. – 7:00 p. m."
+    },
+    {
+      "days": "Sábado",
+      "time": "7:00 a. m. – 7:00 p. m."
+    },
+    {
+      "days": "Domingo",
+      "time": "7:00 a. m. – 1:00 p. m."
+    }
+  ],
+  "social": [
+    {
+      "network": "Instagram",
+      "url": ""
+    },
+    {
+      "network": "Facebook",
+      "url": ""
+    }
+  ],
+  "availabilityNote": "La disponibilidad es informativa y puede cambiar durante el día. Confírmala por WhatsApp antes de visitarnos.",
+  "seo": {
+    "siteUrl": "",
+    "title": "Miga & Horno · Panadería artesanal en Managua",
+    "description": "Pan de masa madre, pan dulce nicaragüense, pasteles, galletas y café. Consulta el catálogo con precios en córdobas y escríbenos por WhatsApp.",
+    "ogImage": "assets/images/general/vitrina-panes.webp"
+  }
+}

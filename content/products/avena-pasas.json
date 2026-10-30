@@ -1,0 +1,35 @@
+{
+  "id": "prd-017",
+  "slug": "avena-pasas",
+  "name": "Galletas de avena y pasas",
+  "categoryId": "cat-galletas",
+  "shortDescription": "Avena, pasas y un toque de canela.",
+  "description": "Galletas masticables de avena con pasas y canela.",
+  "price": 100,
+  "unit": "Bolsa de 6 unidades",
+  "currency": "NIO",
+  "image": "assets/images/products/avena-pasas.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Avena",
+    "Harina de trigo",
+    "Pasas",
+    "Mantequilla",
+    "Azúcar morena",
+    "Huevo",
+    "Canela"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

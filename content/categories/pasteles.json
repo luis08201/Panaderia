@@ -1,0 +1,9 @@
+{
+  "id": "cat-pasteles",
+  "slug": "pasteles",
+  "name": "Pasteles",
+  "description": "Pasteles enteros para compartir y pasteles personalizados para celebraciones.",
+  "image": "assets/images/categories/pasteles.webp",
+  "position": 3,
+  "published": true
+}

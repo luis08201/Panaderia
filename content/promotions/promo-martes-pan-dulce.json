@@ -1,0 +1,11 @@
+{
+  "id": "promo-martes-pan-dulce",
+  "title": "Martes de pan dulce",
+  "description": "Todos los martes, 6 piezas de pan dulce surtido por C$ 120. Válido en tienda mientras haya existencias.",
+  "image": "assets/images/products/conchas.webp",
+  "startDate": "2026-01-01",
+  "endDate": "2026-12-31",
+  "active": true,
+  "linkUrl": "catalogo.html?categoria=pan-dulce",
+  "linkLabel": "Ver pan dulce"
+}

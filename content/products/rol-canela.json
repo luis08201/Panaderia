@@ -1,0 +1,34 @@
+{
+  "id": "prd-020",
+  "slug": "rol-canela",
+  "name": "Rol de canela",
+  "categoryId": "cat-reposteria",
+  "shortDescription": "Masa suave, canela y glaseado de queso crema.",
+  "description": "Rol de masa brioche relleno de canela y azúcar morena, terminado con glaseado de queso crema.",
+  "price": 55,
+  "unit": "Unidad",
+  "currency": "NIO",
+  "image": "assets/images/products/rol-canela.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Mantequilla",
+    "Huevo",
+    "Canela",
+    "Azúcar morena",
+    "Queso crema"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

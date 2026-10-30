@@ -1,0 +1,30 @@
+{
+  "id": "prd-002",
+  "slug": "baguette",
+  "name": "Baguette clásica",
+  "categoryId": "cat-pan-artesanal",
+  "shortDescription": "Delgada, dorada y crujiente, ideal para sándwiches.",
+  "description": "Baguette de corteza fina y miga ligera. Sale del horno dos veces al día y está en su mejor momento durante las primeras horas.",
+  "price": 70,
+  "unit": "Unidad de 250 g",
+  "currency": "NIO",
+  "image": "assets/images/products/baguette.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Agua",
+    "Levadura",
+    "Sal"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

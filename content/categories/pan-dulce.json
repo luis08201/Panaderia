@@ -1,0 +1,9 @@
+{
+  "id": "cat-pan-dulce",
+  "slug": "pan-dulce",
+  "name": "Pan dulce",
+  "description": "Las piezas de siempre para el café de la tarde: pan de coco, conchas, pan de yema y cosa de horno.",
+  "image": "assets/images/categories/pan-dulce.webp",
+  "position": 2,
+  "published": true
+}

@@ -1,0 +1,6 @@
+node_modules
+dist
+public-data
+sitemap.xml
+robots.txt
+.DS_Store

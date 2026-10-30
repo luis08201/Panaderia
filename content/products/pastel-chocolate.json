@@ -1,0 +1,35 @@
+{
+  "id": "prd-011",
+  "slug": "pastel-chocolate",
+  "name": "Pastel de chocolate",
+  "categoryId": "cat-pasteles",
+  "shortDescription": "Capas de bizcocho de cacao y ganache semiamargo.",
+  "description": "Bizcocho húmedo de cacao con relleno y cobertura de ganache de chocolate semiamargo.",
+  "price": 750,
+  "unit": "Pastel entero, 12 porciones",
+  "currency": "NIO",
+  "image": "assets/images/products/pastel-chocolate.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Cacao",
+    "Chocolate",
+    "Huevo",
+    "Mantequilla",
+    "Crema",
+    "Azúcar"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

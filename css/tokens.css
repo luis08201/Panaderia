@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("../assets/fonts/playfair-display-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/playfair-display-italic-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+:root {
+  /* Brand */
+  --color-primary: #754c29;
+  --color-primary-dark: #5c3a1e;
+  --color-secondary: #d6a56d;
+  --color-background: #fff9f0;
+  --color-surface: #ffffff;
+  --color-text: #2f241d;
+  --color-text-muted: #6a5546;
+  --color-accent: #a85d3b;
+  --color-accent-dark: #8c4a2c;
+  --color-border: #e9ded0;
+  --color-tint: #f6ead8;
+  --color-dark: #2f241d;
+  --color-on-dark: #fbf1e3;
+  --color-on-dark-muted: #d9c7b2;
+  --color-success: #3f6b34;
+  --color-success-bg: #e6efdc;
+  --color-danger: #9b2f24;
+  --color-danger-bg: #f8e1dc;
+  --color-whatsapp: #1f7a4a;
+  --color-whatsapp-dark: #17603a;
+  --color-focus: #1b5fa8;
+
+  /* Type */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --step--1: 0.875rem;
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.125rem, 1.07rem + 0.3vw, 1.3rem);
+  --step-2: clamp(1.4rem, 1.25rem + 0.75vw, 1.85rem);
+  --step-3: clamp(1.85rem, 1.5rem + 1.6vw, 2.75rem);
+  --step-4: clamp(2.4rem, 1.7rem + 3.4vw, 4.4rem);
+  --leading-tight: 1.15;
+  --leading-body: 1.6;
+
+  /* Space */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: clamp(3.5rem, 2.5rem + 4vw, 6rem);
+  --section-space: clamp(3.5rem, 2.6rem + 4vw, 6.5rem);
+
+  /* Layout */
+  --container: 76rem;
+  --container-narrow: 46rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+  --header-height: 4.5rem;
+
+  /* Shape */
+  --radius-s: 0.5rem;
+  --radius-m: 0.875rem;
+  --radius-l: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+  --shadow-s: 0 1px 2px rgb(47 36 29 / 0.06), 0 2px 8px rgb(47 36 29 / 0.05);
+  --shadow-m: 0 4px 12px rgb(47 36 29 / 0.08), 0 16px 32px rgb(47 36 29 / 0.08);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 0.25s;
+}

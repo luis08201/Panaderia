@@ -1,0 +1,34 @@
+{
+  "id": "prd-012",
+  "slug": "cheesecake-maracuya",
+  "name": "Cheesecake de maracuyá",
+  "categoryId": "cat-pasteles",
+  "shortDescription": "Base de galleta, queso crema y cobertura de maracuyá.",
+  "description": "Cheesecake horneado sobre base de galleta, con una cobertura ácida de maracuyá que equilibra el dulzor.",
+  "price": 700,
+  "unit": "Pastel entero, 10 porciones",
+  "currency": "NIO",
+  "image": "assets/images/products/cheesecake-maracuya.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Queso crema",
+    "Galleta",
+    "Mantequilla",
+    "Huevo",
+    "Azúcar",
+    "Maracuyá"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": true,
+  "published": true,
+  "sortOrder": 30,
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -1,0 +1,28 @@
+{
+  "id": "prd-025",
+  "slug": "cappuccino",
+  "name": "Cappuccino",
+  "categoryId": "cat-bebidas",
+  "shortDescription": "Espresso con leche texturizada y espuma.",
+  "description": "Doble espresso con leche texturizada y una capa de espuma. Puedes pedirlo con leche deslactosada.",
+  "price": 70,
+  "unit": "Taza de 8 oz",
+  "currency": "NIO",
+  "image": "assets/images/products/cappuccino.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Café",
+    "Leche"
+  ],
+  "allergens": [
+    "Leche"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

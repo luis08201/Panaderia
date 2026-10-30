@@ -1,0 +1,31 @@
+{
+  "id": "prd-016",
+  "slug": "galletas-mantequilla",
+  "name": "Galletas de mantequilla",
+  "categoryId": "cat-galletas",
+  "shortDescription": "Sencillas, mantecosas y con sello decorado.",
+  "description": "Galletas de mantequilla con un sello en relieve. Se deshacen en la boca y acompañan bien el café.",
+  "price": 90,
+  "unit": "Bolsa de 8 unidades",
+  "currency": "NIO",
+  "image": "assets/images/products/galletas-mantequilla.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Mantequilla",
+    "Azúcar",
+    "Vainilla"
+  ],
+  "allergens": [
+    "Gluten",
+    "Leche"
+  ],
+  "available": true,
+  "featured": false,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 20,
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": "cat-bebidas",
+  "slug": "bebidas",
+  "name": "Bebidas",
+  "description": "Café nicaragüense, chocolate y frescos para acompañar el pan.",
+  "image": "assets/images/categories/bebidas.webp",
+  "position": 6,
+  "published": true
+}

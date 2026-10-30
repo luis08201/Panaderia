@@ -1,0 +1,35 @@
+{
+  "id": "prd-010",
+  "slug": "tres-leches",
+  "name": "Pastel tres leches",
+  "categoryId": "cat-pasteles",
+  "shortDescription": "Bizcocho bañado en tres leches con crema batida.",
+  "description": "Bizcocho de vainilla empapado en leche evaporada, leche condensada y crema, cubierto con crema batida. Se recomienda pedirlo con 24 horas de anticipación.",
+  "price": 650,
+  "unit": "Pastel entero, 12 porciones",
+  "currency": "NIO",
+  "image": "assets/images/products/tres-leches.webp",
+  "imageAlt": "",
+  "gallery": [],
+  "ingredients": [
+    "Harina de trigo",
+    "Huevo",
+    "Leche evaporada",
+    "Leche condensada",
+    "Crema",
+    "Azúcar",
+    "Vainilla"
+  ],
+  "allergens": [
+    "Gluten",
+    "Huevo",
+    "Leche"
+  ],
+  "available": true,
+  "featured": true,
+  "newArrival": false,
+  "published": true,
+  "sortOrder": 10,
+  "seoTitle": "",
+  "seoDescription": ""
+}
