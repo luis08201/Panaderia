@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nosotros · Miga &amp; Horno</title>
+    <meta name="description" content="Conoce nuestra historia, los valores y el proceso artesanal con el que horneamos cada día." />
+    <meta name="theme-color" content="#fff9f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_NI" />
+    <meta property="og:site_name" content="Miga &amp; Horno" />
+    <meta property="og:title" content="Nosotros · Miga &amp; Horno" />
+    <meta property="og:description" content="Conoce nuestra historia, los valores y el proceso artesanal con el que horneamos cada día." />
+    <meta property="og:image" content="assets/images/general/vitrina-panes.webp" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public-data/site.json" as="fetch" crossorigin />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body data-page="nosotros">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="announcement" id="announcement" hidden>
+      <div class="container announcement__inner"></div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons/icons.svg#menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons/icons.svg#close"></use></svg>
+          <span class="nav-toggle__label">Menú</span>
+        </button>
+        <nav id="menu" class="nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" data-nav="inicio" href="index.html">Inicio</a></li>
+            <li><a class="nav__link" data-nav="catalogo" href="catalogo.html">Catálogo</a></li>
+          </ul>
+          <div class="nav__end">
+            <ul class="nav__list">
+              <li><a class="nav__link" data-nav="nosotros" href="nosotros.html">Nosotros</a></li>
+              <li><a class="nav__link" data-nav="contacto" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a class="btn btn--primary btn--sm nav__cta" href="catalogo.html">Ver catálogo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="about-hero section" aria-labelledby="about-title">
+        <div class="container split split--reverse">
+          <div class="split__media">
+            <img src="assets/images/general/horno.webp" srcset="assets/images/general/sm/horno.webp 1000w, assets/images/general/horno.webp 2000w" sizes="(min-width: 768px) 50vw, 100vw" width="2000" height="1125" alt="Panadero sacando una bandeja de pan del horno" fetchpriority="high" data-content-image="nosotros.hero" />
+          </div>
+          <div class="split__text">
+            <p class="eyebrow" data-content="nosotros.hero.eyebrow" data-optional>Nosotros</p>
+            <h1 id="about-title" data-content="nosotros.hero.title">Una panadería de barrio, hecha con calma</h1>
+            <p data-content="nosotros.hero.text">Horneamos cada día con ingredientes sencillos, tiempos largos de fermentación y el cuidado de las recetas de casa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="story-title">
+        <div class="container container--narrow">
+          <h2 id="story-title" data-content="nosotros.story.title">Nuestra historia</h2>
+          <div class="prose about-story" data-content-paragraphs="nosotros.story.text"><p>Miga &amp; Horno nació de una idea simple: hacer pan como se hacía en casa, sin apuros. Empezamos con unas pocas hogazas de masa madre y el pan dulce que acompañaba el café de la tarde.</p><p>Hoy seguimos horneando en tandas pequeñas, combinando técnicas de panadería artesanal con sabores nicaragüenses como el pan de coco y la cosa de horno.</p></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="values-title">
+        <div class="container">
+          <div class="section-head"><div class="section-head__text"><h2 id="values-title">Lo que nos importa</h2></div></div>
+          <ul class="values" id="values-list"><li class="value"><h3>Ingredientes simples</h3><p>Harina, agua, sal y tiempo. Sin conservantes ni mejoradores.</p></li><li class="value"><h3>Tandas pequeñas</h3><p>Horneamos varias veces al día para que el pan salga fresco.</p></li><li class="value"><h3>Recetas de casa</h3><p>Mantenemos vivos los sabores de la repostería nicaragüense.</p></li></ul>
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head"><div class="section-head__text"><h2 id="process-title">Nuestro proceso</h2><p>Del amasado al mostrador, sin atajos.</p></div></div>
+          <ol class="process" id="process-list"><li><h3>Masa madre</h3><p>Alimentamos nuestra masa madre a diario; es la base de los panes artesanales.</p></li><li><h3>Fermentación lenta</h3><p>Las masas reposan entre 12 y 24 horas para ganar sabor y textura.</p></li><li><h3>Formado a mano</h3><p>Cada pieza se pesa y se forma a mano antes de entrar al horno.</p></li><li><h3>Horneado diario</h3><p>Horneamos a primera hora y por la tarde.</p></li></ol>
+        </div>
+      </section>
+
+      <section class="section" id="galeria" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-head"><div class="section-head__text"><h2 id="gallery-title">En el obrador</h2></div></div>
+          <ul class="gallery" id="gallery-list"></ul>
+        </div>
+      </section>
+
+      <section class="container" aria-labelledby="about-cta-title">
+        <div class="cta-band">
+          <div>
+            <h2 id="about-cta-title">Pásate por la vitrina</h2>
+            <p>Revisa lo que tenemos hoy y escríbenos si quieres apartar algo.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--light" href="catalogo.html">Ver catálogo</a>
+            <a class="btn btn--whatsapp" data-whatsapp href="contacto.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#whatsapp"></use></svg>WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+            <p class="footer__about">Pan artesanal, pan dulce y repostería horneados cada día. Este sitio es un catálogo informativo: no realizamos ventas en línea.</p>
+          </div>
+          <div>
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Contacto</h2>
+            <ul class="footer__list">
+              <li data-whatsapp-wrapper><a data-whatsapp href="contacto.html" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a data-site="phone" href="tel:+50500000000">+505 0000 0000</a></li>
+              <li data-site="address">Dirección pendiente, Managua, Nicaragua</li>
+              <li><a data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener">Ver en Google Maps</a></li>
+            </ul>
+            <h2 class="footer__title footer__title--spaced">Redes</h2>
+            <ul class="footer__list" data-site="social"><li class="muted">Redes sociales por confirmar</li></ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Horarios</h2>
+            <div data-site="hours"><ul class="hours"><li><span>Lunes a viernes</span><span>6:30 a. m. – 7:00 p. m.</span></li><li><span>Sábado</span><span>7:00 a. m. – 7:00 p. m.</span></li><li><span>Domingo</span><span>7:00 a. m. – 1:00 p. m.</span></li></ul></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© <span data-site="year">2026</span> <span data-site="businessName">Miga &amp; Horno</span>. Todos los derechos reservados.</p>
+          <p>Precios en córdobas (C$). La disponibilidad puede cambiar durante el día.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

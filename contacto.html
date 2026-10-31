@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto · Miga &amp; Horno</title>
+    <meta name="description" content="WhatsApp, teléfono, dirección, horarios y redes de la panadería. Escríbenos para consultar disponibilidad." />
+    <meta name="theme-color" content="#fff9f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_NI" />
+    <meta property="og:site_name" content="Miga &amp; Horno" />
+    <meta property="og:title" content="Contacto · Miga &amp; Horno" />
+    <meta property="og:description" content="WhatsApp, teléfono, dirección, horarios y redes de la panadería. Escríbenos para consultar disponibilidad." />
+    <meta property="og:image" content="assets/images/general/vitrina-panes.webp" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public-data/site.json" as="fetch" crossorigin />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body data-page="contacto">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="announcement" id="announcement" hidden>
+      <div class="container announcement__inner"></div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons/icons.svg#menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons/icons.svg#close"></use></svg>
+          <span class="nav-toggle__label">Menú</span>
+        </button>
+        <nav id="menu" class="nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" data-nav="inicio" href="index.html">Inicio</a></li>
+            <li><a class="nav__link" data-nav="catalogo" href="catalogo.html">Catálogo</a></li>
+          </ul>
+          <div class="nav__end">
+            <ul class="nav__list">
+              <li><a class="nav__link" data-nav="nosotros" href="nosotros.html">Nosotros</a></li>
+              <li><a class="nav__link" data-nav="contacto" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a class="btn btn--primary btn--sm nav__cta" href="catalogo.html">Ver catálogo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <p class="eyebrow">Contacto</p>
+          <h1>Hablemos de pan</h1>
+          <p>La forma más rápida de consultar disponibilidad o cotizar un pastel es por WhatsApp. También puedes llamarnos o visitarnos.</p>
+          <div class="hero__actions" data-whatsapp-wrapper><a class="btn btn--whatsapp" data-whatsapp href="contacto.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#whatsapp"></use></svg>Escríbenos por WhatsApp</a></div>
+        </div>
+      </section>
+
+      <section class="container contact-layout" aria-label="Datos de contacto">
+        <div class="info-grid info-grid--contact">
+          <article class="info-card" data-whatsapp-wrapper>
+            <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#whatsapp"></use></svg></span>
+            <h2 class="info-card__title">WhatsApp</h2>
+            <p>Consultas sobre productos, disponibilidad y pasteles personalizados.</p>
+            <a class="link-arrow" data-whatsapp href="contacto.html" target="_blank" rel="noopener">Abrir chat</a>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#phone"></use></svg></span>
+            <h2 class="info-card__title">Teléfono</h2>
+            <p><a data-site="phone" href="tel:+50500000000">+505 0000 0000</a></p>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#pin"></use></svg></span>
+            <h2 class="info-card__title">Dirección</h2>
+            <address data-site="address">Dirección pendiente, Managua, Nicaragua</address>
+            <a class="link-arrow" data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </article>
+          <article class="info-card info-card--wide">
+            <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#clock"></use></svg></span>
+            <h2 class="info-card__title">Horarios</h2>
+            <div data-site="hours"><ul class="hours"><li><span>Lunes a viernes</span><span>6:30 a. m. – 7:00 p. m.</span></li><li><span>Sábado</span><span>7:00 a. m. – 7:00 p. m.</span></li><li><span>Domingo</span><span>7:00 a. m. – 1:00 p. m.</span></li></ul></div>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#share"></use></svg></span>
+            <h2 class="info-card__title">Redes sociales</h2>
+            <ul class="social-list footer__list" data-site="social"><li class="muted">Redes sociales por confirmar</li></ul>
+          </article>
+        </div>
+        <p class="availability-note"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#info"></use></svg><span data-site="availabilityNote">La disponibilidad es informativa y puede cambiar durante el día. Confírmala por WhatsApp antes de visitarnos.</span></p>
+        <p class="demo-note" data-demo-note><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#info"></use></svg><span>Nombre, teléfono, WhatsApp y dirección son datos de ejemplo hasta que la panadería confirme los reales.</span></p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+            <p class="footer__about">Pan artesanal, pan dulce y repostería horneados cada día. Este sitio es un catálogo informativo: no realizamos ventas en línea.</p>
+          </div>
+          <div>
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Contacto</h2>
+            <ul class="footer__list">
+              <li data-whatsapp-wrapper><a data-whatsapp href="contacto.html" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a data-site="phone" href="tel:+50500000000">+505 0000 0000</a></li>
+              <li data-site="address">Dirección pendiente, Managua, Nicaragua</li>
+              <li><a data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener">Ver en Google Maps</a></li>
+            </ul>
+            <h2 class="footer__title footer__title--spaced">Redes</h2>
+            <ul class="footer__list" data-site="social"><li class="muted">Redes sociales por confirmar</li></ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Horarios</h2>
+            <div data-site="hours"><ul class="hours"><li><span>Lunes a viernes</span><span>6:30 a. m. – 7:00 p. m.</span></li><li><span>Sábado</span><span>7:00 a. m. – 7:00 p. m.</span></li><li><span>Domingo</span><span>7:00 a. m. – 1:00 p. m.</span></li></ul></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© <span data-site="year">2026</span> <span data-site="businessName">Miga &amp; Horno</span>. Todos los derechos reservados.</p>
+          <p>Precios en córdobas (C$). La disponibilidad puede cambiar durante el día.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

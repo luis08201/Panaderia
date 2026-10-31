@@ -63,6 +63,49 @@ function smallImage(path) {
   return existsSync(join(ROOT, small)) ? small : "";
 }
 
+// Reads width and height from WebP, PNG or JPEG headers (no dependencies).
+function imageSize(path) {
+  if (!path || /^https?:/.test(path)) return null;
+  const b = readFileSync(join(ROOT, path));
+  if (b.toString("ascii", 0, 4) === "RIFF" && b.toString("ascii", 8, 12) === "WEBP") {
+    const chunk = b.toString("ascii", 12, 16);
+    if (chunk === "VP8X") return [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+    if (chunk === "VP8 ") return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+    if (chunk === "VP8L") {
+      const bits = b.readUInt32LE(21);
+      return [1 + (bits & 0x3fff), 1 + ((bits >> 14) & 0x3fff)];
+    }
+  }
+  if (b.readUInt32BE(0) === 0x89504e47) return [b.readUInt32BE(16), b.readUInt32BE(20)];
+  if (b[0] === 0xff && b[1] === 0xd8) {
+    let offset = 2;
+    while (offset < b.length) {
+      const marker = b[offset + 1];
+      const length = b.readUInt16BE(offset + 2);
+      if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+        return [b.readUInt16BE(offset + 7), b.readUInt16BE(offset + 5)];
+      }
+      offset += 2 + length;
+    }
+  }
+  return null;
+}
+
+// { src, small, width, height, smallWidth } for the frontend's <img> helper.
+function imageInfo(path) {
+  if (!path) return null;
+  const size = imageSize(path);
+  const small = smallImage(path);
+  const smallSize = small ? imageSize(small) : null;
+  return {
+    src: path,
+    small: small || undefined,
+    width: size?.[0],
+    height: size?.[1],
+    smallWidth: smallSize?.[0],
+  };
+}
+
 function requireFields(data, fields, where) {
   for (const field of fields) {
     if (!text(data[field])) errors.push(`${where}: falta el campo obligatorio "${field}"`);
@@ -99,7 +142,7 @@ const allCategories = categoryEntries.map(({ file, data }) => {
     slug: text(data.slug),
     name: text(data.name),
     description: text(data.description),
-    image: imagePath(data.image, where),
+    image: imageInfo(imagePath(data.image, where)),
     position: Number.isFinite(data.position) ? data.position : 999,
     published: bool(data.published, true),
   };
@@ -142,11 +185,10 @@ const allProducts = productEntries.map(({ file, data }) => {
     price,
     unit: text(data.unit),
     currency: "NIO",
-    image,
-    imageSmall: smallImage(image),
+    image: imageInfo(image),
     imageAlt: text(data.imageAlt) || text(data.name),
     gallery: list(data.gallery)
-      .map((item, index) => imagePath(typeof item === "string" ? item : item?.image, `${where} (galería ${index + 1})`))
+      .map((item, index) => imageInfo(imagePath(typeof item === "string" ? item : item?.image, `${where} (galería ${index + 1})`)))
       .filter(Boolean),
     ingredients: list(data.ingredients).map(text).filter(Boolean),
     allergens: list(data.allergens).map(text).filter(Boolean),
@@ -199,7 +241,7 @@ const promotions = promotionEntries
       id: text(data.id),
       title: text(data.title),
       description: text(data.description),
-      image: imagePath(data.image, where),
+      image: imageInfo(imagePath(data.image, where)),
       startDate: text(data.startDate),
       endDate: text(data.endDate),
       active: bool(data.active, false),
@@ -228,14 +270,13 @@ function readPage(name) {
     return {};
   }
   const page = readJson(file) ?? {};
-  // Resolve every "image" field in the page and add its small variant.
+  // Resolve every "image" field in the page into an image object.
   const walk = (node, path) => {
     if (Array.isArray(node)) node.forEach((item, i) => walk(item, `${path}[${i}]`));
     else if (node && typeof node === "object") {
       for (const [key, value] of Object.entries(node)) {
         if (key === "image" && typeof value === "string") {
-          node.image = imagePath(value, `content/pages/${name}.json (${path}.image)`);
-          node.imageSmall = smallImage(node.image);
+          node.image = imageInfo(imagePath(value, `content/pages/${name}.json (${path}.image)`));
         } else walk(value, `${path}.${key}`);
       }
     }

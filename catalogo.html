@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo · Miga &amp; Horno</title>
+    <meta name="description" content="Pan artesanal, pan dulce, pasteles, galletas, repostería y bebidas con precios en córdobas. Busca, filtra por categoría y consulta por WhatsApp." />
+    <meta name="theme-color" content="#fff9f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_NI" />
+    <meta property="og:site_name" content="Miga &amp; Horno" />
+    <meta property="og:title" content="Catálogo · Miga &amp; Horno" />
+    <meta property="og:description" content="Pan artesanal, pan dulce, pasteles, galletas, repostería y bebidas con precios en córdobas. Busca, filtra por categoría y consulta por WhatsApp." />
+    <meta property="og:image" content="assets/images/general/vitrina-panes.webp" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public-data/site.json" as="fetch" crossorigin />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body data-page="catalogo">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="announcement" id="announcement" hidden>
+      <div class="container announcement__inner"></div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons/icons.svg#menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons/icons.svg#close"></use></svg>
+          <span class="nav-toggle__label">Menú</span>
+        </button>
+        <nav id="menu" class="nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" data-nav="inicio" href="index.html">Inicio</a></li>
+            <li><a class="nav__link" data-nav="catalogo" href="catalogo.html">Catálogo</a></li>
+          </ul>
+          <div class="nav__end">
+            <ul class="nav__list">
+              <li><a class="nav__link" data-nav="nosotros" href="nosotros.html">Nosotros</a></li>
+              <li><a class="nav__link" data-nav="contacto" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a class="btn btn--primary btn--sm nav__cta" href="catalogo.html">Ver catálogo</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <p class="eyebrow">Catálogo</p>
+          <h1>Todo lo que horneamos</h1>
+          <p>Precios en córdobas. Busca un producto, filtra por categoría y escríbenos para confirmar disponibilidad.</p>
+          <p class="availability-note"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#info"></use></svg><span data-site="availabilityNote">La disponibilidad es informativa y puede cambiar durante el día. Confírmala por WhatsApp antes de visitarnos.</span></p>
+        </div>
+      </section>
+
+      <section class="container" aria-label="Productos">
+        <div class="catalog-tools">
+          <div class="catalog-tools__row">
+            <form id="catalog-search" role="search">
+              <label class="field-label" for="search">Buscar productos</label>
+              <div class="search">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#search"></use></svg>
+                <input id="search" class="input" type="search" name="q" placeholder="Ej.: pan de coco, croissant" autocomplete="off" enterkeyhint="search" />
+              </div>
+            </form>
+            <div>
+              <label class="field-label" for="sort">Ordenar por</label>
+              <select id="sort" class="select" name="orden"></select>
+            </div>
+          </div>
+          <fieldset class="chips" id="category-chips"></fieldset>
+        </div>
+        <div class="results-bar">
+          <p id="results-status" role="status" aria-live="polite"></p>
+          <button id="clear-filters" type="button" hidden>Limpiar filtros</button>
+        </div>
+        <noscript><p class="state">Activa JavaScript para buscar y filtrar el catálogo, o escríbenos por WhatsApp desde la página de contacto.</p></noscript>
+        <ul class="product-grid" id="product-list"></ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#wheat"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name" data-site="businessName">Miga &amp; Horno</span>
+            <span class="brand__tagline" data-site="tagline">Panadería artesanal</span>
+          </span>
+        </a>
+            <p class="footer__about">Pan artesanal, pan dulce y repostería horneados cada día. Este sitio es un catálogo informativo: no realizamos ventas en línea.</p>
+          </div>
+          <div>
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Contacto</h2>
+            <ul class="footer__list">
+              <li data-whatsapp-wrapper><a data-whatsapp href="contacto.html" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a data-site="phone" href="tel:+50500000000">+505 0000 0000</a></li>
+              <li data-site="address">Dirección pendiente, Managua, Nicaragua</li>
+              <li><a data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener">Ver en Google Maps</a></li>
+            </ul>
+            <h2 class="footer__title footer__title--spaced">Redes</h2>
+            <ul class="footer__list" data-site="social"><li class="muted">Redes sociales por confirmar</li></ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Horarios</h2>
+            <div data-site="hours"><ul class="hours"><li><span>Lunes a viernes</span><span>6:30 a. m. – 7:00 p. m.</span></li><li><span>Sábado</span><span>7:00 a. m. – 7:00 p. m.</span></li><li><span>Domingo</span><span>7:00 a. m. – 1:00 p. m.</span></li></ul></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© <span data-site="year">2026</span> <span data-site="businessName">Miga &amp; Horno</span>. Todos los derechos reservados.</p>
+          <p>Precios en córdobas (C$). La disponibilidad puede cambiar durante el día.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
