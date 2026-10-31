@@ -1,4 +1,5 @@
 import { $, h, img } from "../utils/dom.js";
+import { revealItems } from "./motion.js";
 
 export function init({ site }) {
   const page = site?.pages?.nosotros;
@@ -19,4 +20,5 @@ export function init({ site }) {
   $("#gallery-list").replaceChildren(
     ...photos.map((item) => h("li", {}, img(item.image, { alt: item.alt ?? "", sizes: "(min-width: 992px) 33vw, (min-width: 600px) 50vw, 100vw" })))
   );
+  revealItems($("#gallery-list"));
 }

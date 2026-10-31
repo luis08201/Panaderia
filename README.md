@@ -49,13 +49,14 @@ panaderia/
 ├── assets/
 │   ├── images/{products,categories,general}/   Fotos (las carpetas sm/ guardan copias pequeñas)
 │   ├── fonts/                 Playfair Display e Inter (WOFF2, alojadas en el sitio)
+│   ├── vendor/gsap/           GSAP 3.15 y ScrollTrigger (copias minificadas, sin npm)
 │   └── icons/icons.svg        Iconos
 ├── css/                       tokens, reset, global, components, pages
 ├── js/
 │   ├── app.js                 Arranque común y carga del módulo de cada página
 │   ├── config.js
 │   ├── modules/               data-loader, navigation, content, cards, filters, catalog,
-│   │                          product-detail, home, about, whatsapp, seo
+│   │                          product-detail, home, about, whatsapp, seo, motion
 │   └── utils/                 currency, normalize, dates, dom
 ├── scripts/
 │   ├── build-content.mjs      Valida content/ y genera public-data/ (+ sitemap.xml y robots.txt)
@@ -71,6 +72,26 @@ Cambios respecto a la estructura sugerida en la especificación:
 - **`public-data/` se genera en cada build** y está en `.gitignore`. Así nunca queda desactualizado respecto al CMS.
 - **Módulos extra**: `cards.js`, `content.js`, `home.js`, `about.js`, `seo.js` y `utils/dates.js`, para que cada página tenga su propio módulo.
 - **Sin `reset` de terceros ni dependencias de npm.**
+
+## Animaciones
+
+`js/modules/motion.js` reúne las animaciones; se hacen con [GSAP](https://gsap.com) y su complemento ScrollTrigger, alojados en `assets/vendor/gsap/`.
+
+- **Entrada**: el texto del hero, los encabezados de página y la ficha de producto suben y aparecen en escalonado. Esta parte es CSS (`global.css`) para que se reproduzca desde el primer pintado.
+- **Al hacer scroll**: los encabezados de sección, las tarjetas de categoría y producto, las promociones, los bloques de historia, valores y proceso, y las tarjetas de contacto aparecen al entrar en pantalla.
+- **Parallax**: la foto del hero se desplaza más lento que la página y el texto se atenúa al bajar. La foto de «Nuestra historia» se acerca suavemente.
+- **Catálogo**: los resultados se animan de nuevo cada vez que cambias la búsqueda, la categoría o el orden.
+- **Detalles**: el menú móvil despliega sus enlaces en escalonado, el encabezado gana sombra al desplazarse y las miniaturas de la ficha funden la foto.
+
+Decisiones para no perder rendimiento ni accesibilidad:
+
+- GSAP se descarga después del evento `load`, así que no compite con el contenido principal. Lo que se pinta antes de que llegue se queda tal cual; solo se animan los elementos que aún están fuera de pantalla.
+- Las fotos principales del hero y de la ficha nunca se escalan ni se desvanecen, porque Chrome lo contaría como un nuevo LCP.
+- Solo se animan `opacity` y `transform`: no hay desplazamientos de diseño, y las tarjetas que aún no aparecen siguen siendo alcanzables con Tab.
+- Con «Reducir movimiento» activado en el sistema no se carga GSAP ni se reproduce ninguna animación.
+- Si GSAP no carga, todo el contenido se ve igual, sin animación.
+
+Para ajustar duraciones o qué elementos se animan, edita `motion.js` (selector `REVEAL` y las funciones de cada efecto). GSAP se distribuye bajo su [licencia estándar](https://gsap.com/standard-license), gratuita también para uso comercial.
 
 ## Modelo de contenido
 
@@ -193,6 +214,7 @@ Probado en Chrome (Playwright) contra el servidor local:
   - No hay enlaces `href="#"`, textos de carrito o pago, ni páginas con más de un H1.
   - El primer Tab enfoca «Saltar al contenido».
   - El menú móvil actualiza `aria-expanded` y se cierra con Escape devolviendo el foco al botón.
+- **Animaciones**: sin errores ni elementos que se queden ocultos tras recorrer cada página a 390 y 1440 px, con y sin «Reducir movimiento»; las tarjetas fuera de pantalla siguen siendo enfocables, y con GSAP bloqueado todo el contenido se ve. CLS por debajo de 0,02 y LCP igual que sin animaciones.
 - **Flujo del CMS** (simulado editando los JSON como lo hace Pages CMS):
   - Un producto con categoría inexistente, precio negativo e imagen faltante detiene el build con 3 errores.
   - Un ID o slug duplicado detiene el build.

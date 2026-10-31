@@ -1,6 +1,7 @@
 import { PAGE_TITLES } from "./config.js";
 import { bindContent } from "./modules/content.js";
 import { getCategories, getProducts, getSite } from "./modules/data-loader.js";
+import { initMotion, refreshMotion } from "./modules/motion.js";
 import { applySettings, initMenu } from "./modules/navigation.js";
 import { addBusinessJsonLd, setMeta } from "./modules/seo.js";
 
@@ -14,6 +15,7 @@ const PAGES = {
 const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html", contacto: "contacto.html" };
 
 async function start() {
+  initMotion();
   initMenu();
   const page = document.body.dataset.page;
   // Start the page's data requests right away instead of after site.json.
@@ -47,6 +49,7 @@ async function start() {
     const module = await loadPage();
     await module.init({ site });
   }
+  refreshMotion();
 }
 
 start();

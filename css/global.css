@@ -265,3 +265,32 @@ a:hover {
   color: var(--color-text-muted);
   font-size: var(--step-1);
 }
+
+/* Intro for above-the-fold text (html.motion is set in <head> unless reduced motion is requested).
+   Plain CSS so it plays at first paint; GSAP handles the scroll animations once the page has loaded. */
+.motion :is(.hero__content, .page-head .container, .about-hero .split__text, .product__info) > * {
+  animation: intro-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.motion :is(.hero__content, .page-head .container, .about-hero .split__text, .product__info) > :nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.motion :is(.hero__content, .page-head .container, .about-hero .split__text, .product__info) > :nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.motion :is(.hero__content, .page-head .container, .about-hero .split__text, .product__info) > :nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+.motion :is(.hero__content, .page-head .container, .about-hero .split__text, .product__info) > :nth-child(n + 5) {
+  animation-delay: 0.32s;
+}
+
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+}

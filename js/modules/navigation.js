@@ -1,4 +1,5 @@
 import { $, $$, h, setText } from "../utils/dom.js";
+import { openMenu } from "./motion.js";
 import { whatsappUrl } from "./whatsapp.js";
 
 const DESKTOP = window.matchMedia("(min-width: 992px)");
@@ -12,6 +13,7 @@ export function initMenu() {
     toggle.setAttribute("aria-expanded", String(open));
     toggle.querySelector(".nav-toggle__label").textContent = open ? "Cerrar" : "Menú";
     nav.classList.toggle("is-open", open);
+    if (open) openMenu(nav);
   };
 
   toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));

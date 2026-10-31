@@ -4,6 +4,7 @@ import { normalize } from "../utils/normalize.js";
 import { loadError, productCard, skeletons, stateBlock } from "./cards.js";
 import { getCategories, getProducts } from "./data-loader.js";
 import { SORT_OPTIONS, filterProducts, sortProducts } from "./filters.js";
+import { revealItems } from "./motion.js";
 import { setMeta } from "./seo.js";
 
 const state = { query: "", category: "", order: "recomendados" };
@@ -131,6 +132,7 @@ function render() {
 
   if (visible.length) {
     elements.grid.replaceChildren(...visible.map((product) => productCard(product, { whatsapp, headingLevel: 2 })));
+    revealItems(elements.grid, { stagger: 0.05 });
   } else {
     elements.grid.replaceChildren(
       h(

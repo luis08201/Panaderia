@@ -3,6 +3,7 @@ import { isCurrent } from "../utils/dates.js";
 import { $ } from "../utils/dom.js";
 import { categoryCard, loadError, productCard, promoCard } from "./cards.js";
 import { getCategories, getProducts, getPromotions } from "./data-loader.js";
+import { revealItems } from "./motion.js";
 
 export async function init({ site }) {
   const whatsapp = site?.settings?.whatsapp;
@@ -14,6 +15,7 @@ async function renderCategories() {
   try {
     const categories = await getCategories();
     list.replaceChildren(...categories.filter((c) => c.productCount > 0).map(categoryCard));
+    revealItems(list, { stagger: 0.06 });
   } catch {
     list.replaceChildren(loadError(renderCategories, 3));
   }
@@ -32,6 +34,8 @@ async function renderProducts(whatsapp) {
 
     freshList.replaceChildren(...fresh.map((p) => productCard(p, { whatsapp, showFeatured: false })));
     $("#recien-horneados").hidden = !fresh.length;
+    revealItems(featuredList);
+    revealItems(freshList);
   } catch {
     featuredList.replaceChildren(loadError(() => renderProducts(whatsapp), 3));
     $("#recien-horneados").hidden = true;
@@ -44,6 +48,7 @@ async function renderPromotions() {
     const promotions = (await getPromotions()).filter((promotion) => isCurrent(promotion));
     $("#promo-list").replaceChildren(...promotions.map(promoCard));
     section.hidden = !promotions.length;
+    revealItems($("#promo-list"));
   } catch {
     section.hidden = true;
   }

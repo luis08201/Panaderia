@@ -3,6 +3,7 @@ import { hasPrice } from "../utils/currency.js";
 import { $, h, icon, img, paragraphs } from "../utils/dom.js";
 import { categoryUrl, loadError, priceBlock, productBadges, productCard, stateBlock } from "./cards.js";
 import { getProducts } from "./data-loader.js";
+import { revealItems, swapImage } from "./motion.js";
 import { absoluteUrl, addJsonLd, setMeta } from "./seo.js";
 import { productWhatsappUrl } from "./whatsapp.js";
 
@@ -74,6 +75,7 @@ function gallery(product) {
         "aria-label": `Ver foto ${index + 1} de ${images.length}`,
         onclick: (event) => {
           show(image, index);
+          swapImage(main);
           for (const button of buttons) button.setAttribute("aria-pressed", String(button === event.currentTarget));
         },
       },
@@ -172,6 +174,7 @@ function renderProduct(root, product, products) {
         )
       : null
   );
+  revealItems(root.querySelector(".product-grid"));
 
   if (!settings.demoNotice && settings.seo?.siteUrl) {
     addJsonLd({
