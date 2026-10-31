@@ -121,7 +121,7 @@ Pages CMS edita los archivos del repositorio de GitHub mediante formularios. Es 
 
 ### Puesta en marcha
 
-1. Este sitio debe estar en **su propio repositorio de GitHub**, con `.pages.yml` en la raíz. (Ahora vive en la carpeta `panaderia/` de otro repositorio; hay que moverlo antes de conectarlo.)
+1. El sitio vive en el repositorio [`luis08201/panaderia`](https://github.com/luis08201/panaderia), con `.pages.yml` en la raíz, que es donde Pages CMS lo busca.
 2. Entra en [app.pagescms.org](https://app.pagescms.org), inicia sesión con GitHub e instala la aplicación de Pages CMS en ese repositorio.
 3. Elige el repositorio y la rama `main`. Verás en el menú: **Productos**, **Categorías**, **Promociones**, **Página de inicio**, **Página Nosotros** y **Configuración**, además de las tres carpetas de fotos.
 4. Para que otra persona edite sin cuenta de GitHub, invítala por correo desde la sección de colaboradores de Pages CMS.
@@ -215,7 +215,7 @@ Probado en Chrome (Playwright) contra el servidor local:
 - El catálogo, las fichas y los textos del CMS se cargan con JavaScript. El HTML incluye el texto del inicio y de Nosotros como respaldo, pero el contenido de cada producto solo existe tras ejecutar JavaScript. Google lo indexa, aunque con menos garantías que una página estática. Si el posicionamiento de cada producto llega a ser importante, el siguiente paso es generar una página HTML por producto durante el build.
 - Por esa misma carga en dos pasos, en móvil la foto de la ficha aparece en unos 4 s con una conexión 4G lenta simulada.
 - La disponibilidad no es en tiempo real: depende de que alguien la actualice en el CMS, y el sitio lo advierte junto a cada consulta.
-- No se ha probado dentro de Pages CMS real porque el sitio aún no tiene su propio repositorio de GitHub. La configuración sigue la documentación vigente de Pages CMS (2.x).
+- La configuración de Pages CMS sigue la documentación vigente (2.x); revísala en el panel la primera vez que conectes el repositorio.
 - La compresión gzip/brotli y la caché las aplica el hosting, no el servidor de desarrollo.
 
 ### Pendiente
@@ -223,7 +223,7 @@ Probado en Chrome (Playwright) contra el servidor local:
 - Nombre, logotipo, teléfono, WhatsApp, dirección, enlace exacto de Google Maps, redes y horarios reales.
 - Fotos propias de los productos.
 - Precios reales.
-- Repositorio propio en GitHub, conexión con Pages CMS y con el hosting, y dominio.
+- Conexión con Pages CMS y con el hosting, y dominio.
 
 ## Fotos
 
