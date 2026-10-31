@@ -1,6 +1,6 @@
 import { PAGE_TITLES } from "./config.js";
 import { bindContent } from "./modules/content.js";
-import { getSite } from "./modules/data-loader.js";
+import { getCategories, getProducts, getSite } from "./modules/data-loader.js";
 import { applySettings, initMenu } from "./modules/navigation.js";
 import { addBusinessJsonLd, setMeta } from "./modules/seo.js";
 
@@ -16,6 +16,9 @@ const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html"
 async function start() {
   initMenu();
   const page = document.body.dataset.page;
+  // Start the page's data requests right away instead of after site.json.
+  if (["inicio", "catalogo", "producto"].includes(page)) getProducts().catch(() => {});
+  if (["inicio", "catalogo"].includes(page)) getCategories().catch(() => {});
 
   let site = null;
   try {

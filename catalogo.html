@@ -15,17 +15,35 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="public-data/site.json" as="fetch" crossorigin />
+    <link rel="preload" href="public-data/products.json" as="fetch" crossorigin />
+    <link rel="preload" href="public-data/categories.json" as="fetch" crossorigin />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <script type="module" src="js/app.js"></script>
+    <link rel="modulepreload" href="js/config.js" />
+    <link rel="modulepreload" href="js/modules/content.js" />
+    <link rel="modulepreload" href="js/modules/data-loader.js" />
+    <link rel="modulepreload" href="js/modules/navigation.js" />
+    <link rel="modulepreload" href="js/modules/seo.js" />
+    <link rel="modulepreload" href="js/utils/dom.js" />
+    <link rel="modulepreload" href="js/modules/catalog.js" />
+    <link rel="modulepreload" href="js/modules/filters.js" />
+    <link rel="modulepreload" href="js/utils/normalize.js" />
+    <link rel="modulepreload" href="js/modules/cards.js" />
+    <link rel="modulepreload" href="js/modules/whatsapp.js" />
+    <link rel="modulepreload" href="js/utils/currency.js" />
+    <link rel="modulepreload" href="js/utils/dates.js" />
   </head>
   <body data-page="catalogo">
     <a class="skip-link" href="#main">Saltar al contenido</a>
-    <div class="announcement" id="announcement" hidden>
-      <div class="container announcement__inner"></div>
+    <div class="announcement" id="announcement">
+      <div class="container announcement__inner">
+        <p>Sitio de demostración: nombre, precios y datos de contacto son de ejemplo.</p>
+        <a href="catalogo.html">Ver catálogo</a>
+      </div>
     </div>
     <header class="site-header">
       <div class="container site-header__inner">
@@ -89,7 +107,7 @@
           <button id="clear-filters" type="button" hidden>Limpiar filtros</button>
         </div>
         <noscript><p class="state">Activa JavaScript para buscar y filtrar el catálogo, o escríbenos por WhatsApp desde la página de contacto.</p></noscript>
-        <ul class="product-grid" id="product-list"></ul>
+        <ul class="product-grid" id="product-list" aria-busy="true"><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li><li aria-hidden="true"><div class="skeleton skeleton--card"></div></li></ul>
       </section>
     </main>
     <footer class="site-footer">
