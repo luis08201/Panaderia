@@ -121,7 +121,7 @@ Pages CMS edita los archivos del repositorio de GitHub mediante formularios. Es 
 
 ### Puesta en marcha
 
-1. El sitio vive en el repositorio [`luis08201/panaderia`](https://github.com/luis08201/panaderia), con `.pages.yml` en la raíz, que es donde Pages CMS lo busca.
+1. El sitio vive en el repositorio [`luis08201/Panaderia`](https://github.com/luis08201/Panaderia), con `.pages.yml` en la raíz, que es donde Pages CMS lo busca.
 2. Entra en [app.pagescms.org](https://app.pagescms.org), inicia sesión con GitHub e instala la aplicación de Pages CMS en ese repositorio.
 3. Elige el repositorio y la rama `main`. Verás en el menú: **Productos**, **Categorías**, **Promociones**, **Página de inicio**, **Página Nosotros** y **Configuración**, además de las tres carpetas de fotos.
 4. Para que otra persona edite sin cuenta de GitHub, invítala por correo desde la sección de colaboradores de Pages CMS.
