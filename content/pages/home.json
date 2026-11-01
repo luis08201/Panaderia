@@ -1,39 +1,39 @@
 {
   "hero": {
-    "eyebrow": "Panadería artesanal en Managua",
-    "title": "Pan recién horneado, todos los días",
-    "text": "Hogazas de masa madre, pan dulce de siempre y pasteles para compartir. Consulta el catálogo y escríbenos por WhatsApp para confirmar disponibilidad.",
-    "ctaLabel": "Ver catálogo",
+    "eyebrow": "Freshly baked with care",
+    "title": "Fresh from the oven, every day",
+    "text": "Handcrafted sourdough, comforting sweet breads, and cakes made to share. Browse our selection and get in touch to check availability.",
+    "ctaLabel": "Explore the menu",
     "image": "assets/images/general/vitrina-panes.webp",
-    "imageAlt": "Estantes con hogazas, baguettes y panes artesanales recién horneados"
+    "imageAlt": "Shelves filled with freshly baked artisan loaves and baguettes"
   },
   "categories": {
-    "title": "Explora por categoría",
-    "text": "Del pan de la mañana al postre de la tarde."
+    "title": "Explore by category",
+    "text": "From your morning loaf to an afternoon treat."
   },
   "featured": {
-    "title": "Favoritos de la casa",
-    "text": "Los productos que más nos piden."
+    "title": "House favorites",
+    "text": "The baked goods our customers keep coming back for."
   },
   "fresh": {
-    "title": "Recién horneados",
-    "text": "Novedades que acabamos de sumar a la vitrina.",
-    "schedule": "Horneamos a las 6:00 a. m. y a las 3:00 p. m."
+    "title": "Fresh from the oven",
+    "text": "Discover our latest additions.",
+    "schedule": "Fresh batches at 6:00 AM and 3:00 PM."
   },
   "promotions": {
-    "title": "Promociones",
-    "text": "Ofertas informativas, válidas en tienda."
+    "title": "Special offers",
+    "text": "In-store specials, while supplies last."
   },
   "story": {
-    "eyebrow": "Nuestra historia",
-    "title": "Fermentación lenta y recetas de casa",
-    "text": "Trabajamos con harinas seleccionadas, masa madre propia y recetas nicaragüenses que aprendimos en familia. Horneamos en tandas pequeñas para que el pan llegue fresco a tu mesa.",
+    "eyebrow": "Our story",
+    "title": "Slow fermentation, homemade traditions",
+    "text": "We bake with carefully selected flour, our own sourdough starter, and cherished family recipes. Small batches mean fresher bread for your table.",
     "image": "assets/images/general/amasado.webp",
-    "imageAlt": "Manos dando forma a una bola de masa sobre una mesa enharinada",
-    "linkLabel": "Conoce más"
+    "imageAlt": "Hands shaping a round loaf of dough on a floured work surface",
+    "linkLabel": "Our story"
   },
   "visit": {
-    "title": "Visítanos",
-    "text": "Te esperamos en tienda. Si buscas algo en particular, escríbenos antes para apartarlo."
+    "title": "Visit our bakery",
+    "text": "Stop by for something freshly baked. Looking for a specific treat? Contact us before you visit."
   }
 }

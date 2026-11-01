@@ -1,30 +1,30 @@
 {
   "businessName": "Miga & Horno",
-  "tagline": "Panadería artesanal",
+  "tagline": "Artisan Bakery",
   "demoNotice": true,
   "announcement": {
     "enabled": true,
-    "text": "Sitio de demostración: nombre, precios y datos de contacto son de ejemplo.",
-    "linkLabel": "Ver catálogo",
+    "text": "Demo website: business details, prices, and contact information are examples.",
+    "linkLabel": "Browse the menu",
     "linkUrl": "catalogo.html"
   },
   "whatsapp": "50500000000",
-  "whatsappMessage": "Hola, quisiera información sobre sus productos.",
+  "whatsappMessage": "Hi! I'd like to learn more about your baked goods.",
   "phone": "+505 0000 0000",
-  "address": "Dirección pendiente, Managua, Nicaragua",
+  "address": "Address coming soon — sample location, Managua, Nicaragua",
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Managua%2C%20Nicaragua",
   "hours": [
     {
-      "days": "Lunes a viernes",
-      "time": "6:30 a. m. – 7:00 p. m."
+      "days": "Monday–Friday",
+      "time": "6:30 AM – 7:00 PM"
     },
     {
-      "days": "Sábado",
-      "time": "7:00 a. m. – 7:00 p. m."
+      "days": "Saturday",
+      "time": "7:00 AM – 7:00 PM"
     },
     {
-      "days": "Domingo",
-      "time": "7:00 a. m. – 1:00 p. m."
+      "days": "Sunday",
+      "time": "7:00 AM – 1:00 PM"
     }
   ],
   "social": [
@@ -37,11 +37,11 @@
       "url": ""
     }
   ],
-  "availabilityNote": "La disponibilidad es informativa y puede cambiar durante el día. Confírmala por WhatsApp antes de visitarnos.",
+  "availabilityNote": "Availability is provided for reference and may change throughout the day. Please confirm before visiting.",
   "seo": {
     "siteUrl": "",
-    "title": "Miga & Horno · Panadería artesanal en Managua",
-    "description": "Pan de masa madre, pan dulce nicaragüense, pasteles, galletas y café. Consulta el catálogo con precios en córdobas y escríbenos por WhatsApp.",
+    "title": "Miga & Horno | Artisan Bakery",
+    "description": "Fresh sourdough, sweet breads, cakes, cookies, and coffee. Explore our bakery menu and ask about availability.",
     "ogImage": "assets/images/general/vitrina-panes.webp"
   }
 }
