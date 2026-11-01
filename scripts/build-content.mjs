@@ -331,7 +331,7 @@ write("site.json", site);
 
 const siteUrl = text(settings.seo?.siteUrl).replace(/\/+$/, "");
 if (siteUrl) {
-  const urls = ["", "catalogo.html", "nosotros.html", "contacto.html", ...products.map((p) => `producto.html?slug=${p.slug}`)];
+  const urls = ["", "catalogo.html", "nosotros.html", "contacto.html", ...products.map((p) => `productos/${p.slug}/`)];
   const xml = urls.map((path) => `  <url><loc>${siteUrl}/${path.replace(/&/g, "&amp;")}</loc></url>`).join("\n");
   writeFileSync(join(ROOT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${xml}\n</urlset>\n`);
   writeFileSync(join(ROOT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
