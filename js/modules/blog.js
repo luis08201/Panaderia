@@ -1,6 +1,7 @@
 import { getBlog } from './data-loader.js';
 import { blogCard, blogIndexMarkup, blogArticleMarkup } from './blog-markup.js';
-import { filterBlogPosts, blogPostUrl } from '../utils/blog.js';
+import { filterBlogPosts, blogPostUrl, BLOG_PAGE_SIZE, paginateBlogPosts } from '../utils/blog.js';
+import { initBlogSearch } from './blog-search.js';
 import { setMeta } from './seo.js';
 import { h } from '../utils/dom.js';
 
@@ -27,16 +28,25 @@ export async function init({ site }) {
     const count = root.querySelector('#blog-count');
     const grid = root.querySelector('#blog-posts');
     const reset = root.querySelector('#blog-reset');
+    const pagination = root.querySelector('#blog-pagination');
+    const loadMore = root.querySelector('#blog-load-more');
+    const progress = root.querySelector('#blog-page-progress');
     const params = new URLSearchParams(location.search);
     let category = data.categories.some((c) => c.slug === params.get('category')) ? params.get('category') : '';
     search.value = params.get('q') || '';
+    let visibleCount = BLOG_PAGE_SIZE;
+    let matching = [];
     const chips = [...root.querySelectorAll('[data-blog-category]')];
     const update = ({ persist = true } = {}) => {
       const query = search.value.trim();
-      const filtered = filterBlogPosts(data.posts, { category, query });
-      grid.innerHTML = filtered.map((post) => blogCard(post)).join('');
-      root.querySelector('#blog-empty').hidden = filtered.length !== 0;
-      count.textContent = `${filtered.length} ${filtered.length === 1 ? 'article' : 'articles'}${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${query ? ` for “${query}”` : ''}`;
+      matching = filterBlogPosts(data.posts, { category, query });
+      const page = paginateBlogPosts(matching, visibleCount);
+      grid.innerHTML = page.visiblePosts.map((post) => blogCard(post)).join('');
+      root.querySelector('#blog-empty').hidden = page.total !== 0;
+      count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} ${page.total === 1 ? 'article' : 'articles'}${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${query ? ` for “${query}”` : ''}`;
+      pagination.hidden = page.total <= BLOG_PAGE_SIZE;
+      loadMore.hidden = !page.hasMore;
+      progress.textContent = page.hasMore ? `You’ve seen ${page.visiblePosts.length} of ${page.total} stories.` : `You’re all caught up — ${page.total} stories.`;
       reset.hidden = !category && !query;
       for (const chip of chips) chip.setAttribute('aria-pressed', String(chip.dataset.blogCategory === category));
       if (persist) {
@@ -47,14 +57,26 @@ export async function init({ site }) {
         history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
       }
     };
-    let timer;
-    search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 150); });
-    for (const chip of chips) chip.addEventListener('click', () => { clearTimeout(timer); category = chip.dataset.blogCategory; update(); });
-    for (const button of root.querySelectorAll('#blog-reset, [data-blog-reset]')) button.addEventListener('click', () => { clearTimeout(timer); category = ''; search.value = ''; update(); search.focus(); });
+    const restart = () => { visibleCount = BLOG_PAGE_SIZE; update(); };
+    const searchUI = initBlogSearch(root, { posts: data.posts, getCategory: () => category, onChange: restart, onSubmit: restart });
+    for (const chip of chips) chip.addEventListener('click', () => { category = chip.dataset.blogCategory; searchUI.refresh(); restart(); });
+    for (const button of root.querySelectorAll('#blog-reset, [data-blog-reset]')) button.addEventListener('click', () => { category = ''; search.value = ''; searchUI.sync(); restart(); search.focus(); });
+    loadMore.addEventListener('click', () => {
+      const previousLength = grid.querySelectorAll('article').length;
+      visibleCount += BLOG_PAGE_SIZE;
+      const page = paginateBlogPosts(matching, visibleCount);
+      grid.insertAdjacentHTML('beforeend', page.visiblePosts.slice(previousLength).map((post) => blogCard(post)).join(''));
+      loadMore.hidden = !page.hasMore;
+      progress.textContent = page.hasMore ? `You’ve seen ${page.visiblePosts.length} of ${page.total} stories.` : `You’re all caught up — ${page.total} stories.`;
+      count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} articles${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${search.value.trim() ? ` for “${search.value.trim()}”` : ''}`;
+      grid.querySelectorAll('article')[previousLength]?.querySelector('h3 a')?.focus({ preventScroll: true });
+    });
     window.addEventListener('popstate', () => {
       const p = new URLSearchParams(location.search);
       category = data.categories.some((c) => c.slug === p.get('category')) ? p.get('category') : '';
       search.value = p.get('q') || '';
+      visibleCount = BLOG_PAGE_SIZE;
+      searchUI.sync();
       update({ persist: false });
     });
     update({ persist: false });

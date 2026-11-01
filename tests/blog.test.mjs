@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import { normalizeBlog } from '../scripts/blog-content.mjs';
-import { filterBlogPosts } from '../js/utils/blog.js';
+import { filterBlogPosts, paginateBlogPosts, blogSearchSuggestions, rememberBlogQuery } from '../js/utils/blog.js';
 import { blogArticleMarkup, blogIndexMarkup } from '../js/modules/blog-markup.js';
 const readEntries = (folder) => readdirSync(new URL(`../content/${folder}/`, import.meta.url)).filter((p) => p.endsWith('.json')).map((name) => ({ file: name, data: JSON.parse(readFileSync(new URL(`../content/${folder}/${name}`, import.meta.url), 'utf8')) }));
 const categories = readEntries('blog-categories');
@@ -70,4 +70,46 @@ test('static listing contains twelve latest cards plus three featured cards', ()
   assert.equal((html.match(/<article class="blog-card/g) || []).length, 15);
   assert.equal((html.match(/data-blog-category=/g) || []).length, 5);
   assert.ok(html.includes('id="blog-tools" hidden'));
+  const initialGrid = html.split('<div id="blog-posts" class="blog-grid">')[1].split('<div id="blog-pagination"')[0];
+  assert.equal((initialGrid.match(/<article class="blog-card/g) || []).length, 6);
+  assert.ok(html.includes('<noscript>'));
+});
+
+test('load more progresses in groups of six, stops at the end and preserves order', () => {
+  const items = Array.from({ length: 19 }, (_, id) => ({ id }));
+  for (const [limit, expected, hasMore] of [[6, 6, true], [12, 12, true], [18, 18, true], [24, 19, false]]) {
+    const page = paginateBlogPosts(items, limit);
+    assert.equal(page.visiblePosts.length, expected);
+    assert.equal(page.hasMore, hasMore);
+    assert.deepEqual(page.visiblePosts.map((p) => p.id), items.slice(0, expected).map((p) => p.id));
+    assert.equal(new Set(page.visiblePosts.map((p) => p.id)).size, expected);
+  }
+  assert.equal(paginateBlogPosts([]).hasMore, false);
+  assert.equal(paginateBlogPosts(items, NaN).visiblePosts.length, 6);
+});
+test('pagination applies after matching all articles, including items beyond the first six', () => {
+  const data = normalize();
+  const filtered = filterBlogPosts(data.posts, { query: 'getting to know your crust' });
+  assert.equal(filtered[0].slug, 'getting-to-know-your-crust');
+  assert.equal(paginateBlogPosts(filtered).visiblePosts.length, 1);
+  assert.equal(paginateBlogPosts(filtered).hasMore, false);
+});
+test('recent searches are bounded, normalized for duplicates and ignore malformed storage', () => {
+  const recent = rememberBlogQuery(['Sourdough', 'Butter', 'Bread', 'Coffee', 'Pastry'], '  SÓURDOUGH  ');
+  assert.equal(recent.length, 5);
+  assert.equal(recent[0], 'SÓURDOUGH');
+  assert.equal(recent.filter((s) => /sourdough/i.test(s)).length, 0);
+  assert.deepEqual(rememberBlogQuery({ bad: true }, ''), []);
+  assert.equal(rememberBlogQuery([], 'a').length, 0);
+});
+test('autocomplete respects category and matches case/accent-insensitive queries', () => {
+  const data = normalize();
+  const options = blogSearchSuggestions(data.posts, { category: 'ingredients-and-craft', query: 'BÚTTER layers' });
+  assert.equal(options.length, 1);
+  assert.equal(options[0].label, 'Butter, layers, and a little patience');
+  const initial = blogSearchSuggestions(data.posts, { recent: ['Morning bread'] });
+  assert.equal(initial[0].kind, 'recent');
+  assert.equal(initial[0].value, 'Morning bread');
+  assert.ok(initial.length <= 6);
+  assert.deepEqual(blogSearchSuggestions(data.posts, { query: 'zz-no-match' }), []);
 });

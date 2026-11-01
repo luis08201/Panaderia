@@ -6,7 +6,7 @@ Implementación de Blog y categorías para el template. Se publica mediante la i
 
 - **Blog posts**: artículos, autor, fecha, foto, categoría, destacados, publicación y contenido organizado por secciones.
 - **Blog categories**: cuatro categorías independientes de las categorías de productos. Se pueden editar nombre, descripción y orden. La creación/eliminación de categorías está desactivada en el CMS para mantener exactamente cuatro; la compilación también comprueba esta cantidad.
-- **Página Blog**: `blog.html`, con tres destacados y los doce artículos iniciales ordenados por fecha, búsqueda y categorías.
+- **Página Blog**: `blog.html`, con tres destacados y doce artículos iniciales ordenados por fecha. El listado muestra seis y añade seis más con **Load more**.
 - **Plantilla de artículo**: `article.html`, que genera una página por artículo en `blog/<article-address>/index.html`. Estas páginas son las instancias de una sola plantilla CMS.
 
 “All” es una opción automática para ver todas las categorías; no es una quinta entrada del CMS. Las cuatro categorías iniciales son Baking basics, Ingredients & craft, Serving & sharing y From the bakery, con tres artículos cada una.
@@ -43,11 +43,15 @@ La colección de artículos admite nuevas entradas; doce es la cantidad inicial,
 
 - Busca por título, resumen, categoría y texto; admite mayúsculas, acentos y varios términos.
 - Combina búsqueda con categoría, guarda ambas en la URL y las recupera al recargar.
+- Presenta sugerencias mientras se escribe y al enfocar el campo. Se pueden recorrer con las flechas, seleccionar con Enter o cerrar con Escape; también funciona con clic y toque.
+- Solo las búsquedas enviadas o seleccionadas se guardan como recientes, con un máximo de cinco en este navegador. **Clear history** las elimina. La búsqueda funciona aunque el almacenamiento del navegador esté deshabilitado.
+- El historial es propio de esta instalación: no se conecta con Etsy ni con un servicio externo de recomendaciones.
+- La paginación se aplica después de filtrar todos los artículos: seis al inicio, seis más por clic y botón oculto al llegar al final. Cambiar búsqueda o categoría reinicia el grupo visible. Los destacados no forman parte de este contador.
 - Muestra el total de resultados, estado vacío y controles para limpiar filtros.
 - Ordena del artículo más reciente al más antiguo, con fecha y tiempo de lectura calculado.
 - Los artículos incluyen índice de secciones, regreso al Blog y dos lecturas relacionadas de su categoría.
 - Los borradores se excluyen de los datos públicos, páginas generadas y sitemap.
-- Tanto el listado inicial como los artículos se generan en HTML durante el build. Sin JavaScript se puede leer y navegar; los filtros se ocultan porque requieren JavaScript.
+- Tanto el listado inicial como los artículos se generan en HTML durante el build. Sin JavaScript se puede leer y navegar: un bloque `noscript` muestra los artículos posteriores al primer grupo de seis; la búsqueda, filtros y botón se ocultan porque requieren JavaScript.
 - Cada artículo generado tiene título, descripción e imagen social propios en el HTML inicial. Si se configura el dominio en Settings, se añaden canonical, URLs sociales absolutas, sitemap y datos BlogPosting.
 - Una dirección inexistente recibe la página 404 del servidor estático. El acceso alternativo `article.html?slug=…` tiene una pantalla de recuperación y `noindex` cuando no encuentra el artículo.
 
@@ -58,6 +62,7 @@ La colección de artículos admite nuevas entradas; doce es la cantidad inicial,
 - `scripts/blog-content.mjs`: normalización y validación.
 - `scripts/prerender-blog.mjs`: HTML generado para listado y artículos.
 - `js/modules/blog.js`: búsqueda, filtros y plantilla interactiva.
+- `js/modules/blog-search.js`: sugerencias, teclado e historial local.
 - `js/modules/blog-markup.js`: presentación compartida y escape del texto del CMS.
 - `js/utils/blog.js`: búsqueda normalizada, fechas y direcciones.
 - `css/blog.css`: diseño responsive y estados interactivos.
@@ -66,12 +71,18 @@ La colección de artículos admite nuevas entradas; doce es la cantidad inicial,
 ## Verificación
 
 - `npm run build`: doce artículos y listado generados, además de los productos existentes.
-- `npm test`: catorce pruebas aprobadas. Incluyen borradores, cuatro categorías, referencias inválidas, fechas imposibles, slugs duplicados, búsquedas combinadas, escape del texto y enlaces internos del artículo.
+- `npm test`: dieciocho pruebas aprobadas. Incluyen borradores, cuatro categorías, referencias inválidas, fechas imposibles, slugs duplicados, búsquedas combinadas, escape del texto, enlaces internos, grupos de seis, historial y sugerencias.
 - Navegador real: doce artículos abiertos con H1 y título propios, tres secciones y relacionados. Búsqueda `BÚTTER layers` más Ingredients & craft devuelve un resultado; conserva el resultado al recargar. Una consulta sin coincidencias muestra recuperación y vuelve a doce.
-- Cuatro filtros de categoría devuelven tres artículos cada uno; All devuelve doce.
+- Cuatro filtros de categoría devuelven tres artículos cada uno; All encuentra doce, con seis visibles antes de pulsar Load more.
 - Dos páginas representativas en 1920, 1440, 1280, 992, 991, 767, 479 y 390 px: sin overflow horizontal ni solapamiento detectado entre logo y navegación de escritorio.
 - Evidencia en `docs/evidence/blog-articles.json`, `blog-responsive.json` y capturas `blog-*.jpg`.
 
 No se ha ejecutado carga agresiva ni modificado contenido a través del CMS en línea.
+
+## Referencia del buscador
+
+Se solicitó una experiencia parecida a Etsy. La portada de Etsy presentó un control anti-bot durante la revisión y no se intentó evadirlo. Se adaptaron patrones comunes de búsqueda —campo destacado, botón de búsqueda, sugerencias e historial— con código y diseño propios de Crumb & Oven; no se afirma una réplica de su interfaz actual. Como contexto se consultó la [documentación pública de búsqueda de Etsy](https://www.etsy.com/seller-handbook/article/how-etsy-search-works/375461474487).
+
+Verificación adicional en navegador: seis tarjetas iniciales, doce tras Load more sin duplicados, foco trasladado a la primera tarjeta nueva, reinicio al cambiar filtros, búsqueda de un artículo fuera de los seis iniciales, selección con flechas/Enter, Escape, persistencia y borrado del historial. Sin overflow en ocho anchos, de 390 a 1920 px, y sin errores de consola observados.
 
 Las capturas y los registros de QA de `docs/evidence/` son archivos locales, excluidos de Git y del paquete público.
