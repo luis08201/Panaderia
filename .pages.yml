@@ -4,19 +4,19 @@
 
 media:
   - name: productos
-    label: Fotos de productos
+    label: Product photos
     input: assets/images/products
     output: assets/images/products
     categories: [image]
     rename: safe
   - name: categorias
-    label: Fotos de categorías
+    label: Category photos
     input: assets/images/categories
     output: assets/images/categories
     categories: [image]
     rename: safe
   - name: general
-    label: Fotos generales
+    label: General photos
     input: assets/images/general
     output: assets/images/general
     categories: [image]
@@ -24,7 +24,7 @@ media:
 
 content:
   - name: productos
-    label: Productos
+    label: Products
     type: collection
     path: content/products
     format: json
@@ -39,7 +39,7 @@ content:
         order: asc
     fields:
       - name: id
-        label: ID interno
+        label: Internal ID
         type: string
         required: true
         pattern:
@@ -53,13 +53,13 @@ content:
         pattern:
           regex: "^[a-z0-9]+(-[a-z0-9]+)*$"
           message: "Solo minúsculas, números y guiones. Ejemplo: pan-de-coco"
-        description: "Aparece en la dirección: producto.html?slug=pan-de-coco"
+        description: "Appears in the product URL: productos/pan-de-coco/"
       - name: name
-        label: Nombre
+        label: Name
         type: string
         required: true
       - name: categoryId
-        label: Categoría
+        label: Category
         type: reference
         required: true
         options:
@@ -68,41 +68,41 @@ content:
           label: "{fields.name}"
           search: "fields.name"
       - name: shortDescription
-        label: Descripción corta
+        label: Short description
         type: text
-        description: "Una línea para las tarjetas del catálogo."
+        description: "One short line for product cards."
       - name: description
-        label: Descripción
+        label: Description
         type: text
-        description: "Deja una línea en blanco para separar párrafos."
+        description: "Leave a blank line between paragraphs."
       - name: price
-        label: Precio (C$)
+        label: Price (USD)
         type: number
-        description: "En córdobas, sin símbolo. Déjalo vacío para mostrar «Precio a consultar»."
+        description: "Enter USD amounts without a currency symbol. Leave empty to display Price on request."
         options:
           min: 0
       - name: unit
-        label: Presentación
+        label: Unit / serving
         type: string
-        description: "Ejemplo: Unidad, Bolsa de 6 unidades, Pastel entero de 12 porciones."
+        description: "Example: Each, Pack of 6, Whole cake (serves 12)."
       - name: currency
-        label: Moneda
+        label: Currency
         type: select
-        default: NIO
+        default: USD
         options:
-          values: [NIO]
+          values: [USD]
       - name: image
-        label: Foto principal
+        label: Main photo
         type: image
         required: true
         options:
           media: productos
       - name: imageAlt
-        label: Texto alternativo de la foto
+        label: Image alt text
         type: string
-        description: "Describe la foto para lectores de pantalla. Si lo dejas vacío se usa el nombre."
+        description: "Describe the image for screen readers. Leave blank to use the product name."
       - name: gallery
-        label: Galería
+        label: Gallery
         type: image
         options:
           media: productos
@@ -110,45 +110,45 @@ content:
             max: 6
           unique: true
       - name: ingredients
-        label: Ingredientes
+        label: Ingredients
         type: string
         list: true
       - name: allergens
-        label: Alérgenos
+        label: Allergens
         type: string
         list: true
       - name: available
-        label: Disponible hoy
+        label: Available today
         type: boolean
         default: true
-        description: "Si lo desactivas, el producto se muestra como «Agotado»."
+        description: "Turn off to mark this product as sold out."
       - name: featured
-        label: Destacado en inicio
+        label: Featured on homepage
         type: boolean
         default: false
       - name: newArrival
-        label: Novedad
+        label: New arrival
         type: boolean
         default: false
       - name: published
-        label: Publicado
+        label: Published
         type: boolean
         default: true
-        description: "Desactívalo para ocultar el producto sin borrarlo."
+        description: "Turn off to hide the product without deleting it."
       - name: sortOrder
-        label: Orden
+        label: Sort order
         type: number
         default: 100
-        description: "Menor número aparece primero dentro de su categoría."
+        description: "Lower numbers appear first within the category."
       - name: seoTitle
-        label: Título SEO
+        label: SEO title
         type: string
       - name: seoDescription
-        label: Descripción SEO
+        label: SEO description
         type: text
 
   - name: categorias
-    label: Categorías
+    label: Categories
     type: collection
     path: content/categories
     format: json
@@ -161,7 +161,7 @@ content:
         order: asc
     fields:
       - name: id
-        label: ID interno
+        label: Internal ID
         type: string
         required: true
         pattern:
@@ -176,28 +176,28 @@ content:
           message: "Solo minúsculas, números y guiones."
         description: "Se usa en el filtro: catalogo.html?categoria=pan-dulce"
       - name: name
-        label: Nombre
+        label: Name
         type: string
         required: true
       - name: description
-        label: Descripción
+        label: Description
         type: text
       - name: image
-        label: Foto
+        label: Photo
         type: image
         options:
           media: categorias
       - name: position
-        label: Posición
+        label: Position
         type: number
         default: 10
       - name: published
-        label: Publicada
+        label: Published
         type: boolean
         default: true
 
   - name: promociones
-    label: Promociones
+    label: Promotions
     type: collection
     path: content/promotions
     format: json
@@ -207,150 +207,150 @@ content:
       primary: title
     fields:
       - name: id
-        label: ID interno
+        label: Internal ID
         type: string
         required: true
         pattern:
           regex: "^promo-[a-z0-9-]+$"
           message: "Usa el formato promo-nombre."
       - name: title
-        label: Título
+        label: Title
         type: string
         required: true
       - name: description
-        label: Descripción
+        label: Description
         type: text
         description: "Solo informativa: el sitio no aplica descuentos."
       - name: image
-        label: Imagen
+        label: Image
         type: image
         options:
           media: productos
       - name: startDate
-        label: Desde
+        label: From
         type: date
         default: ""
         options:
           format: yyyy-MM-dd
       - name: endDate
-        label: Hasta
+        label: Until
         type: date
         default: ""
         options:
           format: yyyy-MM-dd
         description: "Se oculta sola al día siguiente."
       - name: active
-        label: Activa
+        label: Active
         type: boolean
         default: true
       - name: linkUrl
-        label: Enlace (opcional)
+        label: Link (optional)
         type: string
         description: "Ejemplo: catalogo.html?categoria=pan-dulce"
       - name: linkLabel
-        label: Texto del enlace
+        label: Link label
         type: string
 
   - name: inicio
-    label: Página de inicio
+    label: Homepage
     type: file
     path: content/pages/home.json
     format: json
     fields:
       - name: hero
-        label: Portada
+        label: Hero
         type: object
         fields:
-          - { name: eyebrow, label: Antetítulo, type: string }
-          - { name: title, label: Título, type: string, required: true }
-          - { name: text, label: Texto, type: text }
-          - { name: ctaLabel, label: Texto del botón, type: string }
-          - { name: image, label: Imagen, type: image, options: { media: general } }
-          - { name: imageAlt, label: Texto alternativo, type: string }
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: text, label: Text, type: text }
+          - { name: ctaLabel, label: Button label, type: string }
+          - { name: image, label: Image, type: image, options: { media: general } }
+          - { name: imageAlt, label: Alt text, type: string }
       - name: categories
-        label: Sección de categorías
+        label: Category section
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
       - name: featured
-        label: Productos destacados
+        label: Featured products
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
       - name: fresh
-        label: Recién horneados
+        label: Freshly baked
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
-          - { name: schedule, label: Horario de horneado, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: schedule, label: Baking schedule, type: string }
       - name: promotions
-        label: Sección de promociones
+        label: Promotions section
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
       - name: story
-        label: Historia breve
+        label: Short story
         type: object
         fields:
-          - { name: eyebrow, label: Antetítulo, type: string }
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
-          - { name: image, label: Imagen, type: image, options: { media: general } }
-          - { name: imageAlt, label: Texto alternativo, type: string }
-          - { name: linkLabel, label: Texto del enlace, type: string }
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Image, type: image, options: { media: general } }
+          - { name: imageAlt, label: Alt text, type: string }
+          - { name: linkLabel, label: Link label, type: string }
       - name: visit
-        label: Visítanos
+        label: Visit us
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
 
   - name: nosotros
-    label: Página Nosotros
+    label: About page
     type: file
     path: content/pages/nosotros.json
     format: json
     fields:
       - name: hero
-        label: Portada
+        label: Hero
         type: object
         fields:
-          - { name: eyebrow, label: Antetítulo, type: string }
-          - { name: title, label: Título, type: string, required: true }
-          - { name: text, label: Texto, type: text }
-          - { name: image, label: Imagen, type: image, options: { media: general } }
-          - { name: imageAlt, label: Texto alternativo, type: string }
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Image, type: image, options: { media: general } }
+          - { name: imageAlt, label: Alt text, type: string }
       - name: story
         label: Historia
         type: object
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text, description: "Deja una línea en blanco entre párrafos." }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text, description: "Deja una línea en blanco entre párrafos." }
       - name: values
         label: Valores
         type: object
         list: true
         fields:
-          - { name: title, label: Título, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
       - name: process
         label: Proceso artesanal
         type: object
         list: true
         fields:
           - { name: title, label: Paso, type: string }
-          - { name: text, label: Texto, type: text }
+          - { name: text, label: Text, type: text }
       - name: gallery
-        label: Galería
+        label: Gallery
         type: object
         list: true
         fields:
-          - { name: image, label: Imagen, type: image, options: { media: general } }
-          - { name: alt, label: Texto alternativo, type: string }
+          - { name: image, label: Image, type: image, options: { media: general } }
+          - { name: alt, label: Alt text, type: string }
 
   - name: configuracion
     label: Configuración
@@ -358,7 +358,7 @@ content:
     path: content/settings.json
     format: json
     fields:
-      - { name: businessName, label: Nombre del negocio, type: string, required: true }
+      - { name: businessName, label: Business name, type: string, required: true }
       - { name: tagline, label: Lema, type: string }
       - name: demoNotice
         label: Mostrar aviso de datos de ejemplo
@@ -369,8 +369,8 @@ content:
         type: object
         fields:
           - { name: enabled, label: Mostrar, type: boolean }
-          - { name: text, label: Texto, type: string }
-          - { name: linkLabel, label: Texto del enlace, type: string }
+          - { name: text, label: Text, type: string }
+          - { name: linkLabel, label: Link label, type: string }
           - { name: linkUrl, label: Enlace, type: string }
       - name: whatsapp
         label: WhatsApp
@@ -379,35 +379,35 @@ content:
         pattern:
           regex: "^[0-9]{8,15}$"
           message: "Solo números, con el código de país (505)."
-      - { name: whatsappMessage, label: Mensaje general de WhatsApp, type: string }
-      - { name: phone, label: Teléfono, type: string }
-      - { name: address, label: Dirección, type: text }
+      - { name: whatsappMessage, label: Default WhatsApp message, type: string }
+      - { name: phone, label: Phone, type: string }
+      - { name: address, label: Address, type: text }
       - { name: mapsUrl, label: Enlace de Google Maps, type: string }
       - name: hours
-        label: Horarios
+        label: Hours
         type: object
         list: true
         fields:
-          - { name: days, label: Días, type: string }
-          - { name: time, label: Horario, type: string }
+          - { name: days, label: Days, type: string }
+          - { name: time, label: Hours, type: string }
       - name: social
-        label: Redes sociales
+        label: Social media
         type: object
         list: true
         description: "Las redes sin enlace no se muestran."
         fields:
           - name: network
-            label: Red
+            label: Network
             type: select
             options:
               values: [Instagram, Facebook, TikTok, X, YouTube]
           - { name: url, label: Enlace, type: string }
-      - { name: availabilityNote, label: Aviso de disponibilidad, type: text }
+      - { name: availabilityNote, label: Availability note, type: text }
       - name: seo
-        label: SEO global
+        label: Global SEO
         type: object
         fields:
-          - { name: siteUrl, label: Dominio del sitio, type: string, description: "Ejemplo: https://www.mipanaderia.com. Activa canonical y sitemap." }
-          - { name: title, label: Título por defecto, type: string }
-          - { name: description, label: Descripción por defecto, type: text }
-          - { name: ogImage, label: Imagen para redes, type: image, options: { media: general } }
+          - { name: siteUrl, label: Site domain, type: string, description: "Ejemplo: https://www.mipanaderia.com. Activa canonical y sitemap." }
+          - { name: title, label: Default title, type: string }
+          - { name: description, label: Default description, type: text }
+          - { name: ogImage, label: Social sharing image, type: image, options: { media: general } }
