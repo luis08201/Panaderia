@@ -5,6 +5,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join, posix, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateContentUrl } from "./url-policy.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = join(ROOT, "content");
@@ -48,7 +49,14 @@ function imagePath(value, where, { required = false } = {}) {
     if (required) errors.push(`${where}: falta la imagen`);
     return "";
   }
-  if (/^https?:\/\//.test(path)) return path;
+  if (/^https?:\/\//.test(path)) {
+    try { return validateContentUrl(path, { externalOnly: true }); }
+    catch (error) { errors.push(`${where}: imagen externa inválida (${error.message})`); return ""; }
+  }
+  if (path.split("/").includes("..") || path.includes("\\")) {
+    errors.push(`${where}: ruta de imagen no permitida`);
+    return "";
+  }
   if (!existsSync(join(ROOT, path))) {
     errors.push(`${where}: la imagen "${path}" no existe`);
     return "";
@@ -124,8 +132,8 @@ function checkUnique(entries, key, label) {
 
 function checkLink(url, where) {
   const value = text(url);
-  if (value === "#" || value.startsWith("javascript:")) errors.push(`${where}: enlace no válido "${value}"`);
-  return value;
+  try { return validateContentUrl(value); }
+  catch (error) { errors.push(`${where}: enlace no válido "${value}" (${error.message})`); return ""; }
 }
 
 // ---------- Categories ----------
@@ -260,7 +268,18 @@ const whatsapp = text(settings.whatsapp).replace(/\D/g, "");
 if (!whatsapp) warnings.push("settings.json: no hay número de WhatsApp; los botones de consulta se ocultarán");
 else if (whatsapp.length < 8) errors.push(`settings.json: el número de WhatsApp "${settings.whatsapp}" debe incluir el código de país (505…)`);
 checkLink(settings.announcement?.linkUrl, "settings.json (anuncio)");
-for (const [index, item] of list(settings.social).entries()) checkLink(item?.url, `settings.json (red social ${index + 1})`);
+for (const field of ["mapsUrl"]) {
+  try { validateContentUrl(settings[field], { externalOnly: true }); }
+  catch (error) { errors.push(`settings.json (${field}): ${error.message}`); }
+}
+if (settings.seo?.siteUrl) {
+  try { validateContentUrl(settings.seo.siteUrl, { externalOnly: true, siteBase: true }); }
+  catch (error) { errors.push(`settings.json (seo.siteUrl): ${error.message}`); }
+}
+for (const [index, item] of list(settings.social).entries()) {
+  try { validateContentUrl(item?.url, { externalOnly: true }); }
+  catch (error) { errors.push(`settings.json (red social ${index + 1}): ${error.message}`); }
+}
 if (settings.seo?.ogImage) settings.seo.ogImage = imagePath(settings.seo.ogImage, "settings.json (imagen para redes)");
 
 function readPage(name) {
