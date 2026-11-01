@@ -3,7 +3,7 @@ import { formatDate } from "../utils/dates.js";
 import { h, icon, img } from "../utils/dom.js";
 import { productWhatsappUrl } from "./whatsapp.js";
 
-export const productUrl = (product) => `producto.html?slug=${encodeURIComponent(product.slug)}`;
+export const productUrl = (product) => `productos/${encodeURIComponent(product.slug)}/`;
 export const categoryUrl = (category) => `catalogo.html?categoria=${encodeURIComponent(category.slug)}`;
 
 export function productBadges(product, { includeFeatured = true } = {}) {
