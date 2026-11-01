@@ -1,28 +1,28 @@
 {
   "id": "prd-022",
   "slug": "brownie",
-  "name": "Brownie de chocolate",
+  "name": "Chocolate Brownie",
   "categoryId": "cat-reposteria",
-  "shortDescription": "Denso, húmedo y con costra brillante.",
-  "description": "Brownie de chocolate semiamargo con textura húmeda en el centro.",
-  "price": 50,
-  "unit": "Porción",
-  "currency": "NIO",
+  "shortDescription": "Rich and fudgy with a shiny, crackly top.",
+  "description": "Dark chocolate brownie with a moist, fudgy center.",
+  "price": 1.37,
+  "unit": "Slice",
+  "currency": "USD",
   "image": "assets/images/products/brownie.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
     "Chocolate",
-    "Mantequilla",
-    "Azúcar",
-    "Huevo",
-    "Harina de trigo",
-    "Cacao"
+    "Butter",
+    "Sugar",
+    "Egg",
+    "Wheat flour",
+    "Cocoa"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche"
+    "Egg",
+    "Milk"
   ],
   "available": true,
   "featured": false,

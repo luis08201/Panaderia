@@ -3,20 +3,20 @@
   "slug": "cappuccino",
   "name": "Cappuccino",
   "categoryId": "cat-bebidas",
-  "shortDescription": "Espresso con leche texturizada y espuma.",
-  "description": "Doble espresso con leche texturizada y una capa de espuma. Puedes pedirlo con leche deslactosada.",
-  "price": 70,
-  "unit": "Taza de 8 oz",
-  "currency": "NIO",
+  "shortDescription": "Double espresso with steamed milk and foam.",
+  "description": "Double espresso topped with silky steamed milk and a layer of foam. Lactose-free milk available.",
+  "price": 1.91,
+  "unit": "8 oz cup",
+  "currency": "USD",
   "image": "assets/images/products/cappuccino.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Café",
-    "Leche"
+    "Coffee",
+    "Milk"
   ],
   "allergens": [
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": true,

@@ -1,28 +1,28 @@
 {
   "id": "prd-015",
   "slug": "chispas-chocolate",
-  "name": "Galletas con chispas de chocolate",
+  "name": "Chocolate Chip Cookies",
   "categoryId": "cat-galletas",
-  "shortDescription": "Bordes crujientes y centro suave.",
-  "description": "Galletas grandes con mantequilla, azúcar morena y chispas de chocolate semiamargo.",
-  "price": 120,
-  "unit": "Bolsa de 6 unidades",
-  "currency": "NIO",
+  "shortDescription": "Crisp edges and a soft center.",
+  "description": "Large buttery cookies with brown sugar and dark chocolate chips.",
+  "price": 3.28,
+  "unit": "Pack of 6",
+  "currency": "USD",
   "image": "assets/images/products/chispas-chocolate.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Mantequilla",
-    "Azúcar morena",
-    "Huevo",
-    "Chispas de chocolate",
-    "Vainilla"
+    "Wheat flour",
+    "Butter",
+    "Brown sugar",
+    "Egg",
+    "Chocolate chips",
+    "Vanilla"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche"
+    "Egg",
+    "Milk"
   ],
   "available": true,
   "featured": true,
