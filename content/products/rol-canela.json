@@ -1,28 +1,28 @@
 {
   "id": "prd-020",
   "slug": "rol-canela",
-  "name": "Rol de canela",
+  "name": "Cinnamon Roll",
   "categoryId": "cat-reposteria",
-  "shortDescription": "Masa suave, canela y glaseado de queso crema.",
-  "description": "Rol de masa brioche relleno de canela y azúcar morena, terminado con glaseado de queso crema.",
-  "price": 55,
-  "unit": "Unidad",
-  "currency": "NIO",
+  "shortDescription": "Soft dough, cinnamon filling, and cream cheese glaze.",
+  "description": "A soft brioche-style roll filled with cinnamon and brown sugar, finished with cream cheese icing.",
+  "price": 1.5,
+  "unit": "Each",
+  "currency": "USD",
   "image": "assets/images/products/rol-canela.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Mantequilla",
-    "Huevo",
-    "Canela",
-    "Azúcar morena",
-    "Queso crema"
+    "Wheat flour",
+    "Butter",
+    "Egg",
+    "Cinnamon",
+    "Brown sugar",
+    "Cream cheese"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche"
+    "Egg",
+    "Milk"
   ],
   "available": true,
   "featured": true,

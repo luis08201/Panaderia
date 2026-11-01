@@ -1,29 +1,29 @@
 {
   "id": "prd-011",
   "slug": "pastel-chocolate",
-  "name": "Pastel de chocolate",
+  "name": "Chocolate Layer Cake",
   "categoryId": "cat-pasteles",
-  "shortDescription": "Capas de bizcocho de cacao y ganache semiamargo.",
-  "description": "Bizcocho húmedo de cacao con relleno y cobertura de ganache de chocolate semiamargo.",
-  "price": 750,
-  "unit": "Pastel entero, 12 porciones",
-  "currency": "NIO",
+  "shortDescription": "Moist cocoa sponge with dark chocolate ganache.",
+  "description": "Moist cocoa cake layered and covered with rich dark chocolate ganache.",
+  "price": 20.48,
+  "unit": "Whole cake, serves 12",
+  "currency": "USD",
   "image": "assets/images/products/pastel-chocolate.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Cacao",
+    "Wheat flour",
+    "Cocoa",
     "Chocolate",
-    "Huevo",
-    "Mantequilla",
-    "Crema",
-    "Azúcar"
+    "Egg",
+    "Butter",
+    "Cream",
+    "Sugar"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche"
+    "Egg",
+    "Milk"
   ],
   "available": true,
   "featured": false,
