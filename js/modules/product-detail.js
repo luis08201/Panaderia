@@ -59,7 +59,7 @@ function gallery(product) {
   const show = (image, index) => {
     main.replaceChildren(
       img(image, {
-        alt: index === 0 ? product.imageAlt : `${product.name}, photo ${index + 1} de ${images.length}`,
+        alt: index === 0 ? product.imageAlt : `${product.name}, photo ${index + 1} of ${images.length}`,
         sizes: "(min-width: 900px) 55vw, 100vw",
         eager: true,
       })

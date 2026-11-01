@@ -1,6 +1,6 @@
-# Configuración de Pages CMS (https://pagescms.org/docs/configuration/)
-# Pages CMS guarda cada cambio como un commit en GitHub. El hosting ejecuta
-# `npm run build`, que valida el contenido y genera public-data/ para el sitio.
+# Pages CMS configuration (https://pagescms.org/docs/configuration/)
+# Pages CMS saves each change as a GitHub commit. Hosting runs
+# `npm run build` to validate content and generate public-data/ for the site.
 
 media:
   - name: productos
@@ -44,15 +44,15 @@ content:
         required: true
         pattern:
           regex: "^prd-[a-z0-9-]+$"
-          message: "Usa el formato prd-029. No lo cambies después de crear el producto."
-        description: "Identificador estable (prd-029, prd-030…). No depende del nombre."
+          message: "Use the format prd-029. Do not change it after creating the product."
+        description: "Stable ID (prd-029, prd-030…). Independent of the product name."
       - name: slug
         label: Slug (URL)
         type: string
         required: true
         pattern:
           regex: "^[a-z0-9]+(-[a-z0-9]+)*$"
-          message: "Solo minúsculas, números y guiones. Ejemplo: pan-de-coco"
+          message: "Use lowercase letters, numbers, and hyphens only. Example: pan-de-coco"
         description: "Appears in the product URL: productos/pan-de-coco/"
       - name: name
         label: Name
@@ -166,15 +166,15 @@ content:
         required: true
         pattern:
           regex: "^cat-[a-z0-9-]+$"
-          message: "Usa el formato cat-nombre. No lo cambies: los productos lo usan."
+          message: "Use cat-name. Do not change it; products reference this ID."
       - name: slug
         label: Slug (URL)
         type: string
         required: true
         pattern:
           regex: "^[a-z0-9]+(-[a-z0-9]+)*$"
-          message: "Solo minúsculas, números y guiones."
-        description: "Se usa en el filtro: catalogo.html?categoria=pan-dulce"
+          message: "Use lowercase letters, numbers, and hyphens only."
+        description: "Used in category filters: catalogo.html?categoria=pan-dulce"
       - name: name
         label: Name
         type: string
@@ -212,7 +212,7 @@ content:
         required: true
         pattern:
           regex: "^promo-[a-z0-9-]+$"
-          message: "Usa el formato promo-nombre."
+          message: "Use the format promo-name."
       - name: title
         label: Title
         type: string
@@ -220,7 +220,7 @@ content:
       - name: description
         label: Description
         type: text
-        description: "Solo informativa: el sitio no aplica descuentos."
+        description: "For display only; the site does not apply discounts."
       - name: image
         label: Image
         type: image
@@ -238,7 +238,7 @@ content:
         default: ""
         options:
           format: yyyy-MM-dd
-        description: "Se oculta sola al día siguiente."
+        description: "Automatically hidden after the end date."
       - name: active
         label: Active
         type: boolean
@@ -329,7 +329,7 @@ content:
         type: object
         fields:
           - { name: title, label: Title, type: string }
-          - { name: text, label: Text, type: text, description: "Deja una línea en blanco entre párrafos." }
+          - { name: text, label: Text, type: text, description: "Leave a blank line between paragraphs." }
       - name: values
         label: Valores
         type: object
@@ -353,7 +353,7 @@ content:
           - { name: alt, label: Alt text, type: string }
 
   - name: configuracion
-    label: Configuración
+    label: Settings
     type: file
     path: content/settings.json
     format: json
@@ -363,7 +363,7 @@ content:
       - name: demoNotice
         label: Mostrar aviso de datos de ejemplo
         type: boolean
-        description: "Desactívalo cuando nombre, teléfono y dirección sean los reales."
+        description: "Turn off once the business name, phone, and address are real."
       - name: announcement
         label: Barra de anuncio
         type: object
@@ -375,10 +375,10 @@ content:
       - name: whatsapp
         label: WhatsApp
         type: string
-        description: "Con código de país y sin espacios ni signos. Ejemplo: 50588887777"
+        description: "Include country code; use digits only. Example: 50588887777"
         pattern:
           regex: "^[0-9]{8,15}$"
-          message: "Solo números, con el código de país (505)."
+          message: "Digits only, including the country code."
       - { name: whatsappMessage, label: Default WhatsApp message, type: string }
       - { name: phone, label: Phone, type: string }
       - { name: address, label: Address, type: text }
@@ -394,7 +394,7 @@ content:
         label: Social media
         type: object
         list: true
-        description: "Las redes sin enlace no se muestran."
+        description: "Social networks without links are not displayed."
         fields:
           - name: network
             label: Network
