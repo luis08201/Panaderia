@@ -1,26 +1,26 @@
 {
   "id": "prd-009",
   "slug": "cosa-de-horno",
-  "name": "Cosa de horno",
+  "name": "Traditional Corn and Cheese Bake",
   "categoryId": "cat-pan-dulce",
-  "shortDescription": "Masa de maíz, queso seco y mantequilla, como en casa.",
-  "description": "Receta tradicional nicaragüense de maíz y queso seco, horneada hasta dorar los bordes. Dulce y salada a la vez.",
-  "price": 45,
-  "unit": "Porción",
-  "currency": "NIO",
+  "shortDescription": "Corn dough, aged cheese, and butter, just like homemade.",
+  "description": "A traditional Nicaraguan corn and aged-cheese bake, cooked until the edges turn golden. Both sweet and savory.",
+  "price": 1.23,
+  "unit": "Slice",
+  "currency": "USD",
   "image": "assets/images/products/cosa-de-horno.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Masa de maíz",
-    "Queso seco",
-    "Mantequilla",
-    "Azúcar",
-    "Huevo"
+    "Corn dough",
+    "Aged cheese",
+    "Butter",
+    "Sugar",
+    "Egg"
   ],
   "allergens": [
-    "Leche",
-    "Huevo"
+    "Milk",
+    "Egg"
   ],
   "available": true,
   "featured": true,

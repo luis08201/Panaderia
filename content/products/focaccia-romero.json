@@ -1,23 +1,23 @@
 {
   "id": "prd-005",
   "slug": "focaccia-romero",
-  "name": "Focaccia de romero",
+  "name": "Rosemary Focaccia",
   "categoryId": "cat-pan-artesanal",
-  "shortDescription": "Aceite de oliva, romero fresco y sal en escamas.",
-  "description": "Focaccia alta y aireada, con abundante aceite de oliva, romero fresco y sal en escamas. Se prepara en tandas pequeñas.",
-  "price": 160,
-  "unit": "Bandeja de 20 × 30 cm",
-  "currency": "NIO",
+  "shortDescription": "Olive oil, fresh rosemary, and flaky sea salt.",
+  "description": "Tall, airy focaccia generously finished with olive oil, fresh rosemary, and flaky sea salt. Baked in small batches.",
+  "price": 4.37,
+  "unit": "20 × 30 cm tray",
+  "currency": "USD",
   "image": "assets/images/products/focaccia-romero.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Agua",
-    "Aceite de oliva",
-    "Romero",
-    "Levadura",
-    "Sal"
+    "Wheat flour",
+    "Water",
+    "Olive oil",
+    "Rosemary",
+    "Yeast",
+    "Salt"
   ],
   "allergens": [
     "Gluten"

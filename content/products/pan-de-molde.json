@@ -1,27 +1,27 @@
 {
   "id": "prd-004",
   "slug": "pan-de-molde",
-  "name": "Pan de molde casero",
+  "name": "Homestyle Sandwich Bread",
   "categoryId": "cat-pan-artesanal",
-  "shortDescription": "Suave y esponjoso, rebanado a pedido.",
-  "description": "Pan de molde de miga blanca y suave, sin conservantes. Si lo prefieres rebanado, pídelo al momento de recogerlo.",
-  "price": 120,
-  "unit": "Molde de 650 g",
-  "currency": "NIO",
+  "shortDescription": "Soft, fluffy bread, sliced on request.",
+  "description": "Soft white sandwich bread without preservatives. Ask us to slice it when you pick it up.",
+  "price": 3.28,
+  "unit": "650 g loaf",
+  "currency": "USD",
   "image": "assets/images/products/pan-de-molde.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Leche",
-    "Mantequilla",
-    "Azúcar",
-    "Levadura",
-    "Sal"
+    "Wheat flour",
+    "Milk",
+    "Butter",
+    "Sugar",
+    "Yeast",
+    "Salt"
   ],
   "allergens": [
     "Gluten",
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": false,

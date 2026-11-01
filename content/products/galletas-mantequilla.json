@@ -1,25 +1,25 @@
 {
   "id": "prd-016",
   "slug": "galletas-mantequilla",
-  "name": "Galletas de mantequilla",
+  "name": "Butter Cookies",
   "categoryId": "cat-galletas",
-  "shortDescription": "Sencillas, mantecosas y con sello decorado.",
-  "description": "Galletas de mantequilla con un sello en relieve. Se deshacen en la boca y acompañan bien el café.",
-  "price": 90,
-  "unit": "Bolsa de 8 unidades",
-  "currency": "NIO",
+  "shortDescription": "Simple, buttery cookies with a decorative stamp.",
+  "description": "Stamped butter cookies that melt in your mouth and pair perfectly with coffee.",
+  "price": 2.46,
+  "unit": "Pack of 8",
+  "currency": "USD",
   "image": "assets/images/products/galletas-mantequilla.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Mantequilla",
-    "Azúcar",
-    "Vainilla"
+    "Wheat flour",
+    "Butter",
+    "Sugar",
+    "Vanilla"
   ],
   "allergens": [
     "Gluten",
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": false,

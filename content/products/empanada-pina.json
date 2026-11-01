@@ -1,26 +1,26 @@
 {
   "id": "prd-021",
   "slug": "empanada-pina",
-  "name": "Empanada de piña",
+  "name": "Pineapple Empanada",
   "categoryId": "cat-reposteria",
-  "shortDescription": "Masa quebrada rellena de dulce de piña casero.",
-  "description": "Empanada horneada de masa quebrada con relleno de piña cocida con canela.",
-  "price": 30,
-  "unit": "Unidad",
-  "currency": "NIO",
+  "shortDescription": "Flaky pastry filled with homemade pineapple preserves.",
+  "description": "A baked, buttery empanada filled with pineapple simmered with cinnamon.",
+  "price": 0.82,
+  "unit": "Each",
+  "currency": "USD",
   "image": "assets/images/products/empanada-pina.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Mantequilla",
-    "Piña",
-    "Azúcar",
-    "Canela"
+    "Wheat flour",
+    "Butter",
+    "Pineapple",
+    "Sugar",
+    "Cinnamon"
   ],
   "allergens": [
     "Gluten",
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": false,

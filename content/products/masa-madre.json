@@ -1,21 +1,21 @@
 {
   "id": "prd-001",
   "slug": "masa-madre",
-  "name": "Pan de masa madre",
+  "name": "Artisan Sourdough Loaf",
   "categoryId": "cat-pan-artesanal",
-  "shortDescription": "Corteza crujiente, miga húmeda y fermentación de 24 horas.",
-  "description": "Nuestra hogaza insignia. La masa fermenta durante 24 horas con masa madre propia, sin levadura comercial, y se hornea a alta temperatura para lograr una corteza gruesa y una miga abierta.\n\nSe conserva bien de tres a cuatro días envuelta en un paño. Para recuperarla, tuéstala unos minutos.",
-  "price": 180,
-  "unit": "Hogaza de 700 g",
-  "currency": "NIO",
+  "shortDescription": "Crisp crust, tender crumb, and a 24-hour fermentation.",
+  "description": "Our signature sourdough loaf. The dough ferments for 24 hours with our house starter, without commercial yeast, then bakes at high heat for a thick crust and open crumb.\n\nKeeps well for three to four days wrapped in a cloth. Toast briefly to refresh.",
+  "price": 4.91,
+  "unit": "700 g loaf",
+  "currency": "USD",
   "image": "assets/images/products/masa-madre.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Agua",
-    "Masa madre",
-    "Sal"
+    "Wheat flour",
+    "Water",
+    "Sourdough starter",
+    "Salt"
   ],
   "allergens": [
     "Gluten"

@@ -1,27 +1,27 @@
 {
   "id": "prd-019",
   "slug": "croissant",
-  "name": "Croissant de mantequilla",
+  "name": "Butter Croissant",
   "categoryId": "cat-reposteria",
-  "shortDescription": "Hojaldre laminado a mano, con 27 capas.",
-  "description": "Croissant de mantequilla laminado a mano durante tres días. Crujiente por fuera y con capas bien definidas por dentro.",
-  "price": 60,
-  "unit": "Unidad",
-  "currency": "NIO",
+  "shortDescription": "Hand-laminated pastry with 27 delicate layers.",
+  "description": "A buttery croissant laminated by hand over three days. Crisp on the outside with beautifully defined layers inside.",
+  "price": 1.64,
+  "unit": "Each",
+  "currency": "USD",
   "image": "assets/images/products/croissant.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Harina de trigo",
-    "Mantequilla",
-    "Leche",
-    "Azúcar",
-    "Levadura",
-    "Sal"
+    "Wheat flour",
+    "Butter",
+    "Milk",
+    "Sugar",
+    "Yeast",
+    "Salt"
   ],
   "allergens": [
     "Gluten",
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": true,
