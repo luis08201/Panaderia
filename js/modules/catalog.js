@@ -116,8 +116,8 @@ function renderChips() {
       h("span", { class: "chip__count", text: `(${countFor(slug)})` })
     );
   elements.chips.replaceChildren(
-    h("legend", { class: "visually-hidden", text: "Filtrar por categoría" }),
-    chip("", "Todos"),
+    h("legend", { class: "visually-hidden", text: "Filter by category" }),
+    chip("", "All"),
     ...categories.map((category) => chip(category.slug, category.name))
   );
   const active = elements.chips.querySelector('[aria-pressed="true"]');
@@ -141,7 +141,7 @@ function render() {
         stateBlock({
           title: "No products found",
           text: state.query.trim()
-            ? `No results for «${state.query.trim()}»${category ? ` in ${category.name}` : ""}. Try another search or browse all categories.`
+            ? `No results for “${state.query.trim()}”${category ? ` in ${category.name}` : ""}. Try another search or browse all categories.`
             : "There are no published products in this category yet.",
           action: h("button", { class: "btn btn--primary", type: "button", onclick: resetFilters }, "View all products"),
         })

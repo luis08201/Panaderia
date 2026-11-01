@@ -3,7 +3,7 @@ import { formatDate } from "../utils/dates.js";
 import { h, icon, img } from "../utils/dom.js";
 import { productWhatsappUrl } from "./whatsapp.js";
 
-export const productUrl = (product) => `products/${encodeURIComponent(product.slug)}/`;
+export const productUrl = (product) => `productos/${encodeURIComponent(product.slug)}/`;
 export const categoryUrl = (category) => `catalogo.html?categoria=${encodeURIComponent(category.slug)}`;
 
 export function productBadges(product, { includeFeatured = true } = {}) {
@@ -57,7 +57,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
           h(
             "div",
             { class: "product-card__actions" },
-            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": `View details de ${product.name}` }, "View details"),
+            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": `View details for ${product.name}` }, "View details"),
             contactUrl &&
               h(
                 "a",
@@ -67,7 +67,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
                   target: "_blank",
                   rel: "noopener",
                   "aria-label": `Ask on WhatsApp about ${product.name} (opens in a new tab)`,
-                  title: "Consultar por WhatsApp",
+                  title: "Ask on WhatsApp",
                 },
                 icon("whatsapp")
               )

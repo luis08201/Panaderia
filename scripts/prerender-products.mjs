@@ -18,7 +18,7 @@ const siteUrl = String(settings.seo?.siteUrl || "").replace(/\/+$/, "");
 const absolute = (path) => siteUrl ? siteUrl + "/" + path.replace(/^\/+/, "") : path;
 const paragraphs = (value) => String(value ?? "").split(/\n\s*\n/).filter(Boolean).map((p) => `<p>${escapeHtml(p.trim())}</p>`).join("");
 const tags = (label, items) => items?.length ? `<div><h2>${label}</h2><ul class="tag-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>` : "";
-const priceText = (p) => typeof p.price === "number" ? `C$ ${new Intl.NumberFormat("es-NI").format(p.price)}` : "Precio a consultar";
+const priceText = (p) => typeof p.price === "number" ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(p.price) : "Price on request";
 
 for (const p of products) {
   const path = `productos/${p.slug}/`;
@@ -28,19 +28,19 @@ for (const p of products) {
   const images = [p.image, ...(p.gallery || [])].filter((img) => img?.src);
   const mainImage = images[0] ? `<img src="${attr(images[0].src)}" alt="${attr(p.imageAlt || p.name)}" width="${images[0].width || 800}" height="${images[0].height || 600}" fetchpriority="high">` : "";
   const whatsapp = String(settings.whatsapp || "").replace(/\D/g, "");
-  const message = encodeURIComponent(`Hola, quisiera información sobre ${p.name}.`);
-  const contact = whatsapp && !settings.demoNotice ? `<a class="btn btn--whatsapp" href="https://wa.me/${whatsapp}?text=${message}" target="_blank" rel="noopener">Consultar por WhatsApp</a>` : "";
+  const message = encodeURIComponent(`Hi! I would like to ask about ${p.name}.`);
+  const contact = whatsapp && !settings.demoNotice ? `<a class="btn btn--whatsapp" href="https://wa.me/${whatsapp}?text=${message}" target="_blank" rel="noopener">Ask on WhatsApp</a>` : "";
   const productMarkup = `<div class="container"><article class="product">
     <div class="product__gallery"><div class="product__main-image${p.available ? "" : " is-sold-out"}">${mainImage}</div></div>
     <div class="product__info">
       <div><a class="product__category" href="catalogo.html?categoria=${encodeURIComponent(p.category.slug)}">${escapeHtml(p.category.name)}</a><h1>${escapeHtml(p.name)}</h1></div>
       <p class="price product__price"><span class="price__amount">${escapeHtml(priceText(p))}</span>${p.unit ? `<span class="price__unit">${escapeHtml(p.unit)}</span>` : ""}</p>
-      <div class="product__status"><span class="badge ${p.available ? "badge--available" : "badge--unavailable"}">${p.available ? "Disponible hoy" : "Agotado por hoy"}</span></div>
+      <div class="product__status"><span class="badge ${p.available ? "badge--available" : "badge--unavailable"}">${p.available ? "Available today" : "Sold out today"}</span></div>
       ${p.shortDescription ? `<p class="product__lead">${escapeHtml(p.shortDescription)}</p>` : ""}
       <div class="product__description prose">${paragraphs(p.description)}</div>
-      <div class="product__actions">${contact}<a class="btn btn--outline" href="catalogo.html?categoria=${encodeURIComponent(p.category.slug)}">Más de ${escapeHtml(p.category.name)}</a></div>
+      <div class="product__actions">${contact}<a class="btn btn--outline" href="catalogo.html?categoria=${encodeURIComponent(p.category.slug)}">More ${escapeHtml(p.category.name)}</a></div>
       ${settings.availabilityNote ? `<p class="availability-note">${escapeHtml(settings.availabilityNote)}</p>` : ""}
-      <div class="details">${tags("Ingredientes", p.ingredients)}${tags("Alérgenos", p.allergens)}</div>
+      <div class="details">${tags("Ingredients", p.ingredients)}${tags("Allergens", p.allergens)}</div>
     </div></article></div>`;
 
   let html = base.replace(/<meta name="robots" content="noindex"\s*\/>/, "");
@@ -64,4 +64,4 @@ for (const p of products) {
   mkdirSync(directory, { recursive: true });
   writeFileSync(join(directory, "index.html"), html);
 }
-console.log(`Generadas ${products.length} fichas HTML de productos.`);
+console.log(`Generated ${products.length} static product pages.`);

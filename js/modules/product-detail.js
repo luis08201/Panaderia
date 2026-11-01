@@ -75,7 +75,7 @@ function gallery(product) {
       {
         type: "button",
         "aria-pressed": String(index === 0),
-        "aria-label": `View photo ${index + 1} de ${images.length}`,
+        "aria-label": `View photo ${index + 1} of ${images.length}`,
         onclick: (event) => {
           show(image, index);
           swapImage(main);
@@ -148,7 +148,7 @@ function renderProduct(root, product, products) {
                 "Ask on WhatsApp",
                 h("span", { class: "visually-hidden", text: " (opens in a new tab)" })
               ),
-            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, `More ${product.category.name.toLowerCase()}`)
+            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, `More from ${product.category.name}`)
           ),
           h(
             "p",

@@ -179,7 +179,7 @@ const allProducts = productEntries.map(({ file, data }) => {
       price = null;
     }
   }
-  if (data.currency && data.currency !== "NIO") errors.push(`${where}: la moneda debe ser NIO`);
+  if (data.currency && data.currency !== "USD") errors.push(`${where}: currency must be USD`);
 
   const image = imagePath(data.image, where, { required: true });
   return {
@@ -192,7 +192,7 @@ const allProducts = productEntries.map(({ file, data }) => {
     description: text(data.description),
     price,
     unit: text(data.unit),
-    currency: "NIO",
+    currency: "USD",
     image: imageInfo(image),
     imageAlt: text(data.imageAlt) || text(data.name),
     gallery: list(data.gallery)
@@ -217,12 +217,12 @@ const products = allProducts
   .sort((a, b) => {
     const ca = categoriesById.get(a.categoryId).position;
     const cb = categoriesById.get(b.categoryId).position;
-    return ca - cb || a.sortOrder - b.sortOrder || a.name.localeCompare(b.name, "es");
+    return ca - cb || a.sortOrder - b.sortOrder || a.name.localeCompare(b.name, "en");
   });
 
 const categories = allCategories
   .filter((category) => category.published)
-  .sort((a, b) => a.position - b.position || a.name.localeCompare(b.name, "es"))
+  .sort((a, b) => a.position - b.position || a.name.localeCompare(b.name, "en"))
   .map(({ published, ...category }) => ({
     ...category,
     productCount: products.filter((product) => product.categoryId === category.id).length,
