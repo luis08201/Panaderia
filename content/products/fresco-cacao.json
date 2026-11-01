@@ -1,25 +1,25 @@
 {
   "id": "prd-027",
   "slug": "fresco-cacao",
-  "name": "Fresco de cacao",
+  "name": "Iced Cacao Drink",
   "categoryId": "cat-bebidas",
-  "shortDescription": "Bebida fría de cacao, arroz y canela.",
-  "description": "Fresco tradicional de cacao molido con arroz, canela y leche, servido con hielo.",
-  "price": 45,
-  "unit": "Vaso de 16 oz",
-  "currency": "NIO",
+  "shortDescription": "A refreshing chilled drink with cacao, rice, and cinnamon.",
+  "description": "A traditional Nicaraguan drink made with ground cacao, rice, cinnamon, and milk, served over ice.",
+  "price": 1.23,
+  "unit": "16 oz glass",
+  "currency": "USD",
   "image": "assets/images/products/fresco-cacao.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Cacao",
-    "Arroz",
-    "Leche",
-    "Azúcar",
-    "Canela"
+    "Cocoa",
+    "Rice",
+    "Milk",
+    "Sugar",
+    "Cinnamon"
   ],
   "allergens": [
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": false,

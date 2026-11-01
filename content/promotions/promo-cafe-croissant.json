@@ -1,11 +1,11 @@
 {
   "id": "promo-cafe-croissant",
-  "title": "Café y croissant",
-  "description": "Un café filtrado y un croissant de mantequilla por C$ 95, de lunes a viernes antes de las 10:00 a. m.",
+  "title": "Coffee & Croissant",
+  "description": "A drip coffee and butter croissant for $2.59, Monday through Friday before 10:00 a.m.",
   "image": "assets/images/products/croissant.webp",
   "startDate": "2026-10-01",
   "endDate": "2026-11-30",
   "active": true,
-  "linkUrl": "producto.html?slug=croissant",
-  "linkLabel": "Ver croissant"
+  "linkUrl": "productos/croissant/",
+  "linkLabel": "View croissant"
 }

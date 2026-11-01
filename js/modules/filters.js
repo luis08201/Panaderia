@@ -2,10 +2,10 @@ import { hasPrice } from "../utils/currency.js";
 import { normalize } from "../utils/normalize.js";
 
 export const SORT_OPTIONS = [
-  { value: "recomendados", label: "Recomendados" },
-  { value: "nombre", label: "Nombre (A–Z)" },
-  { value: "precio-asc", label: "Precio: menor a mayor" },
-  { value: "precio-desc", label: "Precio: mayor a menor" },
+  { value: "recomendados", label: "Recommended" },
+  { value: "nombre", label: "Name (A–Z)" },
+  { value: "precio-asc", label: "Price: low to high" },
+  { value: "precio-desc", label: "Price: high to low" },
 ];
 
 export function searchText(product) {
@@ -23,7 +23,7 @@ export function filterProducts(products, { query = "", category = "" } = {}) {
   });
 }
 
-const byName = (a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+const byName = (a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" });
 
 // Products without a price always go last when sorting by price.
 function byPrice(direction) {

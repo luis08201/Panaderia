@@ -1,24 +1,24 @@
 {
   "id": "prd-026",
   "slug": "chocolate-caliente",
-  "name": "Chocolate caliente",
+  "name": "Hot Chocolate",
   "categoryId": "cat-bebidas",
-  "shortDescription": "Cacao nicaragüense, leche y un toque de canela.",
-  "description": "Chocolate preparado con cacao, leche entera y canela.",
-  "price": 60,
-  "unit": "Taza de 10 oz",
-  "currency": "NIO",
+  "shortDescription": "Nicaraguan cocoa, milk, and a touch of cinnamon.",
+  "description": "Rich hot chocolate made with cocoa, whole milk, and cinnamon.",
+  "price": 1.64,
+  "unit": "10 oz cup",
+  "currency": "USD",
   "image": "assets/images/products/chocolate-caliente.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Cacao",
-    "Leche",
-    "Azúcar",
-    "Canela"
+    "Cocoa",
+    "Milk",
+    "Sugar",
+    "Cinnamon"
   ],
   "allergens": [
-    "Leche"
+    "Milk"
   ],
   "available": true,
   "featured": false,

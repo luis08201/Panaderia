@@ -1,18 +1,18 @@
 {
   "id": "prd-028",
   "slug": "jugo-naranja",
-  "name": "Jugo de naranja",
+  "name": "Fresh Orange Juice",
   "categoryId": "cat-bebidas",
-  "shortDescription": "Naranja recién exprimida, sin azúcar añadida.",
-  "description": "Jugo de naranja exprimido al momento.",
-  "price": 55,
-  "unit": "Vaso de 12 oz",
-  "currency": "NIO",
+  "shortDescription": "Freshly squeezed oranges, no added sugar.",
+  "description": "Orange juice squeezed fresh to order.",
+  "price": 1.5,
+  "unit": "12 oz glass",
+  "currency": "USD",
   "image": "assets/images/products/jugo-naranja.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Naranja"
+    "Orange"
   ],
   "allergens": [],
   "available": true,

@@ -1,6 +1,6 @@
 import { FEATURED_LIMIT } from "../config.js";
 import { isCurrent } from "../utils/dates.js";
-import { $ } from "../utils/dom.js";
+import { $, h } from "../utils/dom.js";
 import { categoryCard, loadError, productCard, promoCard } from "./cards.js";
 import { getCategories, getProducts, getPromotions } from "./data-loader.js";
 import { revealItems } from "./motion.js";
@@ -17,7 +17,7 @@ async function renderCategories() {
     list.replaceChildren(...categories.filter((c) => c.productCount > 0).map(categoryCard));
     revealItems(list, { stagger: 0.06 });
   } catch {
-    list.replaceChildren(loadError(renderCategories, 3));
+    list.replaceChildren(h("li", { class: "catalog-state" }, loadError(renderCategories, 3)));
   }
 }
 
@@ -37,7 +37,7 @@ async function renderProducts(whatsapp) {
     revealItems(featuredList);
     revealItems(freshList);
   } catch {
-    featuredList.replaceChildren(loadError(() => renderProducts(whatsapp), 3));
+    featuredList.replaceChildren(h("li", { class: "catalog-state" }, loadError(() => renderProducts(whatsapp), 3)));
     $("#recien-horneados").hidden = true;
   }
 }

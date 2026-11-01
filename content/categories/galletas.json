@@ -1,8 +1,8 @@
 {
   "id": "cat-galletas",
   "slug": "galletas",
-  "name": "Galletas",
-  "description": "Galletas horneadas por tandas, en bolsas listas para llevar o regalar.",
+  "name": "Cookies",
+  "description": "Freshly baked cookies in take-home packs, perfect for sharing or gifting.",
   "image": "assets/images/categories/galletas.webp",
   "position": 4,
   "published": true

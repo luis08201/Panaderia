@@ -1,29 +1,29 @@
 {
   "id": "prd-018",
   "slug": "alfajores",
-  "name": "Alfajores de dulce de leche",
+  "name": "Dulce de Leche Alfajores",
   "categoryId": "cat-galletas",
-  "shortDescription": "Dos tapas de maicena rellenas de dulce de leche.",
-  "description": "Tapas suaves de maicena, rellenas de dulce de leche y bañadas en coco rallado o chocolate.",
-  "price": 40,
-  "unit": "Unidad",
-  "currency": "NIO",
+  "shortDescription": "Delicate cornstarch cookies filled with dulce de leche.",
+  "description": "Soft cornstarch cookies filled with dulce de leche and coated in shredded coconut or chocolate.",
+  "price": 1.09,
+  "unit": "Each",
+  "currency": "USD",
   "image": "assets/images/products/alfajores.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Maicena",
-    "Harina de trigo",
-    "Mantequilla",
-    "Huevo",
+    "Cornstarch",
+    "Wheat flour",
+    "Butter",
+    "Egg",
     "Dulce de leche",
-    "Coco rallado"
+    "Shredded coconut"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche",
-    "Coco"
+    "Egg",
+    "Milk",
+    "Coconut"
   ],
   "available": true,
   "featured": false,

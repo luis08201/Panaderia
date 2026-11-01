@@ -1,18 +1,18 @@
 {
   "id": "prd-024",
   "slug": "cafe-filtrado",
-  "name": "Café filtrado",
+  "name": "Drip Coffee",
   "categoryId": "cat-bebidas",
-  "shortDescription": "Café nicaragüense de altura, preparado por goteo.",
-  "description": "Café de altura de productores nicaragüenses, tostado medio y preparado por goteo.",
-  "price": 45,
-  "unit": "Taza de 8 oz",
-  "currency": "NIO",
+  "shortDescription": "High-grown Nicaraguan coffee, freshly brewed.",
+  "description": "Medium-roast coffee from high-altitude Nicaraguan growers, freshly brewed by drip.",
+  "price": 1.23,
+  "unit": "8 oz cup",
+  "currency": "USD",
   "image": "assets/images/products/cafe-filtrado.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Café"
+    "Coffee"
   ],
   "allergens": [],
   "available": true,

@@ -1,28 +1,28 @@
 {
   "id": "prd-012",
   "slug": "cheesecake-maracuya",
-  "name": "Cheesecake de maracuyá",
+  "name": "Passion Fruit Cheesecake",
   "categoryId": "cat-pasteles",
-  "shortDescription": "Base de galleta, queso crema y cobertura de maracuyá.",
-  "description": "Cheesecake horneado sobre base de galleta, con una cobertura ácida de maracuyá que equilibra el dulzor.",
-  "price": 700,
-  "unit": "Pastel entero, 10 porciones",
-  "currency": "NIO",
+  "shortDescription": "Cookie crust, cream cheese, and passion fruit topping.",
+  "description": "Baked cheesecake on a cookie crust, topped with tangy passion fruit to balance the sweetness.",
+  "price": 19.11,
+  "unit": "Whole cake, serves 10",
+  "currency": "USD",
   "image": "assets/images/products/cheesecake-maracuya.webp",
   "imageAlt": "",
   "gallery": [],
   "ingredients": [
-    "Queso crema",
-    "Galleta",
-    "Mantequilla",
-    "Huevo",
-    "Azúcar",
-    "Maracuyá"
+    "Cream cheese",
+    "Cookies",
+    "Butter",
+    "Egg",
+    "Sugar",
+    "Passion fruit"
   ],
   "allergens": [
     "Gluten",
-    "Huevo",
-    "Leche"
+    "Egg",
+    "Milk"
   ],
   "available": true,
   "featured": false,
