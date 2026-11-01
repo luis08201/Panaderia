@@ -1,0 +1,30 @@
+{
+  "slug": "why-bread-needs-time-to-cool",
+  "title": "Why bread needs time to cool",
+  "date": "2026-10-22",
+  "excerpt": "The tempting aroma arrives first. A little patience helps the inside of the loaf catch up.",
+  "introduction": "A warm loaf is hard to resist. Yet the journey from oven to table includes a quieter stage: cooling. If a slice feels sticky or compresses beneath the knife, the loaf may simply need more time before it is ready to cut.",
+  "id": "post-002",
+  "categoryId": "blog-cat-basics",
+  "image": "assets/images/blog/horno.webp",
+  "imageAlt": "A baker lifting a tray of freshly baked bread from the oven",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "The oven is not the final step",
+      "text": "Once bread comes out of the oven, heat and moisture continue moving through it. Letting the loaf rest gives its interior time to settle. The right wait depends on its size and style, so follow the baker’s advice rather than treating every loaf exactly the same."
+    },
+    {
+      "heading": "Give the loaf some air",
+      "text": "A rack allows air to circulate around a plain loaf as it cools. Avoid sealing hot bread in a bag, which can trap steam and soften the crust. Enriched breads and filled pastries may need different handling, so keep any product-specific instructions that came with your purchase."
+    },
+    {
+      "heading": "Make the first slice count",
+      "text": "Use a serrated bread knife and gentle strokes instead of pressing down hard. If you want a warm slice later, toast only what you plan to eat. You still get the aroma and warmth, with a loaf that is easier to slice and enjoy."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

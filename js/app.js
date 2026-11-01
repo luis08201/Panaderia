@@ -10,9 +10,11 @@ const PAGES = {
   catalogo: () => import("./modules/catalog.js"),
   producto: () => import("./modules/product-detail.js"),
   nosotros: () => import("./modules/about.js"),
+  blog: () => import('./modules/blog.js'),
+  article: () => import('./modules/blog.js'),
 };
 
-const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html", contacto: "contacto.html" };
+const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html", contacto: "contacto.html", blog: 'blog.html' };
 
 async function start() {
   initMotion();

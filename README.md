@@ -1,10 +1,10 @@
-# Miga & Horno · catálogo de panadería
+# Crumb & Oven · catálogo de panadería
 
 Sitio web de una panadería en Managua, en español y tipo catálogo: muestra productos con precios en córdobas (C$), fotos, disponibilidad, búsqueda y filtros, y permite consultar por WhatsApp. **No es una tienda en línea**: no hay carrito, checkout, pagos ni cuentas de cliente.
 
 Está hecho con HTML, CSS y JavaScript sin frameworks. El contenido se edita con [Pages CMS](https://pagescms.org), que guarda cada cambio como un commit en GitHub. Node.js solo se usa para validar el contenido y preparar la carpeta que se publica; no hay backend.
 
-> **Datos de ejemplo.** El nombre «Miga & Horno», el teléfono, el WhatsApp (`50500000000`), la dirección, los horarios y los precios son provisionales. El sitio lo avisa en la barra superior y en las secciones de contacto. Cuando tengas los datos reales, cámbialos en **Configuración** dentro de Pages CMS y desactiva «Mostrar aviso de datos de ejemplo».
+> **Datos de ejemplo.** El nombre «Crumb & Oven», el teléfono, el WhatsApp (`50500000000`), la dirección, los horarios y los precios son provisionales. El sitio lo avisa en la barra superior y en las secciones de contacto. Cuando tengas los datos reales, cámbialos en **Configuración** dentro de Pages CMS y desactiva «Mostrar aviso de datos de ejemplo».
 
 ## Páginas
 
@@ -16,6 +16,9 @@ Está hecho con HTML, CSS y JavaScript sin frameworks. El contenido se edita con
 | `nosotros.html` | Historia, valores, proceso artesanal y galería |
 | `contacto.html` | WhatsApp, teléfono, dirección con enlace a Google Maps, horarios y redes |
 | `404.html` | Página de error para direcciones que no existen |
+| `styleguide.html` | Guía visual en inglés con marca, colores, tipografía, componentes y estados interactivos de muestra. Véase `docs/STYLEGUIDE.md` |
+| `blog.html` | Blog con destacados, doce artículos iniciales, búsqueda y cuatro categorías más All |
+| `article.html` y `blog/<slug>/` | Plantilla CMS y páginas generadas por artículo con índice y relacionados. Véase `docs/BLOG.md` |
 
 ## Ejecutarlo en local
 

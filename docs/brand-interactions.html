@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Logo alternativo e interacciones · Crumb &amp; Oven</title>
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <style>
+    body { padding: clamp(1rem, 4vw, 4rem); }
+    main { max-width: 70rem; margin: auto; }
+    h1 { max-width: 18ch; font-size: var(--step-3); }
+    .intro { max-width: 55ch; margin-top: 1rem; color: var(--color-text-muted); }
+    .comparison { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,20rem),1fr)); gap: 1.5rem; margin-block: 2rem 3rem; }
+    .sample { display: grid; gap: 1.5rem; padding: 2rem; background: white; border: 1px solid var(--color-border); border-radius: var(--radius-l); }
+    .sample h2, .controls h2 { font: 600 .75rem var(--font-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--color-text-muted); }
+    .lockup { display: flex; align-items: center; gap: .9rem; min-height: 5rem; }
+    .lockup .brand__mark { width: 3.4rem; height: 3.4rem; flex: none; }
+    .lockup .brand__name { font-size: clamp(1.35rem,3vw,1.8rem); }
+    .controls { display: grid; gap: 1.25rem; padding: 2rem; border: 1px solid var(--color-border); border-radius: var(--radius-l); }
+    .row { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .fields { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,18rem),1fr)); gap: 1.5rem; }
+    .full { grid-column: 1 / -1; }
+    .nav-toggle { display: inline-flex; }
+    .results-bar { margin: 0; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Exploración de identidad · 02</p>
+  <h1>El calor empieza en el horno.</h1>
+  <p class="intro">Una alternativa con un horno de arco y una hogaza. Conserva el tono artesanal y los colores cálidos, con una silueta más reconocible en tamaños pequeños.</p>
+  <div class="comparison">
+    <section class="sample">
+      <h2>01 · Identidad actual</h2>
+      <a class="brand" href="../index.html">
+        <svg class="brand__mark" aria-hidden="true"><use href="../assets/icons/icons.svg#wheat"></use></svg>
+        <span class="brand__text"><span class="brand__name">Crumb &amp; Oven</span><span class="brand__tagline">Artisan Bakery</span></span>
+      </a>
+      <p class="muted">Espiga · origen e ingredientes.</p>
+    </section>
+    <section class="sample">
+      <h2>02 · Alternativa propuesta</h2>
+      <a class="brand lockup" href="../index.html">
+        <svg class="brand__mark" aria-hidden="true"><use href="../assets/icons/icons.svg#oven"></use></svg>
+        <span class="brand__text"><span class="brand__name">Crumb &amp; Oven</span><span class="brand__tagline">Artisan Bakery</span></span>
+      </a>
+      <p class="muted">Horno y hogaza · oficio y calidez.</p>
+    </section>
+  </div>
+  <section class="controls" aria-labelledby="controls-title">
+    <h2 id="controls-title">Prueba de interacciones</h2>
+    <div class="row">
+      <a href="../catalogo.html">Enlace de texto</a>
+      <a class="link-arrow" href="../catalogo.html">Explorar catálogo</a>
+      <a class="btn btn--primary" href="../catalogo.html">Ver productos</a>
+      <a class="btn btn--outline" href="../nosotros.html">Nuestra historia</a>
+      <button class="nav-toggle" type="button">Menú de muestra</button>
+      <div class="results-bar"><button type="button">Limpiar filtros</button></div>
+    </div>
+    <div class="fields">
+      <div><label class="field-label" for="sample-search">Buscar productos</label><input class="input" id="sample-search" type="search" placeholder="Pan de masa madre"></div>
+      <div><label class="field-label" for="sample-select">Ordenar por</label><select class="select" id="sample-select"><option>Recomendados</option><option>Nombre A–Z</option></select></div>
+      <div class="full"><label class="field-label" for="sample-message">Mensaje de muestra</label><textarea id="sample-message" placeholder="Escribe aquí para probar el foco y el borde…"></textarea></div>
+    </div>
+    <div>
+      <p class="field-label">Miniaturas de muestra</p>
+      <ul class="thumbs">
+        <li><button type="button" aria-label="Foto de muestra seleccionada" aria-pressed="true"><img src="../assets/images/products/sm/masa-madre.webp" alt="" width="80" height="60"></button></li>
+        <li><button type="button" aria-label="Segunda foto de muestra" aria-pressed="false"><img src="../assets/images/products/sm/croissant.webp" alt="" width="80" height="60"></button></li>
+      </ul>
+    </div>
+    <p class="muted">Los campos son una muestra local y no envían datos. Usa el puntero y la tecla Tab para comprobar las transiciones y el foco.</p>
+  </section>
+</main>
+</body>
+</html>

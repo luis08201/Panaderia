@@ -1,0 +1,30 @@
+{
+  "slug": "a-breakfast-worth-slowing-down-for",
+  "title": "A breakfast worth slowing down for",
+  "date": "2026-10-27",
+  "excerpt": "You do not need an elaborate spread to make the first meal feel thoughtful.",
+  "introduction": "A good breakfast can be as simple as a favorite loaf, something to spread on it, and a drink you enjoy. The aim is not to create more work. It is to make a little room for a meal that feels considered.",
+  "id": "post-007",
+  "categoryId": "blog-cat-sharing",
+  "image": "assets/images/blog/cafe-filtrado.webp",
+  "imageAlt": "Fresh coffee being poured into a ceramic mug",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Choose one thing to build around",
+      "text": "Start with bread or a pastry you genuinely want to eat. Add a familiar topping, fruit, or something savory according to your preferences. Choosing a small set of ingredients gives each one a place and helps avoid turning an ordinary morning into an unnecessary project."
+    },
+    {
+      "heading": "Prepare the useful details",
+      "text": "Set out plates and cups, slice what needs slicing, and have the spread ready before the toast is done. These small steps make serving feel calmer. If others are joining you, keep toppings separate so everyone can put together the breakfast they prefer."
+    },
+    {
+      "heading": "Leave space to enjoy it",
+      "text": "Serve what you plan to eat and save the rest according to the product’s storage instructions. Sit down if you can, even for a few minutes. A slower breakfast does not require a perfect setting; a warm slice and a little attention are a good beginning."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

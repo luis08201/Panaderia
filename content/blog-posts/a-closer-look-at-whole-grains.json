@@ -1,0 +1,30 @@
+{
+  "slug": "a-closer-look-at-whole-grains",
+  "title": "A closer look at whole grains",
+  "date": "2026-10-18",
+  "excerpt": "Discover a little more color, texture, and variety in your next slice.",
+  "introduction": "Whole-grain breads offer a wide range of experiences, from soft sandwich slices to robust country loaves. The name alone does not tell you how a bread will taste. A closer look at the flour blend and toppings helps you find the style you enjoy.",
+  "id": "post-005",
+  "categoryId": "blog-cat-craft",
+  "image": "assets/images/blog/pan-integral-semillas.webp",
+  "imageAlt": "A whole-grain loaf topped with seeds",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Read beyond the color",
+      "text": "A dark loaf is not a complete description of its ingredients. Check the ingredient information or ask the bakery which grains are used. Blends can vary, and seeds on the outside tell a different story from the flour inside the dough. Clear information makes choosing easier."
+    },
+    {
+      "heading": "Try a simple pairing first",
+      "text": "Taste a slice with something familiar, such as butter or your usual sandwich filling. Then try it toasted and notice the difference in aroma and texture. Starting with a simple pairing makes it easier to decide which qualities you want in your everyday bread."
+    },
+    {
+      "heading": "Keep preferences in the conversation",
+      "text": "If you have ingredient restrictions, consult the bakery’s current ingredient and allergen information before choosing. A product name or photograph is not enough to confirm suitability. For flavor preferences, describe whether you like a softer slice, a hearty bite, or a seed-studded crust."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

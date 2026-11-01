@@ -1,0 +1,30 @@
+{
+  "slug": "a-simple-guide-to-sourdough",
+  "title": "A simple guide to sourdough",
+  "date": "2026-10-30",
+  "featured": true,
+  "excerpt": "A starter, a slow rise, and a little curiosity. Get to know the loaf behind the lovely crust.",
+  "introduction": "Sourdough can sound like a language of its own. Starters, folds, scoring: there is plenty to learn, but you do not need to know every term to enjoy a good loaf. Begin with what you can see, smell, and taste.",
+  "id": "post-001",
+  "categoryId": "blog-cat-basics",
+  "image": "assets/images/blog/masa-madre.webp",
+  "imageAlt": "A round sourdough loaf with a deeply golden crust",
+  "author": "Crumb & Oven editorial team",
+  "published": true,
+  "sections": [
+    {
+      "heading": "It starts with a living culture",
+      "text": "A starter is a mixture of flour and water maintained through regular feeding. It supports the fermentation of the dough and helps shape its character. Two bakers can use similar ingredients and still make very different loaves, because flour, timing, temperature, and technique all play a part."
+    },
+    {
+      "heading": "Notice more than the crust",
+      "text": "Look inside the loaf as well as outside it. The crumb might be open and irregular or a little closer and softer. Neither appearance tells the whole story. Taste a slice on its own, then toasted, and notice how the texture and flavor change with each use."
+    },
+    {
+      "heading": "Find your everyday slice",
+      "text": "Try sourdough with butter, alongside soup, or as the base for a simple sandwich. Ask your bakery about its flour blend and recommended storage. There is no single perfect loaf for every table; the best starting point is one you look forward to eating again."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

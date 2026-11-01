@@ -1,0 +1,30 @@
+{
+  "slug": "a-morning-in-the-bakery",
+  "title": "A morning in the bakery",
+  "date": "2026-10-31",
+  "featured": true,
+  "excerpt": "Before the first coffee is poured, a familiar rhythm is already taking shape.",
+  "introduction": "This sample journal imagines a morning at Crumb & Oven: trays finding their places, loaves cooling, and the counter being readied for the day. The details are small, but together they set the tone for the people who come through the door.",
+  "id": "post-010",
+  "categoryId": "blog-cat-bakery",
+  "image": "assets/images/blog/horno.webp",
+  "imageAlt": "A baker checking a tray at the oven",
+  "author": "Crumb & Oven editorial team",
+  "published": true,
+  "sections": [
+    {
+      "heading": "The bench comes first",
+      "text": "The working day begins with preparation. Tools are set out, ingredients are checked, and dough is assessed for the next stage. A tidy bench gives the baker room to move and makes it easier to pay attention to the work in front of them."
+    },
+    {
+      "heading": "A rhythm of different tasks",
+      "text": "Baking rarely means doing one thing from start to finish without interruption. There may be dough resting while another batch is shaped and a tray is cooling. The skill lies partly in arranging those stages so each product gets the attention it needs."
+    },
+    {
+      "heading": "Ready for the first visitor",
+      "text": "As the counter fills, the focus shifts toward serving. Clear product labels and helpful answers make the selection easier. A welcoming bakery does more than offer a good loaf; it helps people find something that fits their day, whether they have a minute or a whole morning."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "butter-layers-and-patience",
+  "title": "Butter, layers, and a little patience",
+  "date": "2026-10-28",
+  "featured": true,
+  "excerpt": "A few folds and plenty of care give a familiar pastry its delicate character.",
+  "introduction": "The pleasure of a croissant begins with the first crisp flakes. Behind that small everyday moment is a careful sequence of rolling, folding, resting, and baking. You do not need to make one yourself to appreciate the work in each layer.",
+  "id": "post-006",
+  "categoryId": "blog-cat-craft",
+  "image": "assets/images/blog/croissant.webp",
+  "imageAlt": "Golden croissants with visible flaky layers",
+  "author": "Crumb & Oven editorial team",
+  "published": true,
+  "sections": [
+    {
+      "heading": "A structure built in stages",
+      "text": "Lamination brings dough and butter into repeated layers through folding and rolling. The baker manages thickness and temperature as the pastry takes shape. It is a process of careful handling, with rests between stages so the next step can begin with the dough in a workable condition."
+    },
+    {
+      "heading": "Look, listen, and taste",
+      "text": "Notice the golden surface, the gentle crackle when you break the pastry, and the texture inside. Different bakeries favor slightly different shapes and finishes. Rather than expecting identical pastries everywhere, enjoy comparing the balance of crispness, softness, and flavor."
+    },
+    {
+      "heading": "Keep serving uncomplicated",
+      "text": "A plain croissant needs very little company: coffee, tea, or a quiet moment can be enough. If you save it for later, ask how the bakery recommends refreshing it. Pastries with fillings may have different storage requirements, so follow the instructions for the exact product."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

@@ -33,7 +33,7 @@ export function initMenu() {
 
   const page = document.body.dataset.page;
   for (const link of $$(".nav__link")) {
-    if (link.dataset.nav === page || (page === "producto" && link.dataset.nav === "catalogo")) {
+    if (link.dataset.nav === page || (page === "producto" && link.dataset.nav === "catalogo") || (page === 'article' && link.dataset.nav === 'blog')) {
       link.setAttribute("aria-current", "page");
     }
   }

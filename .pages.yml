@@ -3,6 +3,12 @@
 # `npm run build` to validate content and generate public-data/ for the site.
 
 media:
+  - name: blog_images
+    label: Blog photos
+    input: assets/images/blog
+    output: assets/images/blog
+    categories: [image]
+    rename: safe
   - name: productos
     label: Product photos
     input: assets/images/products
@@ -23,6 +29,75 @@ media:
     rename: safe
 
 content:
+  - name: blog_categories
+    label: Blog categories
+    type: collection
+    operations: { create: false, rename: false, delete: false }
+    path: content/blog-categories
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      fields: [name, description, position]
+      primary: name
+      default: { sort: position, order: asc }
+    fields:
+      - { name: id, label: Internal ID, type: string, required: true, description: "Keep this value unchanged. Articles use it to identify their category." }
+      - name: slug
+        label: Category address
+        type: string
+        required: true
+        pattern: { regex: "^[a-z0-9]+(-[a-z0-9]+)*$", message: "Use lowercase letters, numbers, and hyphens. Do not use all." }
+      - { name: name, label: Category name, type: string, required: true }
+      - { name: description, label: Short description, type: text }
+      - { name: position, label: Display order, type: number, default: 10, description: "Lower numbers appear first. The blog uses exactly four categories; All is added automatically." }
+
+  - name: blog_posts
+    label: Blog posts
+    type: collection
+    path: content/blog-posts
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      fields: [image, title, date, featured, published]
+      primary: title
+      search: [title, excerpt]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: id, label: Internal ID, type: string, required: true, description: "Use a unique value such as post-013. Keep it unchanged after creating an article." }
+      - name: slug
+        label: Article address
+        type: string
+        required: true
+        pattern: { regex: "^[a-z0-9]+(-[a-z0-9]+)*$", message: "Use lowercase letters, numbers, and hyphens." }
+        description: "Example: a-simple-guide-to-sourdough. Appears in blog/a-simple-guide-to-sourdough/."
+      - { name: title, label: Article title, type: string, required: true }
+      - { name: excerpt, label: Short preview, type: text, required: true, description: "A short summary for the cards and the top of the article." }
+      - name: categoryId
+        label: Blog category
+        type: reference
+        required: true
+        options:
+          collection: blog_categories
+          value: "{fields.id}"
+          label: "{fields.name}"
+          search: "fields.name"
+      - { name: date, label: Publication date, type: date, required: true, options: { format: yyyy-MM-dd } }
+      - { name: author, label: Author name, type: string, required: true }
+      - { name: image, label: Cover photo, type: image, required: true, options: { media: blog_images } }
+      - { name: imageAlt, label: Photo description, type: string, required: true, description: "Describe what is shown for visitors using a screen reader." }
+      - { name: introduction, label: Opening paragraph, type: text, required: true, description: "Start the story here. Use a blank line for a new paragraph." }
+      - name: sections
+        label: Article sections
+        type: object
+        list: true
+        fields:
+          - { name: heading, label: Section title, type: string, required: true }
+          - { name: text, label: Section text, type: text, required: true, description: "Use a blank line between paragraphs. Add as many sections as the article needs." }
+      - { name: featured, label: Featured article, type: boolean, default: false, description: "Shows in Featured stories. The three newest featured articles are displayed." }
+      - { name: published, label: Published, type: boolean, default: false, description: "Turn off to keep the article as a draft. Publication happens when the site is rebuilt." }
+      - { name: seoTitle, label: Search result title (optional), type: string }
+      - { name: seoDescription, label: Search result description (optional), type: text }
+
   - name: productos
     label: Products
     type: collection

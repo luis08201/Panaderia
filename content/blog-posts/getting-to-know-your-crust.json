@@ -1,0 +1,30 @@
+{
+  "slug": "getting-to-know-your-crust",
+  "title": "Getting to know your crust",
+  "date": "2026-10-14",
+  "excerpt": "Thin and crisp or dark and substantial: the outside of a loaf has a story of its own.",
+  "introduction": "A crust can crackle, give way gently, or offer a satisfying chew. These differences are part of what makes exploring a bakery enjoyable. Instead of searching for a single correct crust, think about the meal and texture you prefer.",
+  "id": "post-003",
+  "categoryId": "blog-cat-basics",
+  "image": "assets/images/blog/baguette.webp",
+  "imageAlt": "A golden baguette on a wooden board",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Look for the style you enjoy",
+      "text": "A baguette and a sandwich loaf are designed for different moments. One may have a thin, crisp shell, while the other offers a tender outer layer. Shape, ingredients, and baking approach all contribute. Compare breads within their own style rather than judging every loaf by the same appearance."
+    },
+    {
+      "heading": "Pair texture with the meal",
+      "text": "A sturdy crust can be lovely alongside soup or a bowl of olive oil. For a delicate filling, you might prefer softer bread that is easier to bite through. Let the way you plan to serve it guide your choice, and ask for suggestions at the counter."
+    },
+    {
+      "heading": "Enjoy it at its best",
+      "text": "Texture changes after baking and during storage. Toasting can bring a pleasing crispness to a slice that has softened. Keep plain bread separate from moist toppings until you are ready to serve, and follow the storage advice for the particular loaf you bought."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

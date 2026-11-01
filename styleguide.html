@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Style guide · Crumb &amp; Oven</title>
+  <meta name="description" content="The colors, typography, components, and small details behind Crumb & Oven. A living guide for making the template your own.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+  <script type="module" src="js/styleguide.js"></script>
+</head>
+<body class="sg-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="sg-header">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#oven"></use></svg>
+      <span class="brand__text"><span class="brand__name">Crumb &amp; Oven</span><span class="brand__tagline">Artisan Bakery</span></span>
+    </a>
+    <a class="sg-back" href="index.html">Back to the bakery <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="sg-shell">
+    <aside class="sg-sidebar">
+      <p class="sg-label">The essentials</p>
+      <nav aria-label="Style guide sections">
+        <a href="#brand"><span>01</span> Brand</a>
+        <a href="#color"><span>02</span> Color</a>
+        <a href="#type"><span>03</span> Typography</a>
+        <a href="#actions"><span>04</span> Buttons &amp; links</a>
+        <a href="#forms"><span>05</span> Form fields</a>
+        <a href="#components"><span>06</span> Components</a>
+        <a href="#layout"><span>07</span> Space &amp; shape</a>
+        <a href="#motion"><span>08</span> Motion &amp; access</a>
+      </nav>
+      <div class="sg-sidebar-note"><span class="sg-dot" aria-hidden="true"></span> Made to be made yours.</div>
+    </aside>
+    <main id="main" class="sg-main">
+      <div class="sg-intro">
+        <p class="eyebrow">Crumb &amp; Oven / Style guide</p>
+        <h1>A little structure.<br>A lot of <em>warmth.</em></h1>
+        <div class="sg-intro-bottom"><p>A practical collection of the ingredients that make this bakery feel like home. Start here, then make it your own.</p><span class="sg-edition">The brand recipe<br><strong>Edition 01 / 2026</strong></span></div>
+      </div>
+
+      <section id="brand" class="sg-section" aria-labelledby="brand-title">
+        <div class="sg-section-head"><p class="sg-number">01 / Identity</p><h2 id="brand-title">A mark with a warm heart.</h2><p>An arched oven, a small loaf, and an open invitation. Keep the symbol and wordmark together whenever space allows.</p></div>
+        <div class="sg-brand-grid">
+          <div class="sg-brand-panel">
+            <span class="sg-label">Primary lockup / light</span>
+            <div class="brand sg-brand-lockup"><svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#oven"></use></svg><span class="brand__text"><span class="brand__name">Crumb &amp; Oven</span><span class="brand__tagline">Artisan Bakery</span></span></div>
+            <p>Give the mark room to breathe.</p>
+          </div>
+          <div class="sg-brand-panel sg-brand-panel--dark">
+            <span class="sg-label">Reversed / dark</span>
+            <div class="brand sg-brand-lockup"><svg class="brand__mark" aria-hidden="true"><use href="assets/icons/icons.svg#oven"></use></svg><span class="brand__text"><span class="brand__name">Crumb &amp; Oven</span><span class="brand__tagline">Artisan Bakery</span></span></div>
+            <p>Use warm light tones on dark surfaces.</p>
+          </div>
+        </div>
+        <div class="sg-footnote"><p>Keep proportions intact. Avoid stretching, heavy effects, or placing the mark over busy photographs.</p><a class="link-arrow" href="assets/brand/oven-mark.svg" download>Download symbol</a></div>
+      </section>
+
+      <section id="color" class="sg-section" aria-labelledby="color-title">
+        <div class="sg-section-head"><p class="sg-number">02 / Palette</p><h2 id="color-title">From flour to golden crust.</h2><p>Soft neutrals do most of the work. Cocoa brings structure; terracotta adds a little warmth. Select a swatch to copy its color.</p></div>
+        <div class="sg-swatches">
+          <button class="sg-swatch" type="button" data-copy-token="--color-background" aria-label="Copy Flour color"><span class="sg-swatch-paint sg-color-flour"></span><span class="sg-swatch-name">Flour <span>Canvas</span></span><span class="sg-value" data-token="--color-background">#fff9f0</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-tint" aria-label="Copy Oat color"><span class="sg-swatch-paint sg-color-oat"></span><span class="sg-swatch-name">Oat <span>Soft sections</span></span><span class="sg-value" data-token="--color-tint">#f6ead8</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-primary" aria-label="Copy Cocoa color"><span class="sg-swatch-paint sg-color-cocoa"></span><span class="sg-swatch-name">Cocoa <span>Primary actions</span></span><span class="sg-value" data-token="--color-primary">#754c29</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-accent" aria-label="Copy Terracotta color"><span class="sg-swatch-paint sg-color-terracotta"></span><span class="sg-swatch-name">Terracotta <span>Warm accents</span></span><span class="sg-value" data-token="--color-accent">#a85d3b</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-secondary" aria-label="Copy Honey color"><span class="sg-swatch-paint sg-color-honey"></span><span class="sg-swatch-name">Honey <span>Highlights</span></span><span class="sg-value" data-token="--color-secondary">#d6a56d</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-text" aria-label="Copy Espresso color"><span class="sg-swatch-paint sg-color-espresso"></span><span class="sg-swatch-name">Espresso <span>Headings &amp; text</span></span><span class="sg-value" data-token="--color-text">#2f241d</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-text-muted" aria-label="Copy Toast color"><span class="sg-swatch-paint sg-color-toast"></span><span class="sg-swatch-name">Toast <span>Supporting text</span></span><span class="sg-value" data-token="--color-text-muted">#6a5546</span></button>
+          <button class="sg-swatch" type="button" data-copy-token="--color-surface" aria-label="Copy White color"><span class="sg-swatch-paint sg-color-white"></span><span class="sg-swatch-name">White <span>Cards &amp; fields</span></span><span class="sg-value" data-token="--color-surface">#ffffff</span></button>
+        </div>
+        <p class="sg-feedback" id="copy-status" role="status" aria-live="polite">Color values follow the template’s shared palette.</p>
+        <div class="sg-semantic-row"><span class="badge badge--available">Available / positive</span><span class="badge badge--unavailable">Unavailable / attention</span><span class="sg-focus-key">Blue outline / keyboard focus</span></div>
+      </section>
+
+      <section id="type" class="sg-section" aria-labelledby="type-title">
+        <div class="sg-section-head"><p class="sg-number">03 / Typography</p><h2 id="type-title">Character, with clarity.</h2><p>Expressive serif headings meet a quiet, practical sans serif. Both typefaces are served locally with the template.</p></div>
+        <div class="sg-font-grid"><div class="sg-font-card"><span class="sg-label">The expressive one</span><p class="sg-serif-specimen">Aa</p><h3>Playfair Display</h3><p>Headings &amp; brand · 500 / 600 / 700</p></div><div class="sg-font-card"><span class="sg-label">The everyday one</span><p class="sg-sans-specimen">Aa</p><h3>Inter</h3><p>Body &amp; interface · 400 / 500 / 600 / 700</p></div></div>
+        <h3 class="sg-type-group-title">Heading levels / H1–H6</h3>
+        <p class="sg-hint">Headings organize your page like chapters in a book. H1 is the main title; H2 introduces a section; H3–H6 organize smaller parts inside it. Use the levels in order. The examples show their usual sizes on your screen.</p>
+        <div class="sg-type-list">
+          <div class="sg-type-row"><span class="sg-type-meta">H1 <small>Page title</small><span class="sg-size-value" data-size-for="sg-heading-1">Fluid · 38.4–70.4px</span></span><p id="sg-heading-1" class="heading-h1">Good things take time.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">H2 <small>Section title</small><span class="sg-size-value" data-size-for="sg-heading-2">Fluid · 29.6–44px</span></span><p id="sg-heading-2" class="heading-h2">Fresh from our oven.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">H3 <small>Subsection</small><span class="sg-size-value" data-size-for="sg-heading-3">Fluid · 18–20.8px</span></span><p id="sg-heading-3" class="heading-h3">A little everyday ritual.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">H4 <small>Nested section</small><span class="sg-size-value" data-size-for="sg-heading-4">Fluid · 17–18px</span></span><p id="sg-heading-4" class="heading-h4">Simple ingredients. Thoughtful details.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">H5 <small>Supporting heading</small><span class="sg-size-value" data-size-for="sg-heading-5">16px / 1rem</span></span><p id="sg-heading-5" class="heading-h5">Small batches, made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">H6 <small>Smallest heading</small><span class="sg-size-value" data-size-for="sg-heading-6">14px / 0.875rem</span></span><p id="sg-heading-6" class="heading-h6">The finishing touches.</p></div>
+        </div>
+        <h3 class="sg-type-group-title">Choose a text size</h3>
+        <p class="sg-hint">Ten options, from a small note to a large headline. Choose the name that best fits what you want to say, then compare the examples below. Each option shows its size so you can see how they differ.</p>
+        <div class="sg-type-list sg-text-scale">
+          <div class="sg-type-row"><span class="sg-type-meta">Tiny note <small>Short captions and small details</small><span class="sg-size-value" data-size-for="sg-size-50">12px / 0.75rem</span></span><p id="sg-size-50" class="text-50">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Small note <small>Hints and supporting information</small><span class="sg-size-value" data-size-for="sg-size-100">14px / 0.875rem</span></span><p id="sg-size-100" class="text-100">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Reading text <small>Everyday paragraphs and descriptions</small><span class="sg-size-value" data-size-for="sg-size-200">16px / 1rem</span></span><p id="sg-size-200" class="text-200">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Comfortable reading <small>Longer text with more breathing room</small><span class="sg-size-value" data-size-for="sg-size-300">18px / 1.125rem</span></span><p id="sg-size-300" class="text-300">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Intro text <small>A short opening paragraph</small><span class="sg-size-value" data-size-for="sg-size-400">20px / 1.25rem</span></span><p id="sg-size-400" class="text-400">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Small title <small>Cards and small content blocks</small><span class="sg-size-value" data-size-for="sg-size-500">24px / 1.5rem</span></span><p id="sg-size-500" class="text-500">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Medium title <small>Groups of related content</small><span class="sg-size-value" data-size-for="sg-size-600">30px / 1.875rem</span></span><p id="sg-size-600" class="text-600">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Section title <small>The start of a new section</small><span class="sg-size-value" data-size-for="sg-size-700">36px / 2.25rem</span></span><p id="sg-size-700" class="text-700">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Page title <small>The main title of a page</small><span class="sg-size-value" data-size-for="sg-size-800">48px / 3rem</span></span><p id="sg-size-800" class="text-800">Made with care.</p></div>
+          <div class="sg-type-row"><span class="sg-type-meta">Large headline <small>A large opening headline</small><span class="sg-size-value" data-size-for="sg-size-900">60px / 3.75rem</span></span><p id="sg-size-900" class="text-900">Made with care.</p></div>
+        </div>
+        <p class="sg-hint">For paragraphs, start with Reading text or Comfortable reading. Save Tiny note for short captions. Choosing a larger size changes how the text looks; it does not change its H1–H6 heading level.</p>
+        <details class="sg-customize"><summary>For your designer: style names</summary><p>You can choose by the friendly names above. These matching style names are only needed when editing the website’s design settings or code.</p><div class="sg-table-wrap"><table class="sg-style-table"><thead><tr><th scope="col">Name in this guide</th><th scope="col">Style name</th></tr></thead><tbody><tr><td>Tiny note</td><td><code>text-50</code></td></tr><tr><td>Small note</td><td><code>text-100</code></td></tr><tr><td>Reading text</td><td><code>text-200</code></td></tr><tr><td>Comfortable reading</td><td><code>text-300</code></td></tr><tr><td>Intro text</td><td><code>text-400</code></td></tr><tr><td>Small title</td><td><code>text-500</code></td></tr><tr><td>Medium title</td><td><code>text-600</code></td></tr><tr><td>Section title</td><td><code>text-700</code></td></tr><tr><td>Page title</td><td><code>text-800</code></td></tr><tr><td>Large headline</td><td><code>text-900</code></td></tr></tbody></table></div></details>
+      </section>
+
+      <section id="actions" class="sg-section" aria-labelledby="actions-title">
+        <div class="sg-section-head"><p class="sg-number">04 / Actions</p><h2 id="actions-title">A clear next step.</h2><p>One primary action at a time. Hover gently changes color; keyboard focus remains clearly visible.</p></div>
+        <div class="sg-sample sg-action-sample"><div><p class="sg-label">Buttons</p><div class="sg-row"><a class="btn btn--primary" href="catalogo.html">Browse the menu</a><a class="btn btn--outline" href="nosotros.html">Our story</a><a class="btn" href="contacto.html">Get in touch</a><button class="btn btn--primary" type="button" disabled>Unavailable</button></div></div><div><p class="sg-label">Smaller &amp; simpler</p><div class="sg-row"><a class="btn btn--primary btn--sm" href="catalogo.html">View details</a><a class="link-arrow" href="catalogo.html">Explore the catalog</a><a href="contacto.html">A simple text link</a></div></div></div>
+        <div class="sg-dark-sample"><p class="sg-label">On a dark surface</p><div class="sg-row"><a class="btn btn--light" href="catalogo.html">Find your favorite</a><span>Keep the next step easy to find.</span></div></div>
+      </section>
+
+      <section id="forms" class="sg-section" aria-labelledby="forms-title">
+        <div class="sg-section-head"><p class="sg-number">05 / Fields</p><h2 id="forms-title">Make every detail easy.</h2><p>Labels stay visible. Hints add context. This form is a local example for testing field styles and validation; it does not send messages.</p></div>
+        <form id="sg-form" class="sg-sample sg-form">
+          <div><label class="field-label" for="sg-name">Your name <span class="sg-required">(required)</span></label><input class="input" id="sg-name" name="name" autocomplete="name" placeholder="Alex Morgan" required></div>
+          <div><label class="field-label" for="sg-email">Email address <span class="sg-required">(required)</span></label><input class="input" id="sg-email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required></div>
+          <div><label class="field-label" for="sg-interest">What brings you here?</label><select class="select" id="sg-interest" name="interest"><option value="bread">Everyday bread</option><option value="cakes">A celebration cake</option><option value="events">An event to remember</option></select></div>
+          <div><label class="field-label" for="sg-disabled">Disabled field</label><input class="input" id="sg-disabled" placeholder="Not available in this example" disabled></div>
+          <div class="sg-full"><label class="field-label" for="sg-message">A few more details</label><textarea id="sg-message" name="message" placeholder="Tell us what you have in mind…" aria-describedby="sg-message-hint"></textarea><p id="sg-message-hint" class="sg-hint">Optional. Please use sample information when trying this form.</p></div>
+          <div class="sg-full sg-row"><button class="btn btn--primary" type="submit">Test validation</button><button class="sg-reset" type="reset">Reset example</button><p id="sg-form-status" class="sg-hint" role="status" aria-live="polite"></p></div>
+        </form>
+      </section>
+
+      <section id="components" class="sg-section" aria-labelledby="components-title">
+        <div class="sg-section-head"><p class="sg-number">06 / Components</p><h2 id="components-title">Familiar pieces. Fresh combinations.</h2><p>Reusable cards, labels, and filters keep the experience consistent as the bakery grows.</p></div>
+        <div class="sg-component-grid">
+          <article class="product-card">
+            <a class="product-card__media" href="producto.html?slug=masa-madre" tabindex="-1" aria-hidden="true"><img src="assets/images/products/sm/masa-madre.webp" alt="" width="600" height="450" loading="lazy"><span class="product-card__badges"><span class="badge badge--featured">Featured</span></span></a>
+            <div class="product-card__body"><p class="product-card__category">Sample product card</p><h3 class="product-card__name"><a href="producto.html?slug=masa-madre">The everyday sourdough</a></h3><p class="product-card__text">A golden crust, an open crumb, and a slow, thoughtful rise.</p><div class="product-card__footer"><p class="price"><span class="price__amount">$9.00</span><span class="price__unit">Sample price / loaf</span></p><a class="btn btn--outline btn--sm" href="producto.html?slug=masa-madre">View product example</a></div></div>
+          </article>
+          <div class="sg-component-details"><div class="sg-sample"><p class="sg-label">Product labels</p><div class="sg-row"><span class="badge badge--featured">Featured</span><span class="badge badge--new">New</span><span class="badge badge--sold-out">Sold out</span><span class="badge badge--available">Available today</span></div></div><div class="sg-sample"><p class="sg-label">Category filters / interactive example</p><div class="sg-row" role="group" aria-label="Sample category filters"><button class="chip" type="button" data-sg-filter aria-pressed="true">All goods</button><button class="chip" type="button" data-sg-filter aria-pressed="false">Bread</button><button class="chip" type="button" data-sg-filter aria-pressed="false">Pastries</button></div><p class="sg-hint" id="sg-filter-status" role="status">Sample selection: All goods.</p></div><div class="sg-sample"><p class="sg-label">Icons / simple and familiar</p><div class="sg-icons"><span><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#search"></use></svg>Search</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#clock"></use></svg>Hours</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#pin"></use></svg>Visit</span><span><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#phone"></use></svg>Call</span></div></div></div>
+        </div>
+      </section>
+
+      <section id="layout" class="sg-section" aria-labelledby="layout-title">
+        <div class="sg-section-head"><p class="sg-number">07 / Rhythm</p><h2 id="layout-title">Room for the good things.</h2><p>A shared spacing scale keeps small details tidy and larger sections unhurried. Rounded corners soften the structure.</p></div>
+        <div class="sg-spacing">
+          <div><span>2XS</span><i style="--sg-space:var(--space-2xs)" aria-hidden="true"></i><output data-token="--space-2xs">0.25rem</output></div>
+          <div><span>XS</span><i style="--sg-space:var(--space-xs)" aria-hidden="true"></i><output data-token="--space-xs">0.5rem</output></div>
+          <div><span>S</span><i style="--sg-space:var(--space-s)" aria-hidden="true"></i><output data-token="--space-s">0.75rem</output></div>
+          <div><span>M</span><i style="--sg-space:var(--space-m)" aria-hidden="true"></i><output data-token="--space-m">1rem</output></div>
+          <div><span>L</span><i style="--sg-space:var(--space-l)" aria-hidden="true"></i><output data-token="--space-l">1.5rem</output></div>
+          <div><span>XL</span><i style="--sg-space:var(--space-xl)" aria-hidden="true"></i><output data-token="--space-xl">2rem</output></div>
+          <div><span>2XL</span><i style="--sg-space:var(--space-2xl)" aria-hidden="true"></i><output data-token="--space-2xl">3rem</output></div>
+        </div>
+        <div class="sg-shapes"><div class="sg-shape sg-shape--small"><span>Small radius</span><output data-token="--radius-s">0.5rem</output></div><div class="sg-shape sg-shape--large"><span>Card radius</span><output data-token="--radius-l">1.25rem</output></div><div class="sg-shape sg-shape--shadow"><span>Soft elevation</span><small>For cards and raised surfaces</small></div></div>
+      </section>
+
+      <section id="motion" class="sg-section" aria-labelledby="motion-title">
+        <div class="sg-section-head"><p class="sg-number">08 / The finishing touches</p><h2 id="motion-title">Gentle movement. Clear feedback.</h2><p>Interaction should feel natural, never get in the way. Try the button, then use Tab to explore the guide with your keyboard.</p></div>
+        <div class="sg-motion-panel"><div><span class="sg-label">Shared interaction timing</span><p class="sg-duration"><output data-token="--duration">0.25s</output><span>Soft in. Soft out.</span></p></div><a class="btn btn--primary" href="#brand">Back to the beginning</a></div>
+        <ul class="sg-access-list"><li><strong>A visible place to land.</strong> Keyboard focus uses a clear blue outline, with no delayed appearance.</li><li><strong>Comfort comes first.</strong> The template respects the device’s reduced-motion preference.</li><li><strong>More than color.</strong> Text labels communicate availability and selected states.</li><li><strong>Check each new combination.</strong> Recheck contrast, long text, and small screens when changing the palette or content.</li></ul>
+        <details class="sg-customize"><summary>Make this guide your own</summary><p>Start with the shared palette and type settings in <code>css/tokens.css</code>. The examples use the same component styles as the bakery. Update the brand name and logo lockups here when you personalize the template.</p><p>Swatch values and spacing labels read the shared settings automatically. The sample card and form copy are illustrative; they are not connected to the product catalog or an inbox.</p></details>
+      </section>
+      <footer class="sg-footer"><p>Crumb &amp; Oven <span>Made with care, down to the details.</span></p><a class="link-arrow" href="index.html">Back to the bakery</a></footer>
+    </main>
+  </div>
+</body>
+</html>

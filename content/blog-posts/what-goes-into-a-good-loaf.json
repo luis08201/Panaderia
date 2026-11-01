@@ -1,0 +1,30 @@
+{
+  "slug": "what-goes-into-a-good-loaf",
+  "title": "What goes into a good loaf",
+  "date": "2026-10-26",
+  "excerpt": "Simple ingredients leave plenty of room for careful choices and a baker’s own approach.",
+  "introduction": "A short ingredient list does not mean a loaf is simple to make well. Flour, water, salt, and a leavening culture can be combined in many ways. The interesting part lies in what the baker chooses to do with them.",
+  "id": "post-004",
+  "categoryId": "blog-cat-craft",
+  "image": "assets/images/blog/harina.webp",
+  "imageAlt": "Hands working with flour and dough at a bakery bench",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Flour brings personality",
+      "text": "Different flours contribute different flavors, colors, and textures. A loaf might use one flour or a blend selected for a particular result. When you discover a bread you love, ask about that blend. It is a useful clue when choosing another loaf from the same bakery."
+    },
+    {
+      "heading": "Water and salt have a role",
+      "text": "Water helps bring the dough together, while salt contributes flavor and affects how the dough behaves. Recipes balance these ingredients for their intended bread. A wetter dough is not automatically better; what matters is how the ingredients and the process work together."
+    },
+    {
+      "heading": "Care is part of the recipe",
+      "text": "Mixing, resting, shaping, and baking all deserve attention. Small observations help a baker decide when to move to the next stage. That is why a familiar recipe can still feel like a daily craft: the process responds to the dough, not just to a timer."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

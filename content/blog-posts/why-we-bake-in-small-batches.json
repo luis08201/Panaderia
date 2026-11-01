@@ -1,0 +1,30 @@
+{
+  "slug": "why-we-bake-in-small-batches",
+  "title": "Why we bake in small batches",
+  "date": "2026-10-24",
+  "excerpt": "A smaller batch leaves room for attention, observation, and a changing daily selection.",
+  "introduction": "Small-batch baking is a way of organizing work around manageable amounts of dough and a focused selection. For a bakery like the one imagined in this template, it provides a useful framework for balancing craft with a busy counter.",
+  "id": "post-011",
+  "categoryId": "blog-cat-bakery",
+  "image": "assets/images/blog/amasado.webp",
+  "imageAlt": "Hands shaping a round piece of dough on a floured bench",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Attention at each stage",
+      "text": "Working with a manageable batch gives the baker a chance to observe how the dough feels and behaves. The size alone does not guarantee quality, but it can support a careful process when paired with good planning, consistent recipes, and thoughtful handling."
+    },
+    {
+      "heading": "A selection that can change",
+      "text": "A focused counter makes room for daily favorites alongside occasional additions. It also means a particular item may not remain available all day. If you are planning a visit for something specific, check the current selection and ask the bakery before making the trip."
+    },
+    {
+      "heading": "A closer conversation",
+      "text": "A smaller selection can make it easier to explain what is being offered and help visitors choose. Questions about flavor, ingredients, portions, and timing are part of that conversation. The goal is a useful relationship between what the bakery makes and what its community enjoys."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

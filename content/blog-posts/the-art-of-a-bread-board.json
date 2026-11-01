@@ -1,0 +1,30 @@
+{
+  "slug": "the-art-of-a-bread-board",
+  "title": "The art of a bread board",
+  "date": "2026-10-20",
+  "excerpt": "A relaxed way to share a few good things, with bread at the center.",
+  "introduction": "A bread board works best when it is easy to reach, easy to serve, and suited to the people around the table. You can make a welcoming spread with only a few components. Variety matters more than volume.",
+  "id": "post-008",
+  "categoryId": "blog-cat-sharing",
+  "image": "assets/images/blog/focaccia-romero.webp",
+  "imageAlt": "A focaccia with herbs and a golden surface",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Offer a small contrast",
+      "text": "Choose two bread styles with different textures, perhaps a crusty loaf and a softer piece. Slice some portions and leave others for tearing if appropriate. Add only a few accompaniments, so the board stays inviting and each item is easy to identify."
+    },
+    {
+      "heading": "Make sharing practical",
+      "text": "Give spreads their own bowls and utensils. Keep wet toppings separate from bread until serving so the slices do not become soggy. Consider your guests’ ingredient needs and clearly identify what is on the board; do not rely on appearance to communicate allergens or dietary suitability."
+    },
+    {
+      "heading": "Refill instead of overcrowding",
+      "text": "Start with manageable portions and bring out more as needed. Follow appropriate storage and serving instructions for perishable accompaniments. A little open space makes the board easier to use, and replenishing it gives you a chance to keep the presentation fresh throughout the meal."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

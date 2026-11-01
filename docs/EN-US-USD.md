@@ -1,4 +1,4 @@
-# Default language and currency — Miga & Horno
+# Default language and currency — Crumb & Oven
 
 The commercial starter template uses **English (United States)** and **USD** by default.
 

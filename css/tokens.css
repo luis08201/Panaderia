@@ -55,6 +55,24 @@
   --step-2: clamp(1.4rem, 1.25rem + 0.75vw, 1.85rem);
   --step-3: clamp(1.85rem, 1.5rem + 1.6vw, 2.75rem);
   --step-4: clamp(2.4rem, 1.7rem + 3.4vw, 4.4rem);
+  /* Semantic headings: keep the existing H1–H3 scale. */
+  --heading-h1: var(--step-4);
+  --heading-h2: var(--step-3);
+  --heading-h3: var(--step-1);
+  --heading-h4: clamp(1.0625rem, 1rem + 0.2vw, 1.125rem);
+  --heading-h5: 1rem;
+  --heading-h6: 0.875rem;
+  /* Ten visual sizes, independent of heading level. */
+  --text-50: 0.75rem;
+  --text-100: 0.875rem;
+  --text-200: 1rem;
+  --text-300: 1.125rem;
+  --text-400: 1.25rem;
+  --text-500: 1.5rem;
+  --text-600: 1.875rem;
+  --text-700: 2.25rem;
+  --text-800: 3rem;
+  --text-900: 3.75rem;
   --leading-tight: 1.15;
   --leading-body: 1.6;
 

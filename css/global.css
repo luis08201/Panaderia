@@ -13,7 +13,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+.heading-h1,
+.heading-h2,
+.heading-h3,
+.heading-h4,
+.heading-h5,
+.heading-h6 {
   font-family: var(--font-serif);
   font-weight: 600;
   line-height: var(--leading-tight);
@@ -21,17 +30,33 @@ h3 {
   text-wrap: balance;
 }
 
-h1 {
-  font-size: var(--step-4);
+h1, .heading-h1 {
+  font-size: var(--heading-h1);
 }
 
-h2 {
-  font-size: var(--step-3);
+h2, .heading-h2 {
+  font-size: var(--heading-h2);
 }
 
-h3 {
-  font-size: var(--step-1);
+h3, .heading-h3 {
+  font-size: var(--heading-h3);
 }
+
+h4, .heading-h4 { font-size: var(--heading-h4); }
+h5, .heading-h5 { font-size: var(--heading-h5); }
+h6, .heading-h6 { font-size: var(--heading-h6); }
+
+/* Size utilities change appearance, never document structure. */
+.text-50 { font-size: var(--text-50); }
+.text-100 { font-size: var(--text-100); }
+.text-200 { font-size: var(--text-200); }
+.text-300 { font-size: var(--text-300); }
+.text-400 { font-size: var(--text-400); }
+.text-500 { font-size: var(--text-500); }
+.text-600 { font-size: var(--text-600); }
+.text-700 { font-size: var(--text-700); }
+.text-800 { font-size: var(--text-800); }
+.text-900 { font-size: var(--text-900); }
 
 p {
   text-wrap: pretty;
@@ -41,10 +66,29 @@ a {
   color: var(--color-primary);
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
+  transition: color var(--duration) var(--ease),
+    text-decoration-color var(--duration) var(--ease),
+    background-color var(--duration) var(--ease);
 }
 
 a:hover {
   color: var(--color-accent-dark);
+}
+
+/* Shared feedback also covers controls created dynamically by the catalog. */
+:where(button, input, select, textarea) {
+  transition: color var(--duration) var(--ease),
+    background-color var(--duration) var(--ease),
+    border-color var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease);
+}
+
+:where(button, input, select, textarea):disabled {
+  cursor: not-allowed;
+}
+
+button:disabled {
+  opacity: 0.55;
 }
 
 :focus-visible {
@@ -169,12 +213,12 @@ a:hover {
     border-color var(--duration) var(--ease), transform var(--duration) var(--ease);
 }
 
-.btn:hover {
+.btn:not(:disabled):hover {
   --btn-bg: var(--color-accent-dark);
   color: var(--btn-fg);
 }
 
-.btn:active {
+.btn:not(:disabled):active {
   transform: translateY(1px);
 }
 
@@ -188,7 +232,7 @@ a:hover {
   --btn-bg: var(--color-primary);
 }
 
-.btn--primary:hover {
+.btn--primary:not(:disabled):hover {
   --btn-bg: var(--color-primary-dark);
 }
 
@@ -198,7 +242,7 @@ a:hover {
   --btn-border: var(--color-primary);
 }
 
-.btn--outline:hover {
+.btn--outline:not(:disabled):hover {
   --btn-bg: var(--color-primary);
   --btn-fg: #fff;
   --btn-border: var(--color-primary);
@@ -209,7 +253,7 @@ a:hover {
   --btn-fg: var(--color-dark);
 }
 
-.btn--light:hover {
+.btn--light:not(:disabled):hover {
   --btn-bg: #fff;
   --btn-fg: var(--color-dark);
 }
@@ -218,7 +262,7 @@ a:hover {
   --btn-bg: var(--color-whatsapp);
 }
 
-.btn--whatsapp:hover {
+.btn--whatsapp:not(:disabled):hover {
   --btn-bg: var(--color-whatsapp-dark);
 }
 
@@ -246,6 +290,10 @@ a:hover {
 }
 
 .link-arrow:hover::after {
+  transform: translateX(3px);
+}
+
+.link-arrow:focus-visible::after {
   transform: translateX(3px);
 }
 

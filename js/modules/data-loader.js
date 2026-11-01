@@ -19,3 +19,4 @@ export const getSite = () => load("site");
 export const getProducts = () => load("products");
 export const getCategories = () => load("categories");
 export const getPromotions = () => load("promotions");
+export const getBlog = () => load('blog');

@@ -4,3 +4,6 @@ public-data
 sitemap.xml
 robots.txt
 .DS_Store
+
+# Local QA captures and browser records
+docs/evidence/

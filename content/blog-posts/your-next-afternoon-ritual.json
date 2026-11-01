@@ -1,0 +1,30 @@
+{
+  "slug": "your-next-afternoon-ritual",
+  "title": "Meet your next afternoon ritual",
+  "date": "2026-10-16",
+  "excerpt": "A little pause, a favorite pastry, and a reason to step away from the rush.",
+  "introduction": "An afternoon ritual does not need to be ambitious. It can be a few minutes with a warm drink or a pastry shared with someone nearby. Repeating a small pleasure gives an ordinary day a moment to look forward to.",
+  "id": "post-012",
+  "categoryId": "blog-cat-bakery",
+  "image": "assets/images/blog/rol-canela.webp",
+  "imageAlt": "Cinnamon rolls arranged with a light glaze",
+  "author": "Crumb & Oven editorial team",
+  "featured": false,
+  "published": true,
+  "sections": [
+    {
+      "heading": "Choose something familiar",
+      "text": "A cinnamon roll, a cookie, or a slice of bread can each have its place. Start with a flavor you know you enjoy, then occasionally try something different. A small routine works best when it fits your preferences rather than feeling like another rule to follow."
+    },
+    {
+      "heading": "Make it easy to repeat",
+      "text": "Keep the preparation simple and the portion suited to the moment. If you are sharing, cut the pastry before sitting down and bring enough napkins or plates. The fewer arrangements you need to manage, the easier it is to make time for the pause itself."
+    },
+    {
+      "heading": "Let the pause be enough",
+      "text": "You do not have to turn every break into a productive activity. Notice the flavor, enjoy a conversation, or simply look away from your screen for a while. The ritual can change with the season, the company, and whatever happens to be on the bakery counter."
+    }
+  ],
+  "seoTitle": "",
+  "seoDescription": ""
+}

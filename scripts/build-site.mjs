@@ -15,6 +15,9 @@ const PUBLIC = [
   "nosotros.html",
   "contacto.html",
   "404.html",
+  "styleguide.html",
+  "blog.html",
+  "article.html",
   "favicon.svg",
   "css",
   "js",
@@ -30,4 +33,5 @@ for (const entry of PUBLIC) {
   if (existsSync(from)) cpSync(from, join(DIST, entry), { recursive: true });
 }
 execFileSync(process.execPath, [join(ROOT, "scripts/prerender-products.mjs"), DIST], { stdio: "inherit" });
+execFileSync(process.execPath, [join(ROOT, 'scripts/prerender-blog.mjs'), DIST], { stdio: 'inherit' });
 console.log("Sitio listo en dist/");

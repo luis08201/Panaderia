@@ -20,6 +20,10 @@
   font-weight: 600;
 }
 
+.announcement a:is(:hover, :focus-visible) {
+  color: var(--color-secondary);
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -59,6 +63,11 @@
   width: 2.4rem;
   height: 2.4rem;
   color: var(--color-accent);
+  transition: color var(--duration) var(--ease);
+}
+
+.brand:is(:hover, :focus-visible) .brand__mark {
+  color: var(--color-primary);
 }
 
 .brand__text {
@@ -96,6 +105,12 @@
 .nav-toggle .icon-close,
 .nav-toggle[aria-expanded="true"] .icon-open {
   display: none;
+}
+
+.nav-toggle:not(:disabled):is(:hover, :focus-visible) {
+  background-color: var(--color-tint);
+  border-color: var(--color-secondary);
+  color: var(--color-primary-dark);
 }
 
 .nav-toggle[aria-expanded="true"] .icon-close {
@@ -141,6 +156,10 @@
   font-weight: 700;
 }
 
+.nav__link:is(:hover, :focus-visible) {
+  color: var(--color-accent-dark);
+}
+
 .nav__cta {
   margin-top: var(--space-m);
 }
@@ -182,10 +201,11 @@
     border: 0;
     padding-inline: 0;
     background: linear-gradient(currentColor, currentColor) 0 calc(100% - 0.4rem) / 0 1.5px no-repeat;
-    transition: background-size var(--duration) var(--ease);
+    transition: background-size var(--duration) var(--ease), color var(--duration) var(--ease);
   }
 
   .nav__link:hover,
+  .nav__link:focus-visible,
   .nav__link[aria-current="page"] {
     background-size: 100% 1.5px;
   }
@@ -336,6 +356,10 @@
   transform: scale(1.06);
 }
 
+.category-card:focus-visible .category-card__media img {
+  transform: scale(1.06);
+}
+
 .category-card__name {
   font-family: var(--font-serif);
   font-size: var(--step-1);
@@ -387,6 +411,10 @@
 .product-card:hover {
   box-shadow: var(--shadow-m);
   transform: translateY(-2px);
+}
+
+.product-card:focus-within {
+  box-shadow: var(--shadow-m);
 }
 
 .product-card__media {
@@ -444,12 +472,13 @@
 
 .product-card__name a {
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
 }
 
 .product-card__name a:hover {
   color: var(--color-accent-dark);
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 .product-card__text {
@@ -631,6 +660,10 @@
   margin-top: auto;
   padding-top: 0.5rem;
   color: #fff;
+}
+
+.promo a:is(:hover, :focus-visible) {
+  color: var(--color-secondary);
 }
 
 @media (min-width: 600px) {
@@ -884,6 +917,10 @@
   color: var(--color-secondary);
 }
 
+.site-footer .brand:is(:hover, :focus-visible) .brand__mark {
+  color: var(--color-on-dark);
+}
+
 .site-footer .brand__tagline {
   color: var(--color-on-dark-muted);
 }
@@ -911,11 +948,12 @@
 }
 
 .footer__list a {
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
 }
 
 .footer__list a:hover {
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 .site-footer .hours li {
