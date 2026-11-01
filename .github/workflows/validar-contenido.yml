@@ -14,3 +14,4 @@ jobs:
           node-version-file: .nvmrc
       - run: npm test
       - run: npm run build
+      - run: node scripts/check-prerender.mjs
