@@ -1,8 +1,8 @@
 {
   "id": "cat-reposteria",
   "slug": "reposteria",
-  "name": "Repostería",
-  "description": "Croissants, roles, empanadas y tartaletas de vitrina.",
+  "name": "Pastries",
+  "description": "Fresh croissants, rolls, empanadas, and fruit tarts.",
   "image": "assets/images/categories/reposteria.webp",
   "position": 5,
   "published": true
