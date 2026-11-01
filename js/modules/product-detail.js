@@ -17,14 +17,17 @@ export async function init(context) {
 async function load() {
   const root = $("#product-root");
   root.setAttribute("aria-busy", "true");
-  const slug = new URLSearchParams(location.search).get("slug")?.trim() ?? "";
+  const slug = location.pathname.match(/\/productos\/([a-z0-9-]+)\/?(?:index\.html)?$/)?.[1]
+    ?? new URLSearchParams(location.search).get("slug")?.trim() ?? "";
   try {
     const products = await getProducts();
     const product = products.find((p) => p.slug === slug);
     if (!product) renderNotFound(root, slug);
     else renderProduct(root, product, products);
   } catch {
-    root.replaceChildren(h("div", { class: "container section" }, loadError(load)));
+    if (!root.hasAttribute("data-static-product")) {
+      root.replaceChildren(h("div", { class: "container section" }, loadError(load)));
+    }
   } finally {
     root.removeAttribute("aria-busy");
   }
@@ -96,7 +99,7 @@ function renderProduct(root, product, products) {
     description,
     image: product.image?.src,
     siteUrl: settings.seo?.siteUrl,
-    path: `producto.html?slug=${product.slug}`,
+    path: `productos/${product.slug}/`,
   });
   $("#breadcrumb-category").replaceChildren(h("a", { href: categoryUrl(product.category), text: product.category.name }));
   $("#breadcrumb-current").textContent = product.name;
