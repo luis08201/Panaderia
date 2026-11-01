@@ -59,7 +59,7 @@ for (const p of products) {
   html = html.replace('<li id="breadcrumb-current" aria-current="page">Producto</li>', `<li id="breadcrumb-current" aria-current="page">${escapeHtml(p.name)}</li>`);
   html = html.replace(/<div id="product-root" aria-live="polite">[\s\S]*?<\/div>\s*<noscript>/, `<div id="product-root" aria-live="polite" data-static-product>${productMarkup}</div>\n      <noscript>`);
   // Do not display the JavaScript-disabled warning on pre-rendered product pages.
-  html = html.replace('<noscript><div class="container"><p class="state">Activa JavaScript para ver el detalle del producto.</p></div></noscript>', "");
+  html = html.replace('<noscript><div class="container"><p class="state">Enable JavaScript to view this product.</p></div></noscript>', "");
   const directory = join(root, "productos", p.slug);
   mkdirSync(directory, { recursive: true });
   writeFileSync(join(directory, "index.html"), html);

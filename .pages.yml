@@ -246,7 +246,7 @@ content:
       - name: linkUrl
         label: Link (optional)
         type: string
-        description: "Ejemplo: catalogo.html?categoria=pan-dulce"
+        description: "Example: catalogo.html?categoria=pan-dulce"
       - name: linkLabel
         label: Link label
         type: string
@@ -407,7 +407,7 @@ content:
         label: Global SEO
         type: object
         fields:
-          - { name: siteUrl, label: Site domain, type: string, description: "Ejemplo: https://www.mipanaderia.com. Activa canonical y sitemap." }
+          - { name: siteUrl, label: Site domain, type: string, description: "Example: https://www.examplebakery.com. Enables canonical URLs and sitemap." }
           - { name: title, label: Default title, type: string }
           - { name: description, label: Default description, type: text }
           - { name: ogImage, label: Social sharing image, type: image, options: { media: general } }
