@@ -55,7 +55,7 @@ export async function init({ site }) {
 async function load() {
   elements.grid.replaceChildren(...skeletons(8));
   elements.grid.setAttribute("aria-busy", "true");
-  elements.status.textContent = "Cargando productos…";
+  elements.status.textContent = "Loading products…";
   try {
     [products, categories] = await Promise.all([getProducts(), getCategories()]);
     categories = categories.filter((category) => category.productCount > 0);
@@ -139,19 +139,19 @@ function render() {
         "li",
         { class: "catalog-state" },
         stateBlock({
-          title: "No encontramos productos",
+          title: "No products found",
           text: state.query.trim()
-            ? `No hay resultados para «${state.query.trim()}»${category ? ` en ${category.name}` : ""}. Prueba con otra palabra o revisa todas las categorías.`
-            : "Esta categoría no tiene productos publicados por ahora.",
-          action: h("button", { class: "btn btn--primary", type: "button", onclick: resetFilters }, "Ver todos los productos"),
+            ? `No results for «${state.query.trim()}»${category ? ` in ${category.name}` : ""}. Try another search or browse all categories.`
+            : "There are no published products in this category yet.",
+          action: h("button", { class: "btn btn--primary", type: "button", onclick: resetFilters }, "View all products"),
         })
       )
     );
   }
 
-  const count = visible.length === 1 ? "1 producto" : `${visible.length} productos`;
-  const where = category ? ` en ${category.name}` : "";
-  const search = state.query.trim() ? ` para «${state.query.trim()}»` : "";
+  const count = visible.length === 1 ? "1 product" : `${visible.length} products`;
+  const where = category ? ` in ${category.name}` : "";
+  const search = state.query.trim() ? ` for “${state.query.trim()}”` : "";
   elements.status.textContent = `${count}${where}${search}`;
   elements.clear.hidden = !filtered;
 

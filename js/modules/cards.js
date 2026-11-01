@@ -3,14 +3,14 @@ import { formatDate } from "../utils/dates.js";
 import { h, icon, img } from "../utils/dom.js";
 import { productWhatsappUrl } from "./whatsapp.js";
 
-export const productUrl = (product) => `productos/${encodeURIComponent(product.slug)}/`;
+export const productUrl = (product) => `products/${encodeURIComponent(product.slug)}/`;
 export const categoryUrl = (category) => `catalogo.html?categoria=${encodeURIComponent(category.slug)}`;
 
 export function productBadges(product, { includeFeatured = true } = {}) {
   const badges = [];
-  if (!product.available) badges.push(h("span", { class: "badge badge--sold-out", text: "Agotado" }));
-  if (product.newArrival) badges.push(h("span", { class: "badge badge--new", text: "Nuevo" }));
-  if (includeFeatured && product.featured) badges.push(h("span", { class: "badge badge--featured", text: "Destacado" }));
+  if (!product.available) badges.push(h("span", { class: "badge badge--sold-out", text: "Sold out" }));
+  if (product.newArrival) badges.push(h("span", { class: "badge badge--new", text: "New" }));
+  if (includeFeatured && product.featured) badges.push(h("span", { class: "badge badge--featured", text: "Featured" }));
   return badges;
 }
 
@@ -57,7 +57,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
           h(
             "div",
             { class: "product-card__actions" },
-            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": `Ver detalles de ${product.name}` }, "Ver detalles"),
+            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": `View details de ${product.name}` }, "View details"),
             contactUrl &&
               h(
                 "a",
@@ -66,7 +66,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
                   href: contactUrl,
                   target: "_blank",
                   rel: "noopener",
-                  "aria-label": `Consultar por WhatsApp sobre ${product.name} (se abre en una pestaña nueva)`,
+                  "aria-label": `Ask on WhatsApp about ${product.name} (opens in a new tab)`,
                   title: "Consultar por WhatsApp",
                 },
                 icon("whatsapp")
@@ -79,7 +79,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
 }
 
 export function categoryCard(category) {
-  const count = category.productCount === 1 ? "1 producto" : `${category.productCount} productos`;
+  const count = category.productCount === 1 ? "1 product" : `${category.productCount} products`;
   return h(
     "li",
     {},
@@ -94,8 +94,8 @@ export function categoryCard(category) {
 
 export function promoCard(promotion) {
   let dates = "";
-  if (promotion.endDate) dates = `Válida hasta el ${formatDate(promotion.endDate)}`;
-  else if (promotion.startDate) dates = `Desde el ${formatDate(promotion.startDate)}`;
+  if (promotion.endDate) dates = `Valid through ${formatDate(promotion.endDate)}`;
+  else if (promotion.startDate) dates = `Starting ${formatDate(promotion.startDate)}`;
 
   return h(
     "li",
@@ -110,7 +110,7 @@ export function promoCard(promotion) {
         dates && h("p", { class: "promo__dates", text: dates }),
         h("h3", { text: promotion.title }),
         promotion.description && h("p", { text: promotion.description }),
-        promotion.linkUrl && h("a", { class: "link-arrow", href: promotion.linkUrl, text: promotion.linkLabel || "Ver más" })
+        promotion.linkUrl && h("a", { class: "link-arrow", href: promotion.linkUrl, text: promotion.linkLabel || "Learn more" })
       )
     )
   );
@@ -135,8 +135,8 @@ export function loadError(onRetry, headingLevel = 2) {
     variant: "error",
     role: "alert",
     headingLevel,
-    title: "No pudimos cargar la información",
-    text: "Revisa tu conexión e inténtalo de nuevo. Si el problema continúa, escríbenos por WhatsApp.",
-    action: h("button", { class: "btn btn--primary", type: "button", onclick: onRetry }, "Reintentar"),
+    title: "We couldn’t load the information",
+    text: "Check your connection and try again. If the problem persists, contact us.",
+    action: h("button", { class: "btn btn--primary", type: "button", onclick: onRetry }, "Try again"),
   });
 }

@@ -35,19 +35,19 @@ async function load() {
 
 function renderNotFound(root, slug) {
   const business = site.settings?.businessName;
-  setMeta({ title: `Producto no encontrado${business ? ` · ${business}` : ""}`, noindex: true });
-  $("#breadcrumb-current").textContent = "Producto no encontrado";
+  setMeta({ title: `Product not found${business ? ` · ${business}` : ""}`, noindex: true });
+  $("#breadcrumb-current").textContent = "Product not found";
   root.replaceChildren(
     h(
       "div",
       { class: "container not-found" },
       stateBlock({
         headingLevel: 1,
-        title: "No encontramos este producto",
+        title: "We couldn’t find this product",
         text: slug
-          ? "Es posible que ya no esté en el catálogo o que el enlace tenga un error. Revisa los productos disponibles."
-          : "El enlace no indica qué producto quieres ver. Revisa los productos disponibles en el catálogo.",
-        action: h("a", { class: "btn btn--primary", href: "catalogo.html" }, "Ir al catálogo"),
+          ? "This item may no longer be in the catalog, or the link may be incorrect. Browse our available products."
+          : "No product was specified. Browse our available products.",
+        action: h("a", { class: "btn btn--primary", href: "catalogo.html" }, "Browse catalog"),
       })
     )
   );
@@ -59,7 +59,7 @@ function gallery(product) {
   const show = (image, index) => {
     main.replaceChildren(
       img(image, {
-        alt: index === 0 ? product.imageAlt : `${product.name}, foto ${index + 1} de ${images.length}`,
+        alt: index === 0 ? product.imageAlt : `${product.name}, photo ${index + 1} de ${images.length}`,
         sizes: "(min-width: 900px) 55vw, 100vw",
         eager: true,
       })
@@ -75,7 +75,7 @@ function gallery(product) {
       {
         type: "button",
         "aria-pressed": String(index === 0),
-        "aria-label": `Ver foto ${index + 1} de ${images.length}`,
+        "aria-label": `View photo ${index + 1} de ${images.length}`,
         onclick: (event) => {
           show(image, index);
           swapImage(main);
@@ -105,17 +105,17 @@ function renderProduct(root, product, products) {
   $("#breadcrumb-current").textContent = product.name;
 
   const status = product.available
-    ? h("span", { class: "badge badge--available" }, "Disponible hoy")
-    : h("span", { class: "badge badge--unavailable" }, "Agotado por hoy");
+    ? h("span", { class: "badge badge--available" }, "Available today")
+    : h("span", { class: "badge badge--unavailable" }, "Sold out today");
   const extraBadges = productBadges(product, { includeFeatured: true }).filter((b) => !b.classList.contains("badge--sold-out"));
 
   const details = [];
   if (product.ingredients.length) {
-    details.push(h("div", {}, h("h2", { text: "Ingredientes" }), h("ul", { class: "tag-list" }, product.ingredients.map((item) => h("li", { text: item })))));
+    details.push(h("div", {}, h("h2", { text: "Ingredients" }), h("ul", { class: "tag-list" }, product.ingredients.map((item) => h("li", { text: item })))));
   }
   if (product.allergens.length) {
     details.push(
-      h("div", {}, h("h2", { text: "Alérgenos" }), h("ul", { class: "tag-list tag-list--warning" }, product.allergens.map((item) => h("li", { text: item }))))
+      h("div", {}, h("h2", { text: "Allergens" }), h("ul", { class: "tag-list tag-list--warning" }, product.allergens.map((item) => h("li", { text: item }))))
     );
   }
 
@@ -145,10 +145,10 @@ function renderProduct(root, product, products) {
                 "a",
                 { class: "btn btn--whatsapp", href: contactUrl, target: "_blank", rel: "noopener" },
                 icon("whatsapp"),
-                "Consultar por WhatsApp",
-                h("span", { class: "visually-hidden", text: " (se abre en una pestaña nueva)" })
+                "Ask on WhatsApp",
+                h("span", { class: "visually-hidden", text: " (opens in a new tab)" })
               ),
-            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, `Más de ${product.category.name.toLowerCase()}`)
+            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, `More ${product.category.name.toLowerCase()}`)
           ),
           h(
             "p",
@@ -157,7 +157,7 @@ function renderProduct(root, product, products) {
             h("span", {
               text:
                 settings.availabilityNote ||
-                "La disponibilidad es informativa y puede cambiar durante el día. Confírmala por WhatsApp.",
+                "Availability may change during the day. Please confirm before visiting.",
             })
           ),
           details.length ? h("div", { class: "details" }, details) : null
@@ -171,7 +171,7 @@ function renderProduct(root, product, products) {
           h(
             "div",
             { class: "container" },
-            h("div", { class: "section-head" }, h("div", { class: "section-head__text" }, h("h2", { id: "related-title", text: "También te puede gustar" }))),
+            h("div", { class: "section-head" }, h("div", { class: "section-head__text" }, h("h2", { id: "related-title", text: "You may also like" }))),
             h("ul", { class: "product-grid" }, related.map((p) => productCard(p, { whatsapp: settings.whatsapp })))
           )
         )
@@ -191,7 +191,7 @@ function renderProduct(root, product, products) {
         ? {
             "@type": "Offer",
             price: product.price,
-            priceCurrency: "NIO",
+            priceCurrency: "USD",
             availability: `https://schema.org/${product.available ? "InStock" : "OutOfStock"}`,
           }
         : undefined,

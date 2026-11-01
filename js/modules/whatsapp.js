@@ -7,7 +7,7 @@ export function whatsappUrl(number, message) {
 }
 
 export function productMessage(product) {
-  return `Hola, quisiera información sobre ${product.name} y su disponibilidad.`;
+  return `Hi! I would like to ask about ${product.name} and its availability.`;
 }
 
 export function productWhatsappUrl(number, product) {
