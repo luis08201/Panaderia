@@ -1,0 +1,884 @@
+{
+  "generatedOn": "2026-11-02",
+  "provider": "OpenAI built-in image_gen",
+  "mode": "Text-to-image; no reference photographs supplied",
+  "purpose": "Hosted demo only; photographs remain excluded from the buyer export",
+  "rightsReference": "https://openai.com/policies/terms-of-use/",
+  "notes": [
+    "Generated illustrative food imagery, not photographs of an actual operating bakery or actual products.",
+    "AI generation does not itself guarantee copyright exclusivity, public-domain status or immunity from claims.",
+    "Original outputs and generation records are retained privately outside the public website."
+  ],
+  "originals": [
+    {
+      "path": "general/amasado.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Close-up of two anonymous adult baker hands gently shaping one round sourdough dough ball on a flour-dusted oak workbench, plain linen apron visible only at the edge, anatomically natural hands, no face, no tattoos, no jewelry; a simple dough scraper rests nearby. Wide landscape composition, approximately 16:9. The main subject should remain visible when center-cropped.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "f5433fd753201e53fee15674996b101f81bac851dd262a553b82c82f42a6cf16"
+    },
+    {
+      "path": "general/harina.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A fine cloud of flour falling from a small metal sieve onto a soft dough mound on a rustic oak workbench; side window sunlight, believable fine flour particles, no person visible, no packaging. Wide landscape composition, approximately 16:9. The main subject should remain visible when center-cropped.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "bd3313e2e34927d77fa428be1cc0478b73219ee5da8ce7c7e38b2d366c6a51a6"
+    },
+    {
+      "path": "general/horno.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Fresh golden sourdough loaves on a dark tray inside a clean artisan bakery oven with an arched opening, gentle warm oven glow, no open flames touching food, no person visible, no manufacturer branding. Wide landscape composition, approximately 16:9. The main subject should remain visible when center-cropped.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "94f4d280e921dc302bfec4cb1751afe8dbcb593ed40412a028e59d519c0bd392"
+    },
+    {
+      "path": "general/vitrina-panes.webp",
+      "prompt": "Create an original photorealistic editorial food photograph for the hero of an artisan bakery website called Crumb & Oven. Wide landscape composition, approximately 16:9, warm morning window light, cream plaster and dark rustic oak, beautifully baked sourdough boules and golden baguettes arranged on clean wooden bakery shelves, no people. Bread concentrated toward the right half, visually calm darker negative space on the left to hold white website heading. Natural irregular crust and realistic flour dust, premium small independent bakery mood, refined cocoa and warm honey palette, believable real food. No text, no labels, no logo, no watermark, no recognizable brands, no reference to any existing photograph or photographer. Generate a single image.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "ee9601497861058b713117b7a549017c95484297c39522ca976cb3b6a86b9edb"
+    },
+    {
+      "path": "products/alfajores.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Three small delicate cornstarch sandwich cookies filled with thick caramel dulce de leche, a little grated coconut around the edges and a light dusting of powdered sugar, one cookie cut to show the filling. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "58ec9af2bf13dfbfaf3702d41f8403ee1c6d22e3732791663e913104361ac5de"
+    },
+    {
+      "path": "products/avena-pasas.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A small stack of rustic oatmeal raisin cookies, visible rolled oats and dark raisins, golden brown edges, a few oat flakes on an unbranded cream ceramic plate. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "8165ccfa4068c3563ad7fe44c48f89f531ae78d6ee02f390c9abef2b563d5ed8"
+    },
+    {
+      "path": "products/baguette.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One long classic French baguette with crisp golden crust and diagonal scoring, a few slices cut from its end to reveal a light airy crumb, on an oak breadboard. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "75c26d3d49f1c5e2e1d1fbf37818c8f2f603ca5f3f2fb165161b2509afc30655"
+    },
+    {
+      "path": "products/brownie.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Two square dark chocolate brownies with a shiny thin crackled top and dense fudgy interiors, one broken corner, on a simple cream plate, no frosting. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "c7526507e7f11bd2248ccc2aeeff423efc0c81cd065ae27780ad71ef12be6c7f"
+    },
+    {
+      "path": "products/cafe-filtrado.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Fresh black drip coffee in one plain off-white ceramic cup, a faint wisp of steam, visible dark coffee surface with no milk or foam, simple oak tabletop. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "3d321daf583a10ca9cb65fc72f141c037a1f48479618d95fdbc56b6f2ed32df8"
+    },
+    {
+      "path": "products/cappuccino.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One plain ceramic cappuccino cup and saucer, silky espresso and microfoam with modest natural leaf latte art, a few scattered coffee beans, no text or brand. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "b01a5411a34789f5791e21a01dabc105d57439641f9820237aed84b0f8292d59"
+    },
+    {
+      "path": "products/cheesecake-maracuya.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One slice of baked vanilla cheesecake on a cookie crumb base with glossy golden passion-fruit sauce and visible dark passion-fruit seeds on top, simple cream plate. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "ce77410884a8175c3483d90e4e2722e7fd19fd387b274064a2e769c4f088c39f"
+    },
+    {
+      "path": "products/chispas-chocolate.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Three thick bakery chocolate-chip cookies, golden crisp edges and slightly soft centers with irregular dark chocolate chips, one broken open, a few crumbs on linen. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "44246edf53a5de1e0eeef40d3956757f69439180a9832fca2e2b5eebf1bc5f31"
+    },
+    {
+      "path": "products/chocolate-caliente.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A plain cream ceramic mug filled with thick smooth dark hot chocolate, gentle steam and a subtle cinnamon dusting, no whipped cream or marshmallows, one cinnamon stick beside the mug. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "43549b8a1cc97ac275b54fa4d996dbea306b270a67821e0b66dda0ae09c863bf"
+    },
+    {
+      "path": "products/conchas.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Two traditional concha sweet bread buns, one with a pale vanilla shell-pattern sugar crust and one with cocoa shell-pattern crust, tender bread visible at one edge, on linen. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "2d9e985bf9026c0008453d0d8efd81edd5d7c07a17b81d1e4393444dc80bf2b6"
+    },
+    {
+      "path": "products/cosa-de-horno.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Traditional Nicaraguan cosa de horno: several small golden rustic ring-shaped baked maize-and-aged-cheese biscuits, dense crumbly texture, lightly cracked surface, not wheat bread, no icing or filling, one broken to show coarse corn crumb. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "b180c03b3b6d52db7b4ef522f7b31cb2f6025da619ec8ebca9d506da11bd2931"
+    },
+    {
+      "path": "products/croissant.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One classic butter croissant with clearly visible delicate laminated layers, deep golden shell and light crisp flakes, one half torn open to show airy honeycomb crumb, on an oak board. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "25a019a605f55442b1cd418efd89f2a5df0e7ed64b62ed29e745ae0266113739"
+    },
+    {
+      "path": "products/empanada-pina.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Two small golden baked half-moon pineapple empanadas with hand-crimped edges and buttery flaky pastry, one cut open to reveal amber pineapple preserves with small fruit pieces, no meat. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "d8cf12022f4729b2c4e605d43bd59498546475dcc4cd75720416f655f9515fa2"
+    },
+    {
+      "path": "products/focaccia-romero.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A thick rectangular slab of airy rosemary focaccia, dimpled golden top with olive oil, fresh rosemary needles and flaky sea salt, one cut piece showing open crumb, no tomatoes or other toppings. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "4f1825607dd849813202f4c81858ed5c0b6ef69ab38b050433b6d8bcb0436c94"
+    },
+    {
+      "path": "products/fresco-cacao.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A plain clear glass of traditional chilled Nicaraguan cacao drink made with cacao, rice, cinnamon and milk, naturally light chocolate brown with a few ice cubes, smooth lightly textured appearance, subtle cacao beans and cinnamon beside it. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "e05d1821ae93f17955a95124ccfd70cf0f4013906f909bd0646003f7bd7b6910"
+    },
+    {
+      "path": "products/galletas-mantequilla.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A small collection of pale golden buttery shortbread cookies with simple pressed decorative patterns, crisp edges, one broken cookie with fine sandy crumb, no lettering or icing. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "11b65d16e8b8659ba906f448bf083063ef24709f8cfebb5d4d3735e3a9d481c4"
+    },
+    {
+      "path": "products/jugo-naranja.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One plain clear glass of freshly squeezed orange juice with natural pulp and a slight frothy rim, two orange halves beside it, no label or straw, morning window light. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "15645c1fb9a6684dd2c5cf128c381fedf4dfa2b319311735b34b0b1755b01cbd"
+    },
+    {
+      "path": "products/masa-madre.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One round artisan sourdough boule with a rustic crisp flour-dusted crust and an elegant simple curved score, one thick slice cut to reveal a moist open crumb, on an oak breadboard. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "9a7b72bced0945d2264e835b31675ea59c1a1ec854eff9ed662544d3e90e1ef9"
+    },
+    {
+      "path": "products/pan-de-coco.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Several small soft Caribbean-style coconut bread rolls, gently golden smooth crust with a little shredded coconut, one opened to reveal fluffy pale crumb, no icing or powdered sugar. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "fe29ed7968ba09b01df301158d4c9a63d4f77ba1203dfb4122090744d37300eb"
+    },
+    {
+      "path": "products/pan-de-molde.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One homestyle white sandwich bread loaf with a softly domed golden crust, several even slices showing fine fluffy white crumb, on a simple wooden cutting board, no seeds. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "2d38d1c22e31618c972c0effbb1d18f7fb5dbd8e38e48cefc223507fdf84c56a"
+    },
+    {
+      "path": "products/pan-de-yema.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: Several tender enriched egg-yolk bread rolls with warm golden yellow glossy crust and soft yellow crumb, one pulled apart, simple round and oval shapes, no toppings or filling. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "4c03165880170640275d782dddba7aedf43abf0ee140807c300de67056f4e8ec"
+    },
+    {
+      "path": "products/pan-integral-semillas.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One hearty whole-wheat loaf coated with flax, sunflower and sesame seeds, a few slices showing a rich tan crumb with scattered seeds, natural matte crust on linen. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "1804cf77445d7bf4f07afb645a468baf8ed625d151119fc3dd473a6f9df5d5f9"
+    },
+    {
+      "path": "products/pastel-chocolate.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One generous slice of moist chocolate layer cake with dark chocolate ganache between layers and a smooth dark ganache finish, minimal styling on a plain cream dessert plate, no lettering. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "8776b33bf4682c88f919ceb61dafdf6f3ce6c7b9b79265f82e70486b33aa504a"
+    },
+    {
+      "path": "products/pastel-personalizado.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: A small round celebration cake with smooth ivory buttercream and restrained hand-piped buttercream details in muted terracotta, simple tasteful design, no text, no numbers, no candles, no branded decorations. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "3469f60a494c5fa534683a9cbab311629a9e994bc29e132bbfe3b69ee2e137aa"
+    },
+    {
+      "path": "products/pastel-zanahoria.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One slice of moist spiced carrot cake with visible finely grated carrot and walnut pieces, a thick simple cream-cheese frosting layer and a few walnut crumbs, cream plate. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "33ea067c5df5d952458e9210ceed99527fd9bf4808a0ce6a5b1631fc974c887c"
+    },
+    {
+      "path": "products/rol-canela.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One soft spiral cinnamon roll with visible cinnamon and brown-sugar swirls and a modest cream-cheese glaze, a second roll softly blurred behind it, no fruit or extra toppings. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "813f58a8ec5d8d4ca9f724546c0af544211352cbc6f8f9e850d74e5a546c4e41"
+    },
+    {
+      "path": "products/tarta-frutas.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: An individual small fresh-fruit tart with a golden buttery shortcrust shell, pale vanilla pastry cream and fresh seasonal strawberry, kiwi and blueberry pieces, natural light glaze, on a cream plate. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "d2fee368acbbc4755246129019a2036391510a040a3d6d4e0b3e4bad5637d637"
+    },
+    {
+      "path": "products/tres-leches.webp",
+      "prompt": "Create one original photorealistic premium bakery photograph for a commercial website demo. Warm natural morning window light, subtle cream and cocoa palette, warm oak, unbranded cream ceramics or linen where appropriate, realistic edible food and natural textures, refined small independent bakery mood. No text, no lettering, no logo, no watermark, no recognizable branded products, no identifiable person, no imitation of a named photographer or existing photograph. Subject: One square slice of very moist vanilla tres-leches sponge cake, creamy milk soaking visible around its base and a simple whipped-cream topping, a light cinnamon sprinkle, no fruit or lettering. Landscape food product photograph approximately 4:3. Center the product with comfortable margins so it remains intact when cropped to a card. Show the food prominently, with a restrained quiet background.",
+      "tool": "image_gen__imagegen",
+      "date": "2026-11-02",
+      "originalSha256": "64f56cbfaec384b732933d85e40036373fa82ca2f4f99272c8432926113f4cac"
+    }
+  ],
+  "derived": [
+    {
+      "path": "assets/images/blog/amasado.webp",
+      "original": "general/amasado.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "c5bda8d61b425c6b0e30ed64b2552494c640f9e6a8cca8e4c4c0c4635c0cf7d3"
+    },
+    {
+      "path": "assets/images/blog/baguette.webp",
+      "original": "products/baguette.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "d4b0b59e084a6b0ba13707bf0a92d4fa4397523b45b4928f0cb07b743ec64eac"
+    },
+    {
+      "path": "assets/images/blog/cafe-filtrado.webp",
+      "original": "products/cafe-filtrado.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "54548e0b3e3b6eb61f1b732b711509f0277b7e8c2c72332c0010f2818109323a"
+    },
+    {
+      "path": "assets/images/blog/croissant.webp",
+      "original": "products/croissant.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "9a9c6618ca7130e7449118936c626e59cdbf04c89b4238b4fc090047014544cb"
+    },
+    {
+      "path": "assets/images/blog/focaccia-romero.webp",
+      "original": "products/focaccia-romero.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "64f6900c59ff4fd75809e10e5103021fca86c0bbb7f3fc4db5920193b04132e8"
+    },
+    {
+      "path": "assets/images/blog/harina.webp",
+      "original": "general/harina.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "02368cd66e1762a2d43f8aeeec6cd68e234aa35fc2367abf0467d4756443a400"
+    },
+    {
+      "path": "assets/images/blog/horno.webp",
+      "original": "general/horno.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "d90fb9281e27e95a02da152b161d8e41e6157e234379c2350b6e73c98e291eab"
+    },
+    {
+      "path": "assets/images/blog/masa-madre.webp",
+      "original": "products/masa-madre.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "732b3baba6800c83e22b7a16fb85f4661f7e8d9636730cfa8f6c30de327e6375"
+    },
+    {
+      "path": "assets/images/blog/pan-integral-semillas.webp",
+      "original": "products/pan-integral-semillas.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "9afee739c79a1656339cbff136c2cd7483f70350a2d1f2ac90711108549c213a"
+    },
+    {
+      "path": "assets/images/blog/pastel-personalizado.webp",
+      "original": "products/pastel-personalizado.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b363c094dbf8aabc5a2891a56cc7c2d7e026eb5e661549e05317f80e7996f83f"
+    },
+    {
+      "path": "assets/images/blog/rol-canela.webp",
+      "original": "products/rol-canela.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "324d19ee69e83622f3f1b767142a867be787c0eb0d1ebda8a336d4f6ad8828e4"
+    },
+    {
+      "path": "assets/images/blog/sm/amasado.webp",
+      "original": "general/amasado.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "3dd4735e06f6fa52635071d84a36022a81398ff00cf66aaef5250e0497dd1a08"
+    },
+    {
+      "path": "assets/images/blog/sm/baguette.webp",
+      "original": "products/baguette.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "6b476d54ad9c3b6fd73a2f4a30a385f0478c3034d8cf5e75376e97a774e23669"
+    },
+    {
+      "path": "assets/images/blog/sm/cafe-filtrado.webp",
+      "original": "products/cafe-filtrado.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "a9edd7021711d81a62b36a34afa8559430efaaee4b41b5935c59ff7323c74619"
+    },
+    {
+      "path": "assets/images/blog/sm/croissant.webp",
+      "original": "products/croissant.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "7e2d433552703f4f076559b408241a81c13688727f77242ca3b2d783271e23ec"
+    },
+    {
+      "path": "assets/images/blog/sm/focaccia-romero.webp",
+      "original": "products/focaccia-romero.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "955e732c99c4c29f429469a7d04b0886c367a1e431b809630b3346147da567ae"
+    },
+    {
+      "path": "assets/images/blog/sm/harina.webp",
+      "original": "general/harina.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "62f83d24d13ed6052afef9aaca626d74e308047e16da447606ae987383683d62"
+    },
+    {
+      "path": "assets/images/blog/sm/horno.webp",
+      "original": "general/horno.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "247f29a9bf5b4a369550339a586f0bd4ff52fc47a09df56a395611cbc696849b"
+    },
+    {
+      "path": "assets/images/blog/sm/masa-madre.webp",
+      "original": "products/masa-madre.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "18ff9e7618867d44683e5ef367fe89e41665e3d943b8407f0b29294c616c641a"
+    },
+    {
+      "path": "assets/images/blog/sm/pan-integral-semillas.webp",
+      "original": "products/pan-integral-semillas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "66f47eb51cef2ee0b9d42c0a1b2f70dd0550f0beae45e6f20d699096ac95705a"
+    },
+    {
+      "path": "assets/images/blog/sm/pastel-personalizado.webp",
+      "original": "products/pastel-personalizado.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "874501d12ee817ab7c76f957dad64bdad50aca0ac10f5801f4bfb957f93234ec"
+    },
+    {
+      "path": "assets/images/blog/sm/rol-canela.webp",
+      "original": "products/rol-canela.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "c7b84139a14ee2179865987e176d0f55b2741ffd31f094312244b2e48a30a203"
+    },
+    {
+      "path": "assets/images/categories/bebidas.webp",
+      "original": "products/cappuccino.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "5857c3eebdc9ba7635176f36bb50237e5dd03aa613283380c904201471fa56a4"
+    },
+    {
+      "path": "assets/images/categories/galletas.webp",
+      "original": "products/chispas-chocolate.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "61a62f42bcc7e1101eec435c3ad97f79948b8d45d69235b41243f541ad67abbd"
+    },
+    {
+      "path": "assets/images/categories/pan-artesanal.webp",
+      "original": "products/masa-madre.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "18ff9e7618867d44683e5ef367fe89e41665e3d943b8407f0b29294c616c641a"
+    },
+    {
+      "path": "assets/images/categories/pan-dulce.webp",
+      "original": "products/conchas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "7c7e7ea62ae6a2220a7943573b253feb351cd930861b9e043adf0179f62d1e20"
+    },
+    {
+      "path": "assets/images/categories/pasteles.webp",
+      "original": "products/pastel-chocolate.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "dffb2aaf5ade56823750038ca08d75d693f10f879b457a95d4b7b67e76e91d64"
+    },
+    {
+      "path": "assets/images/categories/reposteria.webp",
+      "original": "products/croissant.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "7e2d433552703f4f076559b408241a81c13688727f77242ca3b2d783271e23ec"
+    },
+    {
+      "path": "assets/images/general/amasado.webp",
+      "original": "general/amasado.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "c5bda8d61b425c6b0e30ed64b2552494c640f9e6a8cca8e4c4c0c4635c0cf7d3"
+    },
+    {
+      "path": "assets/images/general/harina.webp",
+      "original": "general/harina.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "02368cd66e1762a2d43f8aeeec6cd68e234aa35fc2367abf0467d4756443a400"
+    },
+    {
+      "path": "assets/images/general/horno.webp",
+      "original": "general/horno.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "d90fb9281e27e95a02da152b161d8e41e6157e234379c2350b6e73c98e291eab"
+    },
+    {
+      "path": "assets/images/general/sm/amasado.webp",
+      "original": "general/amasado.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "3dd4735e06f6fa52635071d84a36022a81398ff00cf66aaef5250e0497dd1a08"
+    },
+    {
+      "path": "assets/images/general/sm/harina.webp",
+      "original": "general/harina.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "62f83d24d13ed6052afef9aaca626d74e308047e16da447606ae987383683d62"
+    },
+    {
+      "path": "assets/images/general/sm/horno.webp",
+      "original": "general/horno.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "247f29a9bf5b4a369550339a586f0bd4ff52fc47a09df56a395611cbc696849b"
+    },
+    {
+      "path": "assets/images/general/sm/vitrina-panes.webp",
+      "original": "general/vitrina-panes.webp",
+      "width": 1000,
+      "height": 563,
+      "sha256": "aacbce27cd50620900fabb04d7f13083f65e1e79a89ca3c8ee548cf4c52415e0"
+    },
+    {
+      "path": "assets/images/general/vitrina-panes.webp",
+      "original": "general/vitrina-panes.webp",
+      "width": 2000,
+      "height": 1125,
+      "sha256": "fd0903e8b46a01004a1127e2a8a3fa18ed6ea7ac10ae178815a0a251bbdc20fa"
+    },
+    {
+      "path": "assets/images/products/alfajores.webp",
+      "original": "products/alfajores.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "d2a87c54d91822c082c7aa19b4be21868ce57496f902cd3f97cdece71f72e358"
+    },
+    {
+      "path": "assets/images/products/avena-pasas.webp",
+      "original": "products/avena-pasas.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "617bcbf409b1e7ac10098c683465233479cf67c5e52e471b0c7b6a2a72f66f2d"
+    },
+    {
+      "path": "assets/images/products/baguette.webp",
+      "original": "products/baguette.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "d4b0b59e084a6b0ba13707bf0a92d4fa4397523b45b4928f0cb07b743ec64eac"
+    },
+    {
+      "path": "assets/images/products/brownie.webp",
+      "original": "products/brownie.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "11e80bd8da266c0d8bfaf33301610b55af90f2ae1e7a7daebfadf21884c84fe2"
+    },
+    {
+      "path": "assets/images/products/cafe-filtrado.webp",
+      "original": "products/cafe-filtrado.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "54548e0b3e3b6eb61f1b732b711509f0277b7e8c2c72332c0010f2818109323a"
+    },
+    {
+      "path": "assets/images/products/cappuccino.webp",
+      "original": "products/cappuccino.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "441be78a276241c2fa9fb2ff340d237fd43e2a894e3ac5c983ede922a32ad2b6"
+    },
+    {
+      "path": "assets/images/products/cheesecake-maracuya.webp",
+      "original": "products/cheesecake-maracuya.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "dda3a4b5bf7909ef2d4e92852dcb9960385b5c7252a35b9c07b6467b70dce9af"
+    },
+    {
+      "path": "assets/images/products/chispas-chocolate.webp",
+      "original": "products/chispas-chocolate.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "25be2bc1c5594138586676b3edad733d087e541a0bc828eb23c66e7e789b4268"
+    },
+    {
+      "path": "assets/images/products/chocolate-caliente.webp",
+      "original": "products/chocolate-caliente.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "22646d32bde8462d6514d1f54ed460afb8150907806370cec8ee45925ca24d91"
+    },
+    {
+      "path": "assets/images/products/conchas.webp",
+      "original": "products/conchas.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "a7ee7358a17716a64cba0ad1d52e82daeae36bda660ab40de85d76b80fe18544"
+    },
+    {
+      "path": "assets/images/products/cosa-de-horno.webp",
+      "original": "products/cosa-de-horno.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b0c8b749a78bbcca3dd3fa1ad017c4a4acaf2f88c1286abb255cc86a901b00c3"
+    },
+    {
+      "path": "assets/images/products/croissant.webp",
+      "original": "products/croissant.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "9a9c6618ca7130e7449118936c626e59cdbf04c89b4238b4fc090047014544cb"
+    },
+    {
+      "path": "assets/images/products/empanada-pina.webp",
+      "original": "products/empanada-pina.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "fe73a7a1c65bbc3fb396c4c279996bf5a4b837650d6a489d7c98b830fdfca9f0"
+    },
+    {
+      "path": "assets/images/products/focaccia-romero.webp",
+      "original": "products/focaccia-romero.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "64f6900c59ff4fd75809e10e5103021fca86c0bbb7f3fc4db5920193b04132e8"
+    },
+    {
+      "path": "assets/images/products/fresco-cacao.webp",
+      "original": "products/fresco-cacao.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b18b953231b9cffc7544fae942747c443f938d7a205e6fc78ad77d844b87a085"
+    },
+    {
+      "path": "assets/images/products/galletas-mantequilla.webp",
+      "original": "products/galletas-mantequilla.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "a3ff08a80b841829df08b0f52fcc7cc9faae8501658bd763452b3bbb35361f18"
+    },
+    {
+      "path": "assets/images/products/jugo-naranja.webp",
+      "original": "products/jugo-naranja.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "456a4dbb4ad41b2b4fd7d92fd14b627546d14bb7dc96ec7a4686b56c436df762"
+    },
+    {
+      "path": "assets/images/products/masa-madre.webp",
+      "original": "products/masa-madre.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "732b3baba6800c83e22b7a16fb85f4661f7e8d9636730cfa8f6c30de327e6375"
+    },
+    {
+      "path": "assets/images/products/pan-de-coco.webp",
+      "original": "products/pan-de-coco.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "282c6c37198fd6410ced1147174fd749e7514046219ad3ce3409559e38558ef7"
+    },
+    {
+      "path": "assets/images/products/pan-de-molde.webp",
+      "original": "products/pan-de-molde.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "e5ad39bf4f45cd5d105fe5bb9bbcf9ee15a88798ff59987c25861197fe1bc693"
+    },
+    {
+      "path": "assets/images/products/pan-de-yema.webp",
+      "original": "products/pan-de-yema.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "7b8059609af86f066f845b4d24087bffe7a7e13cf7ce291a23ff4f57667d4acb"
+    },
+    {
+      "path": "assets/images/products/pan-integral-semillas.webp",
+      "original": "products/pan-integral-semillas.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "9afee739c79a1656339cbff136c2cd7483f70350a2d1f2ac90711108549c213a"
+    },
+    {
+      "path": "assets/images/products/pastel-chocolate.webp",
+      "original": "products/pastel-chocolate.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "506b3d251dfa831a7fd93ae668b60f8d094c08a6728607e188075ce64a1a1574"
+    },
+    {
+      "path": "assets/images/products/pastel-personalizado.webp",
+      "original": "products/pastel-personalizado.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b363c094dbf8aabc5a2891a56cc7c2d7e026eb5e661549e05317f80e7996f83f"
+    },
+    {
+      "path": "assets/images/products/pastel-zanahoria.webp",
+      "original": "products/pastel-zanahoria.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "f2c9e55e951f0e5061732067d957a288a3983b2e72766550dec4c1b3001faedd"
+    },
+    {
+      "path": "assets/images/products/rol-canela.webp",
+      "original": "products/rol-canela.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "324d19ee69e83622f3f1b767142a867be787c0eb0d1ebda8a336d4f6ad8828e4"
+    },
+    {
+      "path": "assets/images/products/sm/alfajores.webp",
+      "original": "products/alfajores.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "8d4922add811c14b527e8b5ad5aebeae46be68d18b0b91dc894d4e8d23bfec43"
+    },
+    {
+      "path": "assets/images/products/sm/avena-pasas.webp",
+      "original": "products/avena-pasas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "17276757cc9bbdc620d89fd2af5dd01eb02ab682d8f9d9c571947dc32eea03bc"
+    },
+    {
+      "path": "assets/images/products/sm/baguette.webp",
+      "original": "products/baguette.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "6b476d54ad9c3b6fd73a2f4a30a385f0478c3034d8cf5e75376e97a774e23669"
+    },
+    {
+      "path": "assets/images/products/sm/brownie.webp",
+      "original": "products/brownie.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "6f18e9cc2a7154d47e612d959c6902ae5eec1a933b4f1d740ba7ce9e8b0d1478"
+    },
+    {
+      "path": "assets/images/products/sm/cafe-filtrado.webp",
+      "original": "products/cafe-filtrado.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "a9edd7021711d81a62b36a34afa8559430efaaee4b41b5935c59ff7323c74619"
+    },
+    {
+      "path": "assets/images/products/sm/cappuccino.webp",
+      "original": "products/cappuccino.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "5857c3eebdc9ba7635176f36bb50237e5dd03aa613283380c904201471fa56a4"
+    },
+    {
+      "path": "assets/images/products/sm/cheesecake-maracuya.webp",
+      "original": "products/cheesecake-maracuya.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "79a7720af5510afc878df5282f5dd31093ce089d9cede68db7f51139fb55f917"
+    },
+    {
+      "path": "assets/images/products/sm/chispas-chocolate.webp",
+      "original": "products/chispas-chocolate.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "61a62f42bcc7e1101eec435c3ad97f79948b8d45d69235b41243f541ad67abbd"
+    },
+    {
+      "path": "assets/images/products/sm/chocolate-caliente.webp",
+      "original": "products/chocolate-caliente.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "a68aa1705699762b28a59ea3d5722992ad54bfed862b4b6ff580c3e903538e69"
+    },
+    {
+      "path": "assets/images/products/sm/conchas.webp",
+      "original": "products/conchas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "7c7e7ea62ae6a2220a7943573b253feb351cd930861b9e043adf0179f62d1e20"
+    },
+    {
+      "path": "assets/images/products/sm/cosa-de-horno.webp",
+      "original": "products/cosa-de-horno.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "55e241d0981a9406a7c00bc2d809bcc5a50dd9e305721d6dd499169ab5077453"
+    },
+    {
+      "path": "assets/images/products/sm/croissant.webp",
+      "original": "products/croissant.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "7e2d433552703f4f076559b408241a81c13688727f77242ca3b2d783271e23ec"
+    },
+    {
+      "path": "assets/images/products/sm/empanada-pina.webp",
+      "original": "products/empanada-pina.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "a63b03d73332a5d3823207f480a9e251e3ad5c946267b255f48a7a4987c393af"
+    },
+    {
+      "path": "assets/images/products/sm/focaccia-romero.webp",
+      "original": "products/focaccia-romero.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "955e732c99c4c29f429469a7d04b0886c367a1e431b809630b3346147da567ae"
+    },
+    {
+      "path": "assets/images/products/sm/fresco-cacao.webp",
+      "original": "products/fresco-cacao.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "2c30e8ab7ec9a07f4a23dad963f0d9e7b679b765a4faf79b4e4a85074420ef5a"
+    },
+    {
+      "path": "assets/images/products/sm/galletas-mantequilla.webp",
+      "original": "products/galletas-mantequilla.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "db1982f8cd3f1d5ceb74dfef85562e86ff9656568fbc7d648de3d40493de6081"
+    },
+    {
+      "path": "assets/images/products/sm/jugo-naranja.webp",
+      "original": "products/jugo-naranja.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "ec9fa9559b6b2d7e95cb8b40bd01af58d010345801ad518e9ba8c65a79a3f3f4"
+    },
+    {
+      "path": "assets/images/products/sm/masa-madre.webp",
+      "original": "products/masa-madre.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "18ff9e7618867d44683e5ef367fe89e41665e3d943b8407f0b29294c616c641a"
+    },
+    {
+      "path": "assets/images/products/sm/pan-de-coco.webp",
+      "original": "products/pan-de-coco.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "241e85421b3d31b4b9bcc52439943652f97701091dce4bc01856fbd5fa1078eb"
+    },
+    {
+      "path": "assets/images/products/sm/pan-de-molde.webp",
+      "original": "products/pan-de-molde.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "a735caa21252c69fbce0757f2d29484f96630883b2434d06b4fefff3ae6c4b32"
+    },
+    {
+      "path": "assets/images/products/sm/pan-de-yema.webp",
+      "original": "products/pan-de-yema.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "c25e76370f79391a575bcdb9da10b3ab7310d1cbc035ca1d9bb668af269d1302"
+    },
+    {
+      "path": "assets/images/products/sm/pan-integral-semillas.webp",
+      "original": "products/pan-integral-semillas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "66f47eb51cef2ee0b9d42c0a1b2f70dd0550f0beae45e6f20d699096ac95705a"
+    },
+    {
+      "path": "assets/images/products/sm/pastel-chocolate.webp",
+      "original": "products/pastel-chocolate.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "dffb2aaf5ade56823750038ca08d75d693f10f879b457a95d4b7b67e76e91d64"
+    },
+    {
+      "path": "assets/images/products/sm/pastel-personalizado.webp",
+      "original": "products/pastel-personalizado.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "874501d12ee817ab7c76f957dad64bdad50aca0ac10f5801f4bfb957f93234ec"
+    },
+    {
+      "path": "assets/images/products/sm/pastel-zanahoria.webp",
+      "original": "products/pastel-zanahoria.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "f58726d75eccaeca22a1e25caef550c840e954f252929b0851f07a7577d6341d"
+    },
+    {
+      "path": "assets/images/products/sm/rol-canela.webp",
+      "original": "products/rol-canela.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "c7b84139a14ee2179865987e176d0f55b2741ffd31f094312244b2e48a30a203"
+    },
+    {
+      "path": "assets/images/products/sm/tarta-frutas.webp",
+      "original": "products/tarta-frutas.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "eaf84fc2a3f77243a106f9e8ee1135e4d13c6e3ce09b55a7d03e3fe0c07c8bd3"
+    },
+    {
+      "path": "assets/images/products/sm/tres-leches.webp",
+      "original": "products/tres-leches.webp",
+      "width": 600,
+      "height": 450,
+      "sha256": "5f14f5fd259355ce4e6c329c794c3055092ce09f907f48cc9d8c02526be989f9"
+    },
+    {
+      "path": "assets/images/products/tarta-frutas.webp",
+      "original": "products/tarta-frutas.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "c55757d33a70bf80ae95ca31791f25d9fc69ff7d04272958d12b18ca902a72a2"
+    },
+    {
+      "path": "assets/images/products/tres-leches.webp",
+      "original": "products/tres-leches.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "50561b9bacef076f238ef43a0b342e0d92730d1d35efd96f3583dbbc7f874d21"
+    }
+  ]
+}

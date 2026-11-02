@@ -2,20 +2,40 @@
 
 Edición HTML 0.2.0. Empieza por `start-here.html`; visita `template.html` para ver el alcance de esta edición. La guía de estilo es `styleguide.html`.
 
+English: read the complete [English buyer guide](BUYER-GUIDE.en.md). Soporte del template: [luismgnictech@gmail.com](mailto:luismgnictech@gmail.com), exclusivamente por correo. El WhatsApp de las páginas es el canal de muestra de la panadería, no el soporte de FolklorCraft.
+
 ## Entrega
 
-HTML, CSS y JavaScript sin frameworks; Node.js 20+ para preparar el sitio estático; configuración de Pages CMS; catálogo, productos, Blog, artículos, páginas informativas, búsqueda general, 404 y guías. El catálogo incluye 27 productos publicados de muestra y el Blog 12 artículos en cuatro categorías. Los datos son ejemplos y la disponibilidad se actualiza manualmente. Precios en USD. Consultas por WhatsApp; sin carrito ni pagos. El proveedor de hosting y los planes de servicios los contrata el comprador.
+HTML, CSS y JavaScript sin frameworks; Node.js 22+ para preparar el sitio estático; configuración de Pages CMS; catálogo, productos, Blog, artículos, páginas informativas, búsqueda general, 404 y guías. El catálogo incluye 27 productos publicados de muestra y el Blog 12 artículos en cuatro categorías. Los datos son ejemplos y la disponibilidad se actualiza manualmente. Precios en USD. Consultas por WhatsApp; sin carrito ni pagos. El proveedor de hosting y los planes de servicios los contrata el comprador.
 
 Esta es la edición HTML. Una versión editable nativa de Webflow o Framer necesita su propia adaptación y entrega. El selector ES/EN traduce la interfaz y el contenido con JavaScript; no representa dos sitios completos prerenderizados para SEO multilingüe. La guía de estilo técnica se presenta en inglés.
 
+Figma no forma parte de esta entrega. Se necesitan conocimientos básicos para editar archivos y publicar un sitio estático; Pages CMS simplifica la edición del contenido existente, pero las ampliaciones del esquema y del código requieren conocimientos técnicos.
+
 ## 1. Vista previa y publicación
 
-1. Copia el proyecto a una carpeta propia. Instala Node.js 20+ desde nodejs.org.
+1. Extrae todo el ZIP a una carpeta propia. Entra en la carpeta que contiene `package.json`: esa es la raíz del proyecto. Instala Node.js 22+ desde https://nodejs.org/. Comprueba `node --version` y `npm --version` en una terminal nueva.
 2. Abre una terminal en esa carpeta y ejecuta `npm run dev`.
 3. Abre `http://127.0.0.1:47823`. Para otro puerto en PowerShell: `$env:PORT=47824` y después `npm run dev`.
 4. Para publicar: ejecuta `npm test`, `npm run build` y `node scripts/check-prerender.mjs`. Publica únicamente `dist/`.
 5. En Cloudflare Workers, cambia el nombre de `wrangler.jsonc`. Conserva `npm run build` como construcción y `dist` como carpeta de recursos. Si el hosting tiene construcción propia, evita omitir este paso: las rutas de productos y artículos se generan en él.
 6. Configura el dominio en Configuración → SEO → URL del sitio y vuelve a construir. Esta URL alimenta canonicals y sitemap. El export del comprador la deja vacía para evitar apuntar al dominio de la demo.
+
+En Windows puedes abrir la carpeta en el Explorador, escribir `powershell` en su barra de direcciones y pulsar Enter. En macOS o Linux abre una terminal en la carpeta del proyecto. No se necesita `npm install` en esta edición: no contiene dependencias npm. Deja la terminal abierta mientras usas la vista previa; `Ctrl+C` detiene el servidor. Abre la URL HTTP indicada, no `index.html` con doble clic: el sitio carga sus datos mediante solicitudes HTTP.
+
+La carpeta `dist/` ya incluida sirve como muestra estática. Vuelve a generarla después de cambiar cualquier contenido; editar `public-data/` o `dist/` directamente no conserva los cambios al reconstruir. Conserva los archivos ocultos `.pages.yml` y `.nvmrc` al copiar el proyecto a GitHub.
+
+### Si algo no funciona
+
+| Síntoma | Qué comprobar |
+|---|---|
+| `node` o `npm` no se reconoce | Instala Node.js y abre otra terminal. |
+| `ENOENT` o no encuentra `package.json` | Estás en otra carpeta; entra en la raíz extraída del template. |
+| PowerShell bloquea `npm.ps1` | Usa `npm.cmd run dev`, `npm.cmd test` y `npm.cmd run build`; no hace falta cambiar la política de seguridad. |
+| `EADDRINUSE` | Otro proceso usa el puerto. Usa el puerto alternativo del paso 3. |
+| El sitio carga sin productos | Usa la URL HTTP del servidor y comprueba que la construcción terminó sin errores. |
+| No aparecen las nuevas fichas publicadas | Reconstruye y publica el nuevo `dist/` completo, no solo la página de inicio. |
+| Falla la validación de contenido | Lee el primer error, corrige el archivo indicado y repite la construcción. Envía el mensaje exacto a soporte si persiste. |
 
 ## 2. Pages CMS
 

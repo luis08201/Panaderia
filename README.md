@@ -6,7 +6,7 @@ Bilingual bakery, pastry-shop and café template with a product catalog, CMS Blo
 
 - Open `start-here.html` for the bilingual setup guide, or read [Buyer guide](docs/BUYER-GUIDE.md).
 - See `template.html` for the edition overview and page previews.
-- Run `npm run dev` with Node.js 20+; open http://127.0.0.1:47823.
+- Run `npm run dev` with Node.js 22+; open http://127.0.0.1:47823.
 - Run `npm test`, `npm run build`, then `node scripts/check-prerender.mjs` before publishing. Publish `dist/` only.
 - Cloudflare Workers uses `wrangler.jsonc`; keep its build command enabled and use your own Worker name for another installation.
 
@@ -24,16 +24,21 @@ Run `npm run export:buyer` to create a separate source + static-build candidate 
 
 ## Delivery documentation
 
-- [Buyer guide](docs/BUYER-GUIDE.md)
+- [Guía del comprador · Español](docs/BUYER-GUIDE.md)
+- [Buyer guide · English](docs/BUYER-GUIDE.en.md)
+- [Commercial license · one project](COMMERCIAL-LICENSE.md)
 - [Support boundaries](docs/SUPPORT.md)
 - [Distribution status and owner decisions](DISTRIBUTION.md)
 - [Third-party notices](THIRD-PARTY.md)
+- [Rights, AI assistance and reporting concerns](docs/RIGHTS.md)
 - [Asset inventory](docs/ASSET-INVENTORY.csv)
-- [Demo photo sources](docs/PHOTO-SOURCES.md)
+- [Demo imagery: AI provenance and exclusions](docs/PHOTO-SOURCES.md)
 - [Changelog](CHANGELOG.md)
 - [Blog](docs/BLOG.md), [Search](docs/SEARCH.md), [Style guide](docs/STYLEGUIDE.md)
 
 ## Validation scope
+
+FolklorCraft template support: **luismgnictech@gmail.com**, email only, for six months from purchase. The first-response target is two business days; see the complete support policy. Present the license/support terms, legal seller identification and sales-channel delivery/refund information before payment. Figma is excluded from this HTML edition.
 
 Automated checks validate CMS content, safe URLs, blog categories/articles/pagination, localization, site search and generated product pages. Browser checks cover responsive headers, language switching, search/filter flows and local demo contacts. Lighthouse and accessibility scores from earlier previews are not current guarantees. Before a paid release, measure the final build on its actual host and complete the distribution decisions documented above.
 

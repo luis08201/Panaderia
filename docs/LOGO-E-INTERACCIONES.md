@@ -1,10 +1,10 @@
 # Logo alternativo y transiciones
 
-Cambios locales en la rama `codex/logo-hover`. 
+Referencia de marca e interacciones. Actualizada el 2 de noviembre de 2026 para documentar la procedencia del SVG.
 
 ## Alternativa del logo
 
-El nuevo símbolo combina un horno de arco y una hogaza. Mantiene el terracota, los tonos de cacao y la tipografía del sitio. El horno aprobado es el símbolo activo de las páginas y del favicon.
+El símbolo actual combina un horno con chimenea, puerta de arco y hogaza. Su geometría se escribe directamente en `scripts/build-icons.mjs` y genera el sprite, favicon y archivos descargables. Mantiene el terracota, los tonos de cacao y la tipografía del sitio. La procedencia y las licencias de los iconos de interfaz están en `docs/ICON-PROVENANCE.md`.
 
 - `assets/brand/oven-mark.svg`: símbolo independiente, vectorial.
 - `assets/brand/logo-alternative.svg`: composición horizontal con texto editable. Utiliza Georgia/Arial del sistema; no es una versión con letras convertidas a curvas.

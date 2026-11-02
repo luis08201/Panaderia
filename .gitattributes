@@ -1,0 +1,7 @@
+# Preserve the exact bytes recorded in assets/icons/PROVENANCE.json on all OSes.
+assets/icons/lucide/*.svg text eol=lf
+assets/icons/lucide/LICENSE text eol=lf
+assets/icons/icons.svg text eol=lf
+assets/icons/PROVENANCE.json text eol=lf
+assets/brand/*.svg text eol=lf
+favicon.svg text eol=lf

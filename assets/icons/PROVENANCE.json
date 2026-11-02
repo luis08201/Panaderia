@@ -1,0 +1,118 @@
+{
+  "reviewedOn": "2026-11-02",
+  "upstream": "https://github.com/lucide-icons/lucide",
+  "commit": "4b203ec9b6002fd74fd5dadc8612220e64289305",
+  "license": {
+    "path": "assets/icons/lucide/LICENSE",
+    "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+  },
+  "icons": [
+    {
+      "symbol": "wheat",
+      "upstreamIcon": "wheat",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/wheat.svg",
+      "localFile": "assets/icons/lucide/wheat.svg",
+      "sha256": "d18be93cdd1ea09f28e66c69c04927c5f919c09a3bc6d7553ebb1fc85a5b828d",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "whatsapp",
+      "upstreamIcon": "message-circle",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/message-circle.svg",
+      "localFile": "assets/icons/lucide/message-circle.svg",
+      "sha256": "146f39740fe50844394d56ae1f8821937655bcfff3842bf6fe8ffc0bcd324076",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "menu",
+      "upstreamIcon": "menu",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/menu.svg",
+      "localFile": "assets/icons/lucide/menu.svg",
+      "sha256": "af6491988ac1ba30dc5414f485bc48713e957e1edb0fbef4a0dd8691c3c21598",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "close",
+      "upstreamIcon": "x",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/x.svg",
+      "localFile": "assets/icons/lucide/x.svg",
+      "sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "search",
+      "upstreamIcon": "search",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/search.svg",
+      "localFile": "assets/icons/lucide/search.svg",
+      "sha256": "283d371c2e433817bb9c0c8310caa6c77fa4177c0f4f1168d9c83b97af7389dc",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "clock",
+      "upstreamIcon": "clock",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/clock.svg",
+      "localFile": "assets/icons/lucide/clock.svg",
+      "sha256": "e9d3e3acf4d1c280fcf8092293439dc0a4756a908ceb859de144b12451cd1cb9",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "pin",
+      "upstreamIcon": "map-pin",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/map-pin.svg",
+      "localFile": "assets/icons/lucide/map-pin.svg",
+      "sha256": "16f1042a62f1bda20ebab8bfc1cb79c0be285c980dea6c2c733a17902631405b",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "phone",
+      "upstreamIcon": "phone",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/phone.svg",
+      "localFile": "assets/icons/lucide/phone.svg",
+      "sha256": "bd59dd10667cbe410a69e2fbbf4d9645d08abe862c8d89082bd4f533957859a8",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "info",
+      "upstreamIcon": "info",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/info.svg",
+      "localFile": "assets/icons/lucide/info.svg",
+      "sha256": "bc977a64eb96f3e9c1041ffd09a3fceb70e3e65c02b571f76064062ed31f3cb9",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    },
+    {
+      "symbol": "share",
+      "upstreamIcon": "share",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/4b203ec9b6002fd74fd5dadc8612220e64289305/icons/share.svg",
+      "localFile": "assets/icons/lucide/share.svg",
+      "sha256": "be8870646f636f4db03fd2d1d5db4912a1ab03ce2cfcc5daacc15fa8e105dbc2",
+      "licenseFile": "assets/icons/lucide/LICENSE"
+    }
+  ],
+  "customMark": {
+    "symbol": "oven",
+    "source": "scripts/build-icons.mjs",
+    "method": "New SVG code authored from basic shapes during the 2 November 2026 review; no third-party vector source imported.",
+    "files": [
+      {
+        "path": "favicon.svg",
+        "sha256": "bd46c9c1361859e458f1aa7f1d202fa9db2359682498adc9dbb3046c4112bd63"
+      },
+      {
+        "path": "assets/brand/oven-mark.svg",
+        "sha256": "bd46c9c1361859e458f1aa7f1d202fa9db2359682498adc9dbb3046c4112bd63"
+      },
+      {
+        "path": "assets/brand/logo-alternative.svg",
+        "sha256": "61db8a838359e323f329c8b630882b9b4c300817fc9ccece8c4d5f16b7d4d810"
+      }
+    ]
+  },
+  "notes": [
+    "The legacy whatsapp symbol now contains a generic message-circle icon, not the WhatsApp brand logo.",
+    "This manifest records source and redistribution notices; it is not trademark clearance or a certification of exclusive copyright."
+  ],
+  "generated": {
+    "spriteSha256": "b015a47476073243eb30d1bfbaf8c69df98d3a36358005cdc7800a3a89733431",
+    "faviconSha256": "bd46c9c1361859e458f1aa7f1d202fa9db2359682498adc9dbb3046c4112bd63"
+  }
+}

@@ -74,7 +74,7 @@
         "eyebrow": "Nosotros",
         "title": "Una panadería de barrio, hecha con calma",
         "text": "Horneamos cada día con ingredientes sencillos, tiempos largos de fermentación y el cuidado de las recetas de casa.",
-        "imageAlt": "Panadero sacando una bandeja de pan del horno"
+        "imageAlt": "Pan recién horneado dentro de un horno de panadería artesanal"
       },
       "story": {
         "title": "Nuestra historia",
@@ -113,9 +113,15 @@
         }
       ],
       "gallery": [
-        { "alt": "Harina cayendo sobre la masa en la mesa de trabajo" },
-        { "alt": "Masa redonda formada a mano" },
-        { "alt": "Vitrina con pan recién horneado" }
+        {
+          "alt": "Harina cayendo sobre la masa en la mesa de trabajo"
+        },
+        {
+          "alt": "Masa redonda formada a mano"
+        },
+        {
+          "alt": "Vitrina con pan recién horneado"
+        }
       ]
     }
   },
