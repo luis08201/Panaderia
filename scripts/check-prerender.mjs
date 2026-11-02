@@ -14,6 +14,7 @@ for (const p of products) {
   assert.ok(existsSync(path), `Falta ficha estática: ${p.slug}`);
   const html = readFileSync(path, "utf8");
   assert.ok(html.includes("data-static-product"), `Falta HTML pre-renderizado: ${p.slug}`);
+  assert.ok(html.includes(`href="productos/${p.slug}/#main"`), `Skip link must stay on the product page: ${p.slug}`);
   assert.ok(html.includes('<html lang="en">'), `Incorrect page language: ${p.slug}`);
   assert.ok(!html.includes("C$ "), `Legacy NIO price found: ${p.slug}`);
   if (p.price !== null) assert.ok(html.includes(new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(p.price)), `Missing USD price: ${p.slug}`);

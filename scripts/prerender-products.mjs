@@ -44,6 +44,7 @@ for (const p of products) {
     </div></article></div>`;
 
   let html = base.replace(/<meta name="robots" content="noindex"\s*\/>/, "");
+  html = html.replace('href="#main"', `href="${path}#main"`);
   html = html.replace('<meta name="viewport" content="width=device-width, initial-scale=1" />', '<meta name="viewport" content="width=device-width, initial-scale=1" />\n    <base href="../../" />');
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"\s*\/>/, `<meta name="description" content="${attr(description)}" />`);
