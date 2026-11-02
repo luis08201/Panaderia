@@ -4,6 +4,7 @@ import { getCategories, getProducts, getSite } from "./modules/data-loader.js";
 import { initMotion, refreshMotion } from "./modules/motion.js";
 import { applySettings, initMenu } from "./modules/navigation.js";
 import { addBusinessJsonLd, setMeta } from "./modules/seo.js";
+import { initSiteSearch } from './modules/site-search.js';
 
 const PAGES = {
   inicio: () => import("./modules/home.js"),
@@ -12,6 +13,7 @@ const PAGES = {
   nosotros: () => import("./modules/about.js"),
   blog: () => import('./modules/blog.js'),
   article: () => import('./modules/blog.js'),
+  search: () => import('./modules/site-search.js'),
 };
 
 const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html", contacto: "contacto.html", blog: 'blog.html' };
@@ -19,6 +21,7 @@ const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html"
 async function start() {
   initMotion();
   initMenu();
+  initSiteSearch();
   const page = document.body.dataset.page;
   // Start the page's data requests right away instead of after site.json.
   if (["inicio", "catalogo", "producto"].includes(page)) getProducts().catch(() => {});

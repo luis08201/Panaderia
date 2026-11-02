@@ -54,6 +54,7 @@
             <span class="brand__tagline" data-site="tagline">Artisan Bakery</span>
           </span>
         </a>
+        <button id="site-search-toggle" class="site-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel" aria-label="Search the whole site"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#search"></use></svg><span class="visually-hidden">Search</span></button>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
           <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons/icons.svg#menu"></use></svg>
           <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons/icons.svg#close"></use></svg>
@@ -74,6 +75,14 @@
           </div>
         </nav>
       </div>
+    <div id="site-search-panel" class="site-search-panel" hidden><div class="container">
+  <form id="site-search-form" class="global-search-form" role="search" action="search.html" method="get" aria-label="Site search">
+    <label class="visually-hidden" for="site-search-query">Search the whole site</label>
+    <input id="site-search-query" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-suggestions" aria-describedby="site-search-hint" autocomplete="off" maxlength="200" placeholder="Search products, stories, and more…" required />
+    <button class="btn btn--primary" type="submit">Search</button>
+    <ul id="site-search-suggestions" class="site-search-suggestions" role="listbox" aria-label="Suggested searches" hidden></ul>
+  </form><p id="site-search-hint" class="site-search-hint">Search products, stories, and everything in between.</p>
+</div></div>
     </header>
 
     <main id="main">

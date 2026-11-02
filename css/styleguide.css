@@ -1,7 +1,7 @@
 /* Original guide layout. Component specimens use the template's shared CSS. */
 .sg-page { --sg-line: var(--color-border); }
 .sg-page :target { scroll-margin-top: 7rem; }
-.sg-header { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.25rem clamp(1.25rem,4vw,4rem); border-bottom:1px solid var(--sg-line); }
+.sg-header { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; padding:1.25rem clamp(1.25rem,4vw,4rem); border-bottom:1px solid var(--sg-line); }
 .sg-back { font-size:.85rem; text-decoration:none; }
 .sg-back span { margin-left:.6rem; }
 .sg-shell { display:grid; grid-template-columns:13rem minmax(0,1fr); gap:clamp(2rem,4vw,5rem); max-width:93rem; margin:auto; padding-inline:clamp(1.25rem,4vw,4rem); }

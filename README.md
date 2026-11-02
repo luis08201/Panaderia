@@ -19,6 +19,7 @@ Está hecho con HTML, CSS y JavaScript sin frameworks. El contenido se edita con
 | `styleguide.html` | Guía visual en inglés con marca, colores, tipografía, componentes y estados interactivos de muestra. Véase `docs/STYLEGUIDE.md` |
 | `blog.html` | Blog con destacados, doce artículos iniciales, búsqueda y cuatro categorías más All |
 | `article.html` y `blog/<slug>/` | Plantilla CMS y páginas generadas por artículo con índice y relacionados. Véase `docs/BLOG.md` |
+| `search.html` | Búsqueda general desde el header, sugerencias y resultados por tipo de contenido. Véase `docs/SEARCH.md` |
 
 ## Ejecutarlo en local
 

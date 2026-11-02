@@ -18,6 +18,7 @@ const PUBLIC = [
   "styleguide.html",
   "blog.html",
   "article.html",
+  "search.html",
   "favicon.svg",
   "css",
   "js",
@@ -34,4 +35,5 @@ for (const entry of PUBLIC) {
 }
 execFileSync(process.execPath, [join(ROOT, "scripts/prerender-products.mjs"), DIST], { stdio: "inherit" });
 execFileSync(process.execPath, [join(ROOT, 'scripts/prerender-blog.mjs'), DIST], { stdio: 'inherit' });
+execFileSync(process.execPath, [join(ROOT, 'scripts/search-index.mjs'), DIST], { stdio: 'inherit' });
 console.log("Sitio listo en dist/");

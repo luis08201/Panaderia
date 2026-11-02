@@ -1,0 +1,9 @@
+# Site search
+
+The header search is separate from the Blog's article search. Submit a query or choose a suggestion to open `search.html?q=…`. Results link to their original pages and can be filtered by content type. Queries and filters survive refresh and browser Back/Forward. Results load in groups of twelve; the Blog keeps its own groups of six.
+
+`scripts/search-index.mjs` generates `dist/public-data/search.json` during every production or development build, after product and article rendering. It indexes public pages, published products (including descriptions, ingredients and allergens), full published articles, catalog and blog categories, and current promotions on the Home page. Empty product categories, drafts, hidden products, generic detail templates, the 404 page and search results are excluded. A sold-out but published product remains searchable. Search is text-based, case/accent-insensitive, requires every query word and prioritizes title matches.
+
+The header loads the index only when a visitor types. Its form has a native GET action, an accessible suggestion list and keyboard support (arrows, Enter, Escape). The results page has loading, empty, error/retry and no-JavaScript guidance. It is `noindex, follow` and omitted from the sitemap. Queries are not stored in browser history beyond their normal URL or sent to an outside search provider. The existing Blog search retains its independent local recent-search history.
+
+After changing CMS content, rebuild to refresh the index. When adding a static page, add it to the page list in `scripts/search-index.mjs`; future CMS collections should add their own public entries there. Automated checks cover cross-type matching, ranking, body text, accents, query combinations, generated destinations and excluded configuration/script content. Browser QA covers header submission, suggestions, result filters, deep links, empty results and responsive layouts.
