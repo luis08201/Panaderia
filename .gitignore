@@ -1,6 +1,7 @@
 node_modules
 dist
 public-data
+.wrangler
 sitemap.xml
 robots.txt
 .DS_Store
