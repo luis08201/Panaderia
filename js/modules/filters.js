@@ -1,3 +1,4 @@
+import { localeTag } from "../locale-data.js";
 import { hasPrice } from "../utils/currency.js";
 import { normalize } from "../utils/normalize.js";
 
@@ -23,7 +24,7 @@ export function filterProducts(products, { query = "", category = "" } = {}) {
   });
 }
 
-const byName = (a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+const byName = (a, b) => a.name.localeCompare(b.name, localeTag(), { sensitivity: "base" });
 
 // Products without a price always go last when sorting by price.
 function byPrice(direction) {

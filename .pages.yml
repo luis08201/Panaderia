@@ -1,6 +1,7 @@
 # Pages CMS configuration (https://pagescms.org/docs/configuration/)
 # Pages CMS saves each change as a GitHub commit. Hosting runs
 # `npm run build` to validate content and generate public-data/ for the site.
+# Spanish copy for the ES/EN switch lives in content/locales/es.json, not in these fields.
 
 media:
   - name: blog_images

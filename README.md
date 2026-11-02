@@ -1,10 +1,16 @@
 # Crumb & Oven · catálogo de panadería
 
-Sitio web de una panadería en Managua, en español y tipo catálogo: muestra productos con precios en córdobas (C$), fotos, disponibilidad, búsqueda y filtros, y permite consultar por WhatsApp. **No es una tienda en línea**: no hay carrito, checkout, pagos ni cuentas de cliente.
+Sitio web de una panadería en Managua, tipo catálogo: se publica en inglés y también se puede leer en español. Muestra productos con precios en dólares (USD), fotos, disponibilidad, búsqueda y filtros, y permite consultar por WhatsApp. **No es una tienda en línea**: no hay carrito, checkout, pagos ni cuentas de cliente.
 
 Está hecho con HTML, CSS y JavaScript sin frameworks. El contenido se edita con [Pages CMS](https://pagescms.org), que guarda cada cambio como un commit en GitHub. Node.js solo se usa para validar el contenido y preparar la carpeta que se publica; no hay backend.
 
 > **Datos de ejemplo.** El nombre «Crumb & Oven», el teléfono, el WhatsApp (`50500000000`), la dirección, los horarios y los precios son provisionales. El sitio lo avisa en la barra superior y en las secciones de contacto. Cuando tengas los datos reales, cámbialos en **Configuración** dentro de Pages CMS y desactiva «Mostrar aviso de datos de ejemplo».
+
+## Idioma
+
+El sitio se publica en inglés. En el encabezado hay un control **ES / EN** que cambia la interfaz, el catálogo, las páginas, las promociones y el blog. La elección se guarda en el navegador. También puedes abrir una página con `?lang=es` o `?lang=en`.
+
+El inglés sigue siendo el texto que editas en Pages CMS. El español está en `content/locales/es.json`. Si cambias un nombre o una descripción en inglés, actualiza ahí la misma entrada para que las dos versiones coincidan. Los precios siguen en dólares en los dos idiomas.
 
 ## Páginas
 

@@ -1,3 +1,5 @@
+import { t } from '../i18n.js';
+import { withLang } from '../locale-data.js';
 import { getBlog } from './data-loader.js';
 import { blogCard, blogIndexMarkup, blogArticleMarkup } from './blog-markup.js';
 import { filterBlogPosts, blogPostUrl, BLOG_PAGE_SIZE, paginateBlogPosts } from '../utils/blog.js';
@@ -14,8 +16,8 @@ export async function init({ site }) {
       const slug = location.pathname.match(/\/blog\/([a-z0-9-]+)(?:\/(?:index\.html)?)?$/)?.[1] || new URLSearchParams(location.search).get('slug') || '';
       const post = data.posts.find((p) => p.slug === slug);
       if (!post) {
-        root.replaceChildren(h('div', { class: 'state blog-not-found' }, h('h1', { text: 'We couldn’t find that story' }), h('p', { text: 'It may have moved or is no longer published. Find something fresh in the journal.' }), h('a', { class: 'btn btn--primary', href: 'blog.html', text: 'Back to the blog' })));
-        setMeta({ title: 'Story not found · Crumb & Oven', noindex: true });
+        root.replaceChildren(h('div', { class: 'state blog-not-found' }, h('h1', { text: t('blog.missingTitle') }), h('p', { text: t('blog.missingText') }), h('a', { class: 'btn btn--primary', href: 'blog.html', text: t('blog.backBlog') })));
+        setMeta({ title: `${t('blog.missingMeta')} · Crumb & Oven`, noindex: true });
         return;
       }
       root.innerHTML = blogArticleMarkup(post, data.posts);
@@ -45,10 +47,11 @@ export async function init({ site }) {
       grid.innerHTML = page.visiblePosts.map((post) => blogCard(post)).join('');
       animateResults(grid);
       root.querySelector('#blog-empty').hidden = page.total !== 0;
-      count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} ${page.total === 1 ? 'article' : 'articles'}${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${query ? ` for “${query}”` : ''}`;
+      const categoryName = category ? data.categories.find((c) => c.slug === category).name : '';
+      count.textContent = t('blog.showing', { shown: page.visiblePosts.length, total: page.total, word: page.total === 1 ? t('blog.article') : t('blog.articles'), where: categoryName ? t('blog.in', { name: categoryName }) : '', query: query ? t('blog.for', { query }) : '' });
       pagination.hidden = page.total <= BLOG_PAGE_SIZE;
       loadMore.hidden = !page.hasMore;
-      progress.textContent = page.hasMore ? `You’ve seen ${page.visiblePosts.length} of ${page.total} stories.` : `You’re all caught up — ${page.total} stories.`;
+      progress.textContent = page.hasMore ? t('blog.seen', { shown: page.visiblePosts.length, total: page.total }) : t('blog.caught', { total: page.total });
       reset.hidden = !category && !query;
       for (const chip of chips) chip.setAttribute('aria-pressed', String(chip.dataset.blogCategory === category));
       if (persist) {
@@ -56,6 +59,7 @@ export async function init({ site }) {
         for (const [name, value] of [['q', query], ['category', category]]) {
           if (value) url.searchParams.set(name, value); else url.searchParams.delete(name);
         }
+        withLang(url.searchParams);
         history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
       }
     };
@@ -70,8 +74,8 @@ export async function init({ site }) {
       grid.insertAdjacentHTML('beforeend', page.visiblePosts.slice(previousLength).map((post) => blogCard(post)).join(''));
       animateResults(grid, [...grid.children].slice(previousLength));
       loadMore.hidden = !page.hasMore;
-      progress.textContent = page.hasMore ? `You’ve seen ${page.visiblePosts.length} of ${page.total} stories.` : `You’re all caught up — ${page.total} stories.`;
-      count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} articles${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${search.value.trim() ? ` for “${search.value.trim()}”` : ''}`;
+      progress.textContent = page.hasMore ? t('blog.seen', { shown: page.visiblePosts.length, total: page.total }) : t('blog.caught', { total: page.total });
+      count.textContent = t('blog.showing', { shown: page.visiblePosts.length, total: page.total, word: t('blog.articles'), where: category ? t('blog.in', { name: data.categories.find((c) => c.slug === category).name }) : '', query: search.value.trim() ? t('blog.for', { query: search.value.trim() }) : '' });
       grid.querySelectorAll('article')[previousLength]?.querySelector('h3 a')?.focus({ preventScroll: true });
     });
     window.addEventListener('popstate', () => {
@@ -87,9 +91,9 @@ export async function init({ site }) {
     console.warn('Blog data unavailable:', error);
     if (root.hasAttribute('data-static-blog')) {
       root.querySelector('#blog-tools')?.setAttribute('hidden', '');
-      if (document.body.dataset.page === 'blog') root.prepend(h('p', { class: 'demo-note', text: 'Search is temporarily unavailable. You can still browse the stories below.' }));
+      if (document.body.dataset.page === 'blog') root.prepend(h('p', { class: 'demo-note', text: t('blog.searchDown') }));
     } else {
-      root.replaceChildren(h('div', { class: 'state state--error' }, h(document.body.dataset.page === 'article' ? 'h1' : 'h2', { text: 'The journal couldn’t load' }), h('p', { text: 'Please check your connection and try again.' }), h('button', { type: 'button', class: 'btn btn--primary', text: 'Try again', onclick: () => init({ site }) })));
+      root.replaceChildren(h('div', { class: 'state state--error' }, h(document.body.dataset.page === 'article' ? 'h1' : 'h2', { text: t('blog.loadErrorTitle') }), h('p', { text: t('blog.loadErrorText') }), h('button', { type: 'button', class: 'btn btn--primary', text: t('error.retry'), onclick: () => init({ site }) })));
     }
   }
 }

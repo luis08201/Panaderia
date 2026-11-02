@@ -1,3 +1,5 @@
+import { t } from '../i18n.js';
+import { withLang } from '../locale-data.js';
 import { getSearchIndex } from './data-loader.js';
 import { h } from '../utils/dom.js';
 import { searchSite, SEARCH_TYPES } from '../utils/site-search.js';
@@ -18,17 +20,17 @@ export function initSiteSearch() {
     const request = ++revision;
     const query = input.value.trim();
     closeSuggestions();
-    hint.textContent = query ? 'Searching…' : 'Search products, stories, and everything in between.';
+    hint.textContent = query ? t('search.searching') : t('search.hint');
     if (!query) return;
     try {
       const index = await getSearchIndex();
       if (request !== revision || toggle.getAttribute('aria-expanded') !== 'true') return;
       matches = searchSite(index,query).slice(0,5);
-      list.replaceChildren(...matches.map((item,i)=>h('li',{role:'option',id:`site-search-option-${i}`,'aria-selected':'false','data-search-option':i},h('span',{text:item.title}),h('small',{text:item.type}))));
+      list.replaceChildren(...matches.map((item,i)=>h('li',{role:'option',id:`site-search-option-${i}`,'aria-selected':'false','data-search-option':i},h('span',{text:item.title}),h('small',{text:t(`type.${item.type}`)}))));
       list.hidden = !matches.length;
       input.setAttribute('aria-expanded',String(matches.length>0));
-      hint.textContent = matches.length ? 'Use ↑ ↓ to explore, Enter to view results, or keep typing.' : 'No suggestions. Press Enter to view all search results.';
-    } catch { if (request === revision) hint.textContent = 'Press Enter to search the whole site.'; }
+      hint.textContent = matches.length ? t('search.hintKeys') : t('search.none');
+    } catch { if (request === revision) hint.textContent = t('search.enter'); }
   };
   toggle.addEventListener('click',()=>{
     if (toggle.getAttribute('aria-expanded') === 'true') { close(); return; }
@@ -65,22 +67,22 @@ export async function init() {
   const results = document.querySelector('#search-results');
   const more = document.querySelector('#search-load-more');
   let index, type = '', count = 12, matches = [], filtered = [];
-  const plural = (value) => value === 'Category' ? 'Categories' : value+'s';
+  const typeName = (value, plural = false) => t(`type.${plural ? value + 's' : value}`);
   const render = () => {
     const query = input.value.trim().slice(0,200);
     matches = searchSite(index,query);
     filtered = matches.filter((item)=>!type || item.type===type);
     filters.hidden = !query;
-    filters.replaceChildren(...['',...SEARCH_TYPES].map((value)=>h('button',{type:'button',class:'chip','aria-pressed':String(type===value),'data-search-type':value,text:`${value ? plural(value) : 'All'} (${value ? matches.filter((item)=>item.type===value).length : matches.length})`})));
+    filters.replaceChildren(...['',...SEARCH_TYPES].map((value)=>h('button',{type:'button',class:'chip','aria-pressed':String(type===value),'data-search-type':value,text:`${value ? typeName(value, true) : t('search.all')} (${value ? matches.filter((item)=>item.type===value).length : matches.length})`})));
     const visible=filtered.slice(0,count);
-    status.textContent = !query ? 'What are you looking for? Enter a word or phrase to explore the site.' : `${filtered.length} ${filtered.length===1?'result':'results'} for “${query}”${type ? ` in ${plural(type).toLowerCase()}` : ''}${filtered.length ? ` · Showing ${visible.length} of ${filtered.length}` : '. Try another word or choose All.'}`;
-    results.replaceChildren(...visible.map((item)=>h('article',{class:'search-result'},h('p',{class:'search-result__type',text:item.type}),h('h2',{},h('a',{href:item.url,text:item.title})),h('p',{text:item.description}),h('a',{href:item.url,class:'search-result__link',text:`View ${item.type.toLowerCase()} →`,'aria-label':`View ${item.title}`}))));
+    status.textContent = !query ? t('search.prompt') : `${filtered.length} ${filtered.length===1?t('search.one'):t('search.many')} “${query}”${type ? ` ${t('search.in', { where: typeName(type, true).toLowerCase() })}` : ''}${filtered.length ? ` · ${t('search.showing', { shown: visible.length, total: filtered.length })}` : `. ${t('search.another')}`}`;
+    results.replaceChildren(...visible.map((item)=>h('article',{class:'search-result'},h('p',{class:'search-result__type',text:typeName(item.type)}),h('h2',{},h('a',{href:item.url,text:item.title})),h('p',{text:item.description}),h('a',{href:item.url,class:'search-result__link',text:t('search.view', { type: typeName(item.type).toLowerCase() }),'aria-label':t('card.detailsFor', { name: item.title })}))));
     animateResults(results);
     more.hidden=visible.length>=filtered.length;
   };
   const readUrl=()=>{const params=new URLSearchParams(location.search);input.value=(params.get('q')||'').slice(0,200);type=SEARCH_TYPES.includes(params.get('type'))?params.get('type'):'';count=12;};
-  const saveUrl=()=>{const params=new URLSearchParams();if(input.value.trim())params.set('q',input.value.trim());if(type)params.set('type',type);history.pushState(null,'',`${location.pathname}${params.size?'?'+params:''}`);};
-  const load=async()=>{status.textContent='Searching the site…';results.setAttribute('aria-busy','true');try{index=await getSearchIndex();readUrl();render();}catch{status.textContent='Search could not load. Please try again.';results.replaceChildren(h('button',{type:'button',class:'btn btn--outline',text:'Try again',onclick:load}));}finally{results.removeAttribute('aria-busy');}};
+  const saveUrl=()=>{const params=new URLSearchParams();if(input.value.trim())params.set('q',input.value.trim());if(type)params.set('type',type);withLang(params);history.pushState(null,'',`${location.pathname}${params.size?'?'+params:''}`);};
+  const load=async()=>{status.textContent=t('search.loading');results.setAttribute('aria-busy','true');try{index=await getSearchIndex();readUrl();render();}catch{status.textContent=t('search.failed');results.replaceChildren(h('button',{type:'button',class:'btn btn--outline',text:t('search.retry'),onclick:load}));}finally{results.removeAttribute('aria-busy');}};
   form.addEventListener('submit',(event)=>{if(!index)return;event.preventDefault();type='';count=12;saveUrl();render();});
   filters.addEventListener('click',(event)=>{const button=event.target.closest('[data-search-type]');if(button){type=button.dataset.searchType;count=12;saveUrl();render();filters.querySelector('[aria-pressed="true"]')?.focus({preventScroll:true});}});
   more.addEventListener('click',()=>{const next=count;count+=12;render();results.children[next]?.querySelector('a')?.focus({preventScroll:true});});

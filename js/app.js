@@ -1,4 +1,4 @@
-import { PAGE_TITLES } from "./config.js";
+import { initLanguage, t } from "./i18n.js";
 import { bindContent } from "./modules/content.js";
 import { getCategories, getProducts, getSite } from "./modules/data-loader.js";
 import { initMotion, refreshMotion } from "./modules/motion.js";
@@ -19,6 +19,7 @@ const PAGES = {
 const PATHS = { inicio: "", catalogo: "catalogo.html", nosotros: "nosotros.html", contacto: "contacto.html", blog: 'blog.html' };
 
 async function start() {
+  initLanguage();
   initMotion();
   initMenu();
   initSiteSearch();
@@ -36,7 +37,7 @@ async function start() {
       const seo = site.settings.seo ?? {};
       const business = site.settings.businessName;
       setMeta({
-        title: page === "inicio" ? seo.title : `${PAGE_TITLES[page]} · ${business}`,
+        title: page === "inicio" ? seo.title : `${t(`page.${page}`)} · ${business}`,
         description: page === "inicio" ? seo.description : undefined,
         image: seo.ogImage,
         siteUrl: seo.siteUrl,

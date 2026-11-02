@@ -1,17 +1,12 @@
-import { LOCALE } from "../config.js";
-
-
-
-
-export const PRICE_ON_REQUEST = "Price on request";
+import { t } from "../i18n.js";
+import { localeTag } from "../locale-data.js";
 
 export function hasPrice(price) {
   return typeof price === "number" && Number.isFinite(price);
 }
 
-// Prices are stored in USD and displayed using en-US currency formatting.
+// Prices stay in USD. The locale only changes how the amount is written.
 export function formatPrice(price) {
-  if (!hasPrice(price)) return PRICE_ON_REQUEST;
-  
-  return new Intl.NumberFormat(LOCALE, { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(price);
+  if (!hasPrice(price)) return t("price.ask");
+  return new Intl.NumberFormat(localeTag(), { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(price);
 }

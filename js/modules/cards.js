@@ -1,3 +1,4 @@
+import { t } from "../i18n.js";
 import { formatPrice, hasPrice } from "../utils/currency.js";
 import { formatDate } from "../utils/dates.js";
 import { h, icon, img } from "../utils/dom.js";
@@ -8,9 +9,9 @@ export const categoryUrl = (category) => `catalogo.html?categoria=${encodeURICom
 
 export function productBadges(product, { includeFeatured = true } = {}) {
   const badges = [];
-  if (!product.available) badges.push(h("span", { class: "badge badge--sold-out", text: "Sold out" }));
-  if (product.newArrival) badges.push(h("span", { class: "badge badge--new", text: "New" }));
-  if (includeFeatured && product.featured) badges.push(h("span", { class: "badge badge--featured", text: "Featured" }));
+  if (!product.available) badges.push(h("span", { class: "badge badge--sold-out", text: t("badge.sold") }));
+  if (product.newArrival) badges.push(h("span", { class: "badge badge--new", text: t("badge.new") }));
+  if (includeFeatured && product.featured) badges.push(h("span", { class: "badge badge--featured", text: t("badge.featured") }));
   return badges;
 }
 
@@ -57,7 +58,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
           h(
             "div",
             { class: "product-card__actions" },
-            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": `View details for ${product.name}` }, "View details"),
+            h("a", { class: "btn btn--outline btn--sm", href: url, "aria-label": t("card.detailsFor", { name: product.name }) }, t("card.details")),
             contactUrl &&
               h(
                 "a",
@@ -66,8 +67,8 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
                   href: contactUrl,
                   target: "_blank",
                   rel: "noopener",
-                  "aria-label": `Ask on WhatsApp about ${product.name} (opens in a new tab)`,
-                  title: "Ask on WhatsApp",
+                  "aria-label": t("card.whatsappFor", { name: product.name }),
+                  title: t("card.whatsapp"),
                 },
                 icon("whatsapp")
               )
@@ -79,7 +80,7 @@ export function productCard(product, { whatsapp = "", headingLevel = 3, showFeat
 }
 
 export function categoryCard(category) {
-  const count = category.productCount === 1 ? "1 product" : `${category.productCount} products`;
+  const count = category.productCount === 1 ? t("card.one") : t("card.many", { count: category.productCount });
   return h(
     "li",
     {},
@@ -94,8 +95,8 @@ export function categoryCard(category) {
 
 export function promoCard(promotion) {
   let dates = "";
-  if (promotion.endDate) dates = `Valid through ${formatDate(promotion.endDate)}`;
-  else if (promotion.startDate) dates = `Starting ${formatDate(promotion.startDate)}`;
+  if (promotion.endDate) dates = t("promo.until", { date: formatDate(promotion.endDate) });
+  else if (promotion.startDate) dates = t("promo.from", { date: formatDate(promotion.startDate) });
 
   return h(
     "li",
@@ -110,7 +111,7 @@ export function promoCard(promotion) {
         dates && h("p", { class: "promo__dates", text: dates }),
         h("h3", { text: promotion.title }),
         promotion.description && h("p", { text: promotion.description }),
-        promotion.linkUrl && h("a", { class: "link-arrow", href: promotion.linkUrl, text: promotion.linkLabel || "Learn more" })
+        promotion.linkUrl && h("a", { class: "link-arrow", href: promotion.linkUrl, text: promotion.linkLabel || t("promo.more") })
       )
     )
   );
@@ -135,8 +136,8 @@ export function loadError(onRetry, headingLevel = 2) {
     variant: "error",
     role: "alert",
     headingLevel,
-    title: "We couldn’t load the information",
-    text: "Check your connection and try again. If the problem persists, contact us.",
-    action: h("button", { class: "btn btn--primary", type: "button", onclick: onRetry }, "Try again"),
+    title: t("error.title"),
+    text: t("error.text"),
+    action: h("button", { class: "btn btn--primary", type: "button", onclick: onRetry }, t("error.retry")),
   });
 }

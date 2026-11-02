@@ -1,4 +1,5 @@
 import { RELATED_LIMIT } from "../config.js";
+import { t } from "../i18n.js";
 import { hasPrice } from "../utils/currency.js";
 import { $, h, icon, img, paragraphs } from "../utils/dom.js";
 import { categoryUrl, loadError, priceBlock, productBadges, productCard, stateBlock } from "./cards.js";
@@ -35,19 +36,17 @@ async function load() {
 
 function renderNotFound(root, slug) {
   const business = site.settings?.businessName;
-  setMeta({ title: `Product not found${business ? ` · ${business}` : ""}`, noindex: true });
-  $("#breadcrumb-current").textContent = "Product not found";
+  setMeta({ title: `${t("product.missing")}${business ? ` · ${business}` : ""}`, noindex: true });
+  $("#breadcrumb-current").textContent = t("product.missing");
   root.replaceChildren(
     h(
       "div",
       { class: "container not-found" },
       stateBlock({
         headingLevel: 1,
-        title: "We couldn’t find this product",
-        text: slug
-          ? "This item may no longer be in the catalog, or the link may be incorrect. Browse our available products."
-          : "No product was specified. Browse our available products.",
-        action: h("a", { class: "btn btn--primary", href: "catalogo.html" }, "Browse catalog"),
+        title: t("product.missingTitle"),
+        text: slug ? t("product.missingText") : t("product.missingEmpty"),
+        action: h("a", { class: "btn btn--primary", href: "catalogo.html" }, t("product.browse")),
       })
     )
   );
@@ -75,7 +74,7 @@ function gallery(product) {
       {
         type: "button",
         "aria-pressed": String(index === 0),
-        "aria-label": `View photo ${index + 1} of ${images.length}`,
+        "aria-label": t("product.photo", { n: index + 1, total: images.length }),
         onclick: (event) => {
           show(image, index);
           swapImage(main);
@@ -105,17 +104,17 @@ function renderProduct(root, product, products) {
   $("#breadcrumb-current").textContent = product.name;
 
   const status = product.available
-    ? h("span", { class: "badge badge--available" }, "Available today")
-    : h("span", { class: "badge badge--unavailable" }, "Sold out today");
+    ? h("span", { class: "badge badge--available" }, t("product.available"))
+    : h("span", { class: "badge badge--unavailable" }, t("product.sold"));
   const extraBadges = productBadges(product, { includeFeatured: true }).filter((b) => !b.classList.contains("badge--sold-out"));
 
   const details = [];
   if (product.ingredients.length) {
-    details.push(h("div", {}, h("h2", { text: "Ingredients" }), h("ul", { class: "tag-list" }, product.ingredients.map((item) => h("li", { text: item })))));
+    details.push(h("div", {}, h("h2", { text: t("product.ingredients") }), h("ul", { class: "tag-list" }, product.ingredients.map((item) => h("li", { text: item })))));
   }
   if (product.allergens.length) {
     details.push(
-      h("div", {}, h("h2", { text: "Allergens" }), h("ul", { class: "tag-list tag-list--warning" }, product.allergens.map((item) => h("li", { text: item }))))
+      h("div", {}, h("h2", { text: t("product.allergens") }), h("ul", { class: "tag-list tag-list--warning" }, product.allergens.map((item) => h("li", { text: item }))))
     );
   }
 
@@ -145,10 +144,10 @@ function renderProduct(root, product, products) {
                 "a",
                 { class: "btn btn--whatsapp", href: contactUrl, target: "_blank", rel: "noopener" },
                 icon("whatsapp"),
-                "Ask on WhatsApp",
-                h("span", { class: "visually-hidden", text: " (opens in a new tab)" })
+                t("product.whatsapp"),
+                h("span", { class: "visually-hidden", text: t("product.newTab") })
               ),
-            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, `More from ${product.category.name}`)
+            h("a", { class: "btn btn--outline", href: categoryUrl(product.category) }, t("product.more", { name: product.category.name.toLowerCase() }))
           ),
           h(
             "p",
@@ -156,8 +155,7 @@ function renderProduct(root, product, products) {
             icon("info"),
             h("span", {
               text:
-                settings.availabilityNote ||
-                "Availability may change during the day. Please confirm before visiting.",
+                settings.availabilityNote || t("product.note"),
             })
           ),
           details.length ? h("div", { class: "details" }, details) : null
@@ -171,7 +169,7 @@ function renderProduct(root, product, products) {
           h(
             "div",
             { class: "container" },
-            h("div", { class: "section-head" }, h("div", { class: "section-head__text" }, h("h2", { id: "related-title", text: "You may also like" }))),
+            h("div", { class: "section-head" }, h("div", { class: "section-head__text" }, h("h2", { id: "related-title", text: t("product.related") }))),
             h("ul", { class: "product-grid" }, related.map((p) => productCard(p, { whatsapp: settings.whatsapp })))
           )
         )

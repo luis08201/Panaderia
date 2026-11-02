@@ -1,3 +1,4 @@
+import { t } from "../i18n.js";
 import { $, $$, h, setText } from "../utils/dom.js";
 import { openMenu } from "./motion.js";
 import { whatsappUrl } from "./whatsapp.js";
@@ -11,7 +12,7 @@ export function initMenu() {
 
   const setOpen = (open) => {
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.querySelector(".nav-toggle__label").textContent = open ? "Close" : "Menu";
+    toggle.querySelector(".nav-toggle__label").textContent = open ? t("close") : t("menu");
     nav.classList.toggle("is-open", open);
     if (open) openMenu(nav);
   };
@@ -79,7 +80,7 @@ export function applySettings(settings) {
   setText("[data-site='availabilityNote']", settings.availabilityNote);
   renderAnnouncement(settings.announcement);
 
-  const generalChat = whatsappUrl(settings.whatsapp, settings.whatsappMessage || "Hi! I would like more information.");
+  const generalChat = whatsappUrl(settings.whatsapp, settings.whatsappMessage || t("wa.general"));
   for (const link of $$("[data-whatsapp]")) {
     if (generalChat) link.href = generalChat;
     else (link.closest("[data-whatsapp-wrapper]") ?? link).remove();
@@ -105,7 +106,7 @@ export function applySettings(settings) {
     slot.replaceChildren(
       ...(links.length
         ? links.map((item) => h("li", {}, h("a", { href: item.url, target: "_blank", rel: "noopener", text: item.network })))
-        : [h("li", { class: "muted", text: "Social links coming soon" })])
+        : [h("li", { class: "muted", text: t("social.soon") })])
     );
   }
 

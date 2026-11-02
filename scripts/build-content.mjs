@@ -317,6 +317,38 @@ const site = {
   generatedAt: new Date().toISOString(),
 };
 
+// Spanish overlays live in content/locales/es.json. English remains the stored CMS text.
+const localeFile = join(CONTENT, "locales", "es.json");
+const locale = existsSync(localeFile) ? readJson(localeFile) : null;
+if (locale) {
+  const textCopy = (value) => (value && typeof value === "object" ? value : null);
+  for (const product of products) {
+    const copy = textCopy(locale.products?.[product.id]);
+    if (!copy?.name) warnings.push(`Sin traducción al español: producto ${product.id}`);
+    else product.es = { ...copy, category: { name: locale.categories?.[product.categoryId]?.name || product.category.name } };
+  }
+  for (const category of categories) {
+    const copy = textCopy(locale.categories?.[category.id]);
+    if (!copy?.name) warnings.push(`Sin traducción al español: categoría ${category.id}`);
+    else category.es = copy;
+  }
+  for (const promotion of promotions) {
+    const copy = textCopy(locale.promotions?.[promotion.id]);
+    if (copy?.title) promotion.es = copy;
+  }
+  if (locale.settings) site.settings.es = locale.settings;
+  if (locale.pages) site.pages.es = locale.pages;
+  for (const category of blog.categories) {
+    const copy = textCopy(locale.blogCategories?.[category.id]);
+    if (copy?.name) category.es = copy;
+  }
+  for (const post of blog.posts) {
+    const copy = textCopy(locale.blogPosts?.[post.id]);
+    if (!copy?.title) warnings.push(`Sin traducción al español: artículo ${post.id}`);
+    else post.es = { ...copy, category: { name: locale.blogCategories?.[post.categoryId]?.name || post.category.name } };
+  }
+}
+
 // ---------- Report and write ----------
 for (const warning of warnings) console.warn(`aviso: ${warning}`);
 if (errors.length) {

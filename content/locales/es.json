@@ -1,0 +1,919 @@
+{
+  "settings": {
+    "tagline": "Panadería artesanal",
+    "announcement": {
+      "text": "Sitio de demostración: los datos del negocio, los precios y el contacto son de ejemplo.",
+      "linkLabel": "Ver catálogo"
+    },
+    "whatsappMessage": "Hola, quisiera información sobre sus productos.",
+    "address": "Dirección pendiente — ubicación de ejemplo, Managua, Nicaragua",
+    "hours": [
+      {
+        "days": "Lunes a viernes",
+        "time": "6:30 a. m. – 7:00 p. m."
+      },
+      {
+        "days": "Sábado",
+        "time": "7:00 a. m. – 7:00 p. m."
+      },
+      {
+        "days": "Domingo",
+        "time": "7:00 a. m. – 1:00 p. m."
+      }
+    ],
+    "social": [
+      {},
+      {}
+    ],
+    "availabilityNote": "La disponibilidad es informativa y puede cambiar durante el día. Confírmala antes de visitarnos.",
+    "seo": {
+      "title": "Crumb & Oven | Panadería artesanal",
+      "description": "Pan de masa madre, pan dulce, pasteles, galletas y café. Consulta el menú con precios en dólares y escríbenos por WhatsApp."
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "eyebrow": "Panadería artesanal en Managua",
+        "title": "Pan recién horneado, todos los días",
+        "text": "Hogazas de masa madre, pan dulce de siempre y pasteles para compartir. Consulta el catálogo y escríbenos por WhatsApp para confirmar disponibilidad.",
+        "ctaLabel": "Ver catálogo",
+        "imageAlt": "Estantes con hogazas, baguettes y panes artesanales recién horneados"
+      },
+      "categories": {
+        "title": "Explora por categoría",
+        "text": "Del pan de la mañana al postre de la tarde."
+      },
+      "featured": {
+        "title": "Favoritos de la casa",
+        "text": "Lo que nuestros clientes vuelven a pedir."
+      },
+      "fresh": {
+        "title": "Recién horneados",
+        "text": "Novedades que acabamos de sumar a la vitrina.",
+        "schedule": "Horneamos a las 6:00 a. m. y a las 3:00 p. m."
+      },
+      "promotions": {
+        "title": "Promociones",
+        "text": "Ofertas informativas, válidas en tienda."
+      },
+      "story": {
+        "eyebrow": "Nuestra historia",
+        "title": "Fermentación lenta y recetas de casa",
+        "text": "Trabajamos con harinas seleccionadas, masa madre propia y recetas nicaragüenses que aprendimos en familia. Horneamos en tandas pequeñas para que el pan llegue fresco a tu mesa.",
+        "imageAlt": "Manos dando forma a una bola de masa sobre una mesa enharinada",
+        "linkLabel": "Conoce más"
+      },
+      "visit": {
+        "title": "Visítanos",
+        "text": "Te esperamos en tienda. Si buscas algo en particular, escríbenos antes para apartarlo."
+      }
+    },
+    "nosotros": {
+      "hero": {
+        "eyebrow": "Nosotros",
+        "title": "Una panadería de barrio, hecha con calma",
+        "text": "Horneamos cada día con ingredientes sencillos, tiempos largos de fermentación y el cuidado de las recetas de casa.",
+        "imageAlt": "Panadero sacando una bandeja de pan del horno"
+      },
+      "story": {
+        "title": "Nuestra historia",
+        "text": "Crumb & Oven nació de una idea simple: hacer pan como se hacía en casa, sin apuros. Empezamos con unas pocas hogazas de masa madre y el pan dulce que acompaña el café de la tarde.\n\nHoy seguimos horneando en tandas pequeñas, combinando técnicas artesanales con favoritos nicaragüenses como el pan de coco y las cosas de horno de maíz y queso."
+      },
+      "values": [
+        {
+          "title": "Ingredientes simples",
+          "text": "Harina, agua, sal y tiempo. Sin conservantes ni mejoradores."
+        },
+        {
+          "title": "Tandas pequeñas",
+          "text": "Horneamos varias veces al día para que el pan salga fresco."
+        },
+        {
+          "title": "Recetas de casa",
+          "text": "Mantenemos vivos los sabores de la repostería nicaragüense."
+        }
+      ],
+      "process": [
+        {
+          "title": "Masa madre",
+          "text": "Alimentamos nuestra masa madre a diario; es la base de los panes artesanales."
+        },
+        {
+          "title": "Fermentación lenta",
+          "text": "Las masas reposan entre 12 y 24 horas para ganar sabor y textura."
+        },
+        {
+          "title": "Formado a mano",
+          "text": "Cada pieza se pesa y se forma a mano antes de entrar al horno."
+        },
+        {
+          "title": "Horneado diario",
+          "text": "Horneamos a primera hora y por la tarde."
+        }
+      ],
+      "gallery": [
+        { "alt": "Harina cayendo sobre la masa en la mesa de trabajo" },
+        { "alt": "Masa redonda formada a mano" },
+        { "alt": "Vitrina con pan recién horneado" }
+      ]
+    }
+  },
+  "categories": {
+    "cat-pan-dulce": {
+      "name": "Pan dulce",
+      "description": "Las piezas de siempre para el café de la tarde: pan de coco, conchas, pan de yema y cosa de horno."
+    },
+    "cat-reposteria": {
+      "name": "Repostería",
+      "description": "Croissants, roles, empanadas y tartaletas de vitrina."
+    },
+    "cat-bebidas": {
+      "name": "Bebidas",
+      "description": "Café nicaragüense, chocolate y frescos para acompañar el pan."
+    },
+    "cat-pan-artesanal": {
+      "name": "Pan artesanal",
+      "description": "Hogazas, baguettes y panes de fermentación lenta para la mesa de todos los días."
+    },
+    "cat-pasteles": {
+      "name": "Pasteles",
+      "description": "Pasteles enteros para compartir y pasteles personalizados para celebraciones."
+    },
+    "cat-galletas": {
+      "name": "Galletas",
+      "description": "Galletas horneadas por tandas, en bolsas listas para llevar o regalar."
+    }
+  },
+  "products": {
+    "prd-020": {
+      "name": "Rol de canela",
+      "shortDescription": "Masa suave, canela y glaseado de queso crema.",
+      "description": "Rol de masa brioche relleno de canela y azúcar morena, terminado con glaseado de queso crema.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Huevo",
+        "Canela",
+        "Azúcar morena",
+        "Queso crema"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-011": {
+      "name": "Pastel de chocolate",
+      "shortDescription": "Capas de bizcocho de cacao y ganache semiamargo.",
+      "description": "Bizcocho húmedo de cacao con relleno y cobertura de ganache de chocolate semiamargo.",
+      "unit": "Pastel entero, 12 porciones",
+      "ingredients": [
+        "Harina de trigo",
+        "Cacao",
+        "Chocolate",
+        "Huevo",
+        "Mantequilla",
+        "Crema",
+        "Azúcar"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-001": {
+      "name": "Pan de masa madre",
+      "shortDescription": "Corteza crujiente, miga húmeda y fermentación de 24 horas.",
+      "description": "Nuestra hogaza insignia. La masa fermenta durante 24 horas con masa madre propia, sin levadura comercial, y se hornea a alta temperatura para lograr una corteza gruesa y una miga abierta.\n\nSe conserva bien de tres a cuatro días envuelta en un paño. Para recuperarla, tuéstala unos minutos.",
+      "unit": "Hogaza de 700 g",
+      "ingredients": [
+        "Harina de trigo",
+        "Agua",
+        "Masa madre",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten"
+      ]
+    },
+    "prd-012": {
+      "name": "Cheesecake de maracuyá",
+      "shortDescription": "Base de galleta, queso crema y cobertura de maracuyá.",
+      "description": "Cheesecake horneado sobre base de galleta, con una cobertura ácida de maracuyá que equilibra el dulzor.",
+      "unit": "Pastel entero, 10 porciones",
+      "ingredients": [
+        "Queso crema",
+        "Galleta",
+        "Mantequilla",
+        "Huevo",
+        "Azúcar",
+        "Maracuyá"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-003": {
+      "name": "Pan integral de semillas",
+      "shortDescription": "Harina integral con linaza, girasol y ajonjolí.",
+      "description": "Pan denso y sabroso, hecho con harina integral y una mezcla de semillas tostadas. Rinde muy bien en rebanadas finas para el desayuno.",
+      "unit": "Pieza de 600 g",
+      "ingredients": [
+        "Harina integral de trigo",
+        "Harina de trigo",
+        "Linaza",
+        "Semillas de girasol",
+        "Ajonjolí",
+        "Miel",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten",
+        "Ajonjolí"
+      ]
+    },
+    "prd-008": {
+      "name": "Pan de yema",
+      "shortDescription": "Miga amarilla y suave, perfecto con café.",
+      "description": "Pan enriquecido con yemas de huevo y mantequilla, de miga tierna y color dorado.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Yema de huevo",
+        "Mantequilla",
+        "Azúcar",
+        "Levadura"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-022": {
+      "name": "Brownie de chocolate",
+      "shortDescription": "Denso, húmedo y con costra brillante.",
+      "description": "Brownie de chocolate semiamargo con textura húmeda en el centro.",
+      "unit": "Porción",
+      "ingredients": [
+        "Chocolate",
+        "Mantequilla",
+        "Azúcar",
+        "Huevo",
+        "Harina de trigo",
+        "Cacao"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-028": {
+      "name": "Jugo de naranja",
+      "shortDescription": "Naranja recién exprimida, sin azúcar añadida.",
+      "description": "Jugo de naranja exprimido al momento.",
+      "unit": "Vaso de 12 oz",
+      "ingredients": [
+        "Naranja"
+      ]
+    },
+    "prd-005": {
+      "name": "Focaccia de romero",
+      "shortDescription": "Aceite de oliva, romero fresco y sal en escamas.",
+      "description": "Focaccia alta y aireada, con abundante aceite de oliva, romero fresco y sal en escamas. Se prepara en tandas pequeñas.",
+      "unit": "Bandeja de 20 × 30 cm",
+      "ingredients": [
+        "Harina de trigo",
+        "Agua",
+        "Aceite de oliva",
+        "Romero",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten"
+      ]
+    },
+    "prd-002": {
+      "name": "Baguette clásica",
+      "shortDescription": "Delgada, dorada y crujiente, ideal para sándwiches.",
+      "description": "Baguette de corteza fina y miga ligera. Sale del horno dos veces al día y está en su mejor momento durante las primeras horas.",
+      "unit": "Unidad de 250 g",
+      "ingredients": [
+        "Harina de trigo",
+        "Agua",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten"
+      ]
+    },
+    "prd-015": {
+      "name": "Galletas con chispas de chocolate",
+      "shortDescription": "Bordes crujientes y centro suave.",
+      "description": "Galletas grandes con mantequilla, azúcar morena y chispas de chocolate semiamargo.",
+      "unit": "Bolsa de 6 unidades",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Azúcar morena",
+        "Huevo",
+        "Chispas de chocolate",
+        "Vainilla"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-004": {
+      "name": "Pan de molde casero",
+      "shortDescription": "Suave y esponjoso, rebanado a pedido.",
+      "description": "Pan de molde de miga blanca y suave, sin conservantes. Si lo prefieres rebanado, pídelo al momento de recogerlo.",
+      "unit": "Molde de 650 g",
+      "ingredients": [
+        "Harina de trigo",
+        "Leche",
+        "Mantequilla",
+        "Azúcar",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten",
+        "Leche"
+      ]
+    },
+    "prd-017": {
+      "name": "Galletas de avena y pasas",
+      "shortDescription": "Avena, pasas y un toque de canela.",
+      "description": "Galletas masticables de avena con pasas y canela.",
+      "unit": "Bolsa de 6 unidades",
+      "ingredients": [
+        "Avena",
+        "Harina de trigo",
+        "Pasas",
+        "Mantequilla",
+        "Azúcar morena",
+        "Huevo",
+        "Canela"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-021": {
+      "name": "Empanada de piña",
+      "shortDescription": "Masa quebrada rellena de dulce de piña casero.",
+      "description": "Empanada horneada de masa quebrada con relleno de piña cocida con canela.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Piña",
+        "Azúcar",
+        "Canela"
+      ],
+      "allergens": [
+        "Gluten",
+        "Leche"
+      ]
+    },
+    "prd-010": {
+      "name": "Pastel tres leches",
+      "shortDescription": "Bizcocho bañado en tres leches con crema batida.",
+      "description": "Bizcocho de vainilla empapado en leche evaporada, leche condensada y crema, cubierto con crema batida. Se recomienda pedirlo con 24 horas de anticipación.",
+      "unit": "Pastel entero, 12 porciones",
+      "ingredients": [
+        "Harina de trigo",
+        "Huevo",
+        "Leche evaporada",
+        "Leche condensada",
+        "Crema",
+        "Azúcar",
+        "Vainilla"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-009": {
+      "name": "Cosa de horno",
+      "shortDescription": "Masa de maíz, queso seco y mantequilla, como en casa.",
+      "description": "Receta tradicional nicaragüense de maíz y queso seco, horneada hasta dorar los bordes. Dulce y salada a la vez.",
+      "unit": "Porción",
+      "ingredients": [
+        "Masa de maíz",
+        "Queso seco",
+        "Mantequilla",
+        "Azúcar",
+        "Huevo"
+      ],
+      "allergens": [
+        "Leche",
+        "Huevo"
+      ]
+    },
+    "prd-026": {
+      "name": "Chocolate caliente",
+      "shortDescription": "Cacao nicaragüense, leche y un toque de canela.",
+      "description": "Chocolate preparado con cacao, leche entera y canela.",
+      "unit": "Taza de 10 oz",
+      "ingredients": [
+        "Cacao",
+        "Leche",
+        "Azúcar",
+        "Canela"
+      ],
+      "allergens": [
+        "Leche"
+      ]
+    },
+    "prd-018": {
+      "name": "Alfajores de dulce de leche",
+      "shortDescription": "Dos tapas de maicena rellenas de dulce de leche.",
+      "description": "Tapas suaves de maicena, rellenas de dulce de leche y bañadas en coco rallado o chocolate.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Maicena",
+        "Harina de trigo",
+        "Mantequilla",
+        "Huevo",
+        "Dulce de leche",
+        "Coco rallado"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche",
+        "Coco"
+      ]
+    },
+    "prd-006": {
+      "name": "Pan de coco",
+      "shortDescription": "Suave, con coco rallado y un toque de leche de coco.",
+      "description": "Un clásico de la costa caribe que horneamos todos los días. Masa suave con leche de coco y coco rallado, ligeramente dulce.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Leche de coco",
+        "Coco rallado",
+        "Azúcar",
+        "Mantequilla",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten",
+        "Leche",
+        "Coco"
+      ]
+    },
+    "prd-027": {
+      "name": "Fresco de cacao",
+      "shortDescription": "Bebida fría de cacao, arroz y canela.",
+      "description": "Fresco tradicional de cacao molido con arroz, canela y leche, servido con hielo.",
+      "unit": "Vaso de 16 oz",
+      "ingredients": [
+        "Cacao",
+        "Arroz",
+        "Leche",
+        "Azúcar",
+        "Canela"
+      ],
+      "allergens": [
+        "Leche"
+      ]
+    },
+    "prd-013": {
+      "name": "Pastel de zanahoria",
+      "shortDescription": "Especiado, con nueces y frosting de queso crema.",
+      "description": "Bizcocho de zanahoria con canela y nueces, cubierto con frosting de queso crema.",
+      "unit": "Pastel entero, 12 porciones",
+      "ingredients": [
+        "Harina de trigo",
+        "Zanahoria",
+        "Nueces",
+        "Huevo",
+        "Azúcar",
+        "Canela",
+        "Queso crema"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche",
+        "Nueces"
+      ]
+    },
+    "prd-007": {
+      "name": "Conchas",
+      "shortDescription": "Pan de huevo con cubierta crujiente de vainilla o chocolate.",
+      "description": "Pan de huevo esponjoso con la tradicional cubierta azucarada. Hay de vainilla y de chocolate, según la tanda del día.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Huevo",
+        "Leche",
+        "Mantequilla",
+        "Azúcar",
+        "Vainilla",
+        "Cacao"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    },
+    "prd-016": {
+      "name": "Galletas de mantequilla",
+      "shortDescription": "Sencillas, mantecosas y con sello decorado.",
+      "description": "Galletas de mantequilla con un sello en relieve. Se deshacen en la boca y acompañan bien el café.",
+      "unit": "Bolsa de 8 unidades",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Azúcar",
+        "Vainilla"
+      ],
+      "allergens": [
+        "Gluten",
+        "Leche"
+      ]
+    },
+    "prd-025": {
+      "name": "Cappuccino",
+      "shortDescription": "Espresso con leche texturizada y espuma.",
+      "description": "Doble espresso con leche texturizada y una capa de espuma. Puedes pedirlo con leche deslactosada.",
+      "unit": "Taza de 8 oz",
+      "ingredients": [
+        "Café",
+        "Leche"
+      ],
+      "allergens": [
+        "Leche"
+      ]
+    },
+    "prd-024": {
+      "name": "Café filtrado",
+      "shortDescription": "Café nicaragüense de altura, preparado por goteo.",
+      "description": "Café de altura de productores nicaragüenses, tostado medio y preparado por goteo.",
+      "unit": "Taza de 8 oz",
+      "ingredients": [
+        "Café"
+      ]
+    },
+    "prd-014": {
+      "name": "Pastel personalizado",
+      "shortDescription": "Para cumpleaños y celebraciones, con el sabor y diseño que elijas.",
+      "description": "Preparamos pasteles para cumpleaños, bautizos y celebraciones. El precio depende del tamaño, el sabor y la decoración. Escríbenos con al menos tres días de anticipación para cotizarlo.",
+      "unit": "Según tamaño y diseño"
+    },
+    "prd-019": {
+      "name": "Croissant de mantequilla",
+      "shortDescription": "Hojaldre laminado a mano, con 27 capas.",
+      "description": "Croissant de mantequilla laminado a mano durante tres días. Crujiente por fuera y con capas bien definidas por dentro.",
+      "unit": "Unidad",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Leche",
+        "Azúcar",
+        "Levadura",
+        "Sal"
+      ],
+      "allergens": [
+        "Gluten",
+        "Leche"
+      ]
+    },
+    "prd-023": {
+      "name": "Tartaleta de frutas",
+      "shortDescription": "Crema pastelera y fruta fresca de temporada.",
+      "description": "Base de masa sablée, crema pastelera de vainilla y fruta fresca. La fruta cambia según la temporada.",
+      "unit": "Tartaleta individual",
+      "ingredients": [
+        "Harina de trigo",
+        "Mantequilla",
+        "Leche",
+        "Huevo",
+        "Azúcar",
+        "Fruta de temporada"
+      ],
+      "allergens": [
+        "Gluten",
+        "Huevo",
+        "Leche"
+      ]
+    }
+  },
+  "promotions": {
+    "promo-martes-pan-dulce": {
+      "title": "Martes de pan dulce",
+      "description": "Todos los martes, 6 piezas de pan dulce surtido por C$ 120. Válido en tienda mientras haya existencias.",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "linkLabel": "Ver pan dulce"
+    },
+    "promo-fiestas-patrias": {
+      "title": "Rosquillas de septiembre",
+      "description": "Promoción de fiestas patrias, ya finalizada. Se conserva como ejemplo de una promoción vencida.",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-15"
+    },
+    "promo-cafe-croissant": {
+      "title": "Café y croissant",
+      "description": "Un café filtrado y un croissant de mantequilla por C$ 95, de lunes a viernes antes de las 10:00 a. m.",
+      "startDate": "2026-10-01",
+      "endDate": "2026-11-30",
+      "linkLabel": "Ver croissant"
+    }
+  },
+  "blogCategories": {
+    "blog-cat-basics": {
+      "name": "Bases del horneado",
+      "description": "Los hábitos sencillos detrás de un mejor pan."
+    },
+    "blog-cat-bakery": {
+      "name": "Desde la panadería",
+      "description": "Pequeñas historias del mostrador, la mesa y el horno."
+    },
+    "blog-cat-craft": {
+      "name": "Ingredientes y oficio",
+      "description": "Una mirada más de cerca a los ingredientes y procesos que nos gustan."
+    },
+    "blog-cat-sharing": {
+      "name": "Servir y compartir",
+      "description": "Ideas para juntar buen pan y buena compañía."
+    }
+  },
+  "blogPosts": {
+    "post-001": {
+      "title": "Una guía sencilla de la masa madre",
+      "excerpt": "Un fermento, una subida lenta y un poco de curiosidad. Conoce el pan que hay detrás de esa corteza.",
+      "introduction": "La masa madre puede sonar a otro idioma. Fermento, pliegues, greña: hay mucho que aprender, pero no hace falta saber cada término para disfrutar un buen pan. Empieza por lo que puedes ver, oler y probar.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Hogaza redonda de masa madre con corteza dorada",
+      "sections": [
+        {
+          "heading": "Empieza con un cultivo vivo",
+          "text": "El fermento es una mezcla de harina y agua que se mantiene con refrescos regulares. Ayuda a fermentar la masa y le da carácter. Dos panaderos pueden usar ingredientes parecidos y obtener panes muy distintos, porque la harina, el tiempo, la temperatura y la técnica influyen."
+        },
+        {
+          "heading": "Mira más allá de la corteza",
+          "text": "Observa el interior tanto como el exterior. La miga puede ser abierta e irregular, o más cerrada y suave. Ninguna de las dos cuenta toda la historia. Prueba una rebanada sola y luego tostada, y nota cómo cambian la textura y el sabor."
+        },
+        {
+          "heading": "Encuentra tu rebanada de cada día",
+          "text": "Prueba la masa madre con mantequilla, junto a una sopa o como base de un sándwich sencillo. Pregunta en la panadería por la mezcla de harinas y cómo guardarla. No hay un pan perfecto para todas las mesas; el mejor punto de partida es uno que quieras volver a comer."
+        }
+      ]
+    },
+    "post-002": {
+      "title": "Por qué el pan necesita enfriar",
+      "excerpt": "El aroma llega primero. Un poco de paciencia ayuda a que el interior del pan lo alcance.",
+      "introduction": "Una hogaza caliente es difícil de resistir. Pero el camino del horno a la mesa incluye una etapa más quieta: el enfriado. Si la rebanada se pega o se aplasta bajo el cuchillo, quizá el pan solo necesita más tiempo antes de cortarse.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Panadero sacando una bandeja de pan recién horneado",
+      "sections": [
+        {
+          "heading": "El horno no es el último paso",
+          "text": "Cuando el pan sale del horno, el calor y la humedad siguen moviéndose dentro. Dejarlo reposar le da tiempo al interior para asentarse. La espera depende del tamaño y del estilo, así que sigue el consejo del panadero en lugar de tratar todas las hogazas igual."
+        },
+        {
+          "heading": "Dale aire al pan",
+          "text": "Una rejilla deja que el aire circule mientras un pan sencillo se enfría. Evita guardar el pan caliente en una bolsa: el vapor ablanda la corteza. Los panes enriquecidos y la bollería rellena pueden necesitar otro cuidado, así que conserva las instrucciones del producto que compraste."
+        },
+        {
+          "heading": "Que la primera rebanada valga la pena",
+          "text": "Usa un cuchillo de sierra y cortes suaves, sin aplastar. Si más tarde quieres una rebanada tibia, tuesta solo lo que vayas a comer. Conservas el aroma y el calor, y el pan se corta mejor."
+        }
+      ]
+    },
+    "post-003": {
+      "title": "Conoce tu corteza",
+      "excerpt": "Fina y crujiente, u oscura y firme: el exterior del pan tiene su propia historia.",
+      "introduction": "Una corteza puede crujir, ceder con suavidad o pedir un bocado más largo. Esas diferencias son parte de lo agradable de recorrer una panadería. En lugar de buscar una sola corteza correcta, piensa en la comida y la textura que prefieres.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Baguette dorada sobre una tabla de madera",
+      "sections": [
+        {
+          "heading": "Busca el estilo que te gusta",
+          "text": "Una baguette y un pan de molde están pensados para momentos distintos. Una puede tener una cáscara fina y crujiente; el otro, una capa exterior más tierna. La forma, los ingredientes y el horneado influyen. Compara panes de un mismo estilo, no todas las hogazas con la misma apariencia."
+        },
+        {
+          "heading": "Empareja la textura con la comida",
+          "text": "Una corteza firme queda muy bien junto a una sopa o un poco de aceite de oliva. Para un relleno delicado, quizá prefieras un pan más suave. Deja que la forma de servirlo guíe la elección y pide sugerencias en el mostrador."
+        },
+        {
+          "heading": "Disfrútalo en su mejor momento",
+          "text": "La textura cambia después del horneado y durante el almacenamiento. Tostar puede devolverle un crujido agradable a una rebanada que se ablandó. Separa el pan de los toppings húmedos hasta el momento de servir y sigue las indicaciones de conservación de esa hogaza."
+        }
+      ]
+    },
+    "post-004": {
+      "title": "Lo que hay en un buen pan",
+      "excerpt": "Ingredientes sencillos dejan espacio para decisiones cuidadosas y para el criterio del panadero.",
+      "introduction": "Una lista corta de ingredientes no significa que el pan sea fácil de hacer bien. Harina, agua, sal y un cultivo pueden combinarse de muchas maneras. Lo interesante está en lo que el panadero decide hacer con ellos.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Manos trabajando harina y masa en la mesa de la panadería",
+      "sections": [
+        {
+          "heading": "La harina tiene carácter",
+          "text": "Cada harina aporta sabor, color y textura. Un pan puede usar una sola harina o una mezcla elegida para un resultado concreto. Cuando encuentres un pan que te guste, pregunta por esa mezcla: es una pista útil para elegir otro de la misma panadería."
+        },
+        {
+          "heading": "El agua y la sal también trabajan",
+          "text": "El agua ayuda a unir la masa y la sal aporta sabor y cambia cómo se comporta. Las recetas equilibran esos ingredientes según el pan que buscan. Una masa más húmeda no es automáticamente mejor; importa cómo trabajan juntos los ingredientes y el proceso."
+        },
+        {
+          "heading": "El cuidado también es receta",
+          "text": "Amasar, reposar, formar y hornear merecen atención. Pequeñas observaciones ayudan al panadero a decidir cuándo pasar a la siguiente etapa. Por eso una receta conocida sigue siendo un oficio diario: el proceso responde a la masa, no solo a un reloj."
+        }
+      ]
+    },
+    "post-005": {
+      "title": "Una mirada a los granos enteros",
+      "excerpt": "Descubre un poco más de color, textura y variedad en tu próxima rebanada.",
+      "introduction": "Los panes de grano entero ofrecen experiencias muy distintas, desde rebanadas suaves para sándwich hasta hogazas de campo más intensas. El nombre no dice cómo sabrá el pan. Mirar la mezcla de harinas y las semillas ayuda a encontrar el estilo que te gusta.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Hogaza de grano entero cubierta de semillas",
+      "sections": [
+        {
+          "heading": "Lee más allá del color",
+          "text": "Un pan oscuro no describe del todo sus ingredientes. Revisa la información o pregunta qué granos usa la panadería. Las mezclas cambian, y las semillas de afuera cuentan otra historia que la harina de adentro. La información clara facilita elegir."
+        },
+        {
+          "heading": "Prueba primero un acompañamiento sencillo",
+          "text": "Prueba una rebanada con algo conocido, como mantequilla o tu relleno habitual. Luego tuéstala y nota la diferencia de aroma y textura. Empezar simple ayuda a decidir qué cualidades quieres en el pan de todos los días."
+        },
+        {
+          "heading": "Habla de lo que prefieres",
+          "text": "Si tienes restricciones, consulta los ingredientes y alérgenos actuales antes de elegir. El nombre o la foto no bastan para confirmar si te conviene. Para el sabor, di si prefieres una rebanada suave, un bocado más firme o una corteza con semillas."
+        }
+      ]
+    },
+    "post-006": {
+      "title": "Mantequilla, capas y un poco de paciencia",
+      "excerpt": "Unos pliegues y bastante cuidado le dan a un pastel familiar su carácter delicado.",
+      "introduction": "El gusto de un croissant empieza con las primeras hojuelas crujientes. Detrás de ese momento cotidiano hay una secuencia cuidadosa de estirar, plegar, reposar y hornear. No hace falta hacerlo en casa para apreciar el trabajo de cada capa.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Croissants dorados con capas hojaldradas",
+      "sections": [
+        {
+          "heading": "Una estructura que se arma por etapas",
+          "text": "El laminado une masa y mantequilla en capas repetidas, al plegar y estirar. El panadero cuida el grosor y la temperatura mientras el hojaldre toma forma. Es un proceso de manejo cuidadoso, con reposos entre etapas para que el siguiente paso empiece con la masa en buen estado."
+        },
+        {
+          "heading": "Mira, escucha y prueba",
+          "text": "Fíjate en la superficie dorada, en el crujido suave al partirlo y en la textura de adentro. Cada panadería prefiere formas y acabados un poco distintos. En lugar de esperar el mismo pastel en todas partes, compara el equilibrio entre lo crujiente, lo suave y el sabor."
+        },
+        {
+          "heading": "Sírvelo sin complicarlo",
+          "text": "Un croissant solo necesita poca compañía: café, té o un momento tranquilo pueden bastar. Si lo guardas para después, pregunta cómo recomienda refrescarlo la panadería. Los rellenos pueden conservarse de otra manera, así que sigue las instrucciones de ese producto."
+        }
+      ]
+    },
+    "post-007": {
+      "title": "Un desayuno para ir más despacio",
+      "excerpt": "No hace falta una mesa elaborada para que la primera comida se sienta pensada.",
+      "introduction": "Un buen desayuno puede ser tan simple como un pan que te guste, algo para untar y una bebida que disfrutes. La idea no es crear más trabajo. Es hacer un poco de lugar para una comida que se sienta considerada.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Café recién servido en una taza de cerámica",
+      "sections": [
+        {
+          "heading": "Elige una cosa alrededor de la cual armarlo",
+          "text": "Empieza con un pan o un pastel que de verdad quieras comer. Suma un topping conocido, fruta o algo salado, según te guste. Un conjunto pequeño de ingredientes le da lugar a cada uno y evita convertir una mañana común en un proyecto."
+        },
+        {
+          "heading": "Prepara los detalles útiles",
+          "text": "Saca platos y tazas, corta lo que haya que cortar y ten el untado listo antes de que el pan esté tostado. Esos pasos hacen el servicio más calmado. Si hay más personas, deja los toppings separados para que cada quien arme el desayuno que prefiere."
+        },
+        {
+          "heading": "Deja espacio para disfrutarlo",
+          "text": "Sirve lo que piensas comer y guarda el resto según las instrucciones del producto. Siéntate si puedes, aunque sean unos minutos. Un desayuno más lento no exige una mesa perfecta; una rebanada tibia y un poco de atención son un buen comienzo."
+        }
+      ]
+    },
+    "post-008": {
+      "title": "El arte de una tabla de pan",
+      "excerpt": "Una forma relajada de compartir unas cuantas cosas buenas, con el pan en el centro.",
+      "introduction": "Una tabla de pan funciona mejor cuando es fácil de alcanzar, fácil de servir y adecuada para quienes están en la mesa. Puedes armar algo acogedor con pocos componentes. La variedad importa más que la cantidad.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Focaccia con hierbas y superficie dorada",
+      "sections": [
+        {
+          "heading": "Ofrece un contraste pequeño",
+          "text": "Elige dos panes de texturas distintas, quizá una hogaza con corteza y una pieza más suave. Corta algunas porciones y deja otras para partir, si corresponde. Agrega pocos acompañamientos, para que la tabla siga siendo clara y cada cosa se reconozca."
+        },
+        {
+          "heading": "Haz que compartir sea práctico",
+          "text": "Pon los untables en sus propios recipientes y con su utensilio. Separa los toppings húmedos del pan hasta servir, para que las rebanadas no se ablanden. Ten en cuenta las necesidades de tus invitados e identifica lo que hay en la tabla: la apariencia no comunica alérgenos ni dietas."
+        },
+        {
+          "heading": "Repón en lugar de abarrotar",
+          "text": "Empieza con porciones manejables y saca más cuando haga falta. Sigue las instrucciones de conservación de los acompañamientos perecederos. Un poco de espacio vacío hace la tabla más fácil de usar, y reponerla mantiene la presentación fresca durante la comida."
+        }
+      ]
+    },
+    "post-009": {
+      "title": "Celebraciones pequeñas, detalles cuidadosos",
+      "excerpt": "Un pastel favorito y unos toques personales pueden hacer que una reunión común se sienta especial.",
+      "introduction": "No toda celebración necesita una lista larga de invitados ni un tema elaborado. A veces lo más memorable es elegir algo que a esa persona le encanta. Un pastel, una mesa compartida y un detalle pensado pueden hacer mucho.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Pastel de celebración con un acabado rosa suave",
+      "sections": [
+        {
+          "heading": "Empieza por la persona",
+          "text": "Piensa en sus sabores favoritos y en cómo le gusta reunirse. Un pastel conocido puede significar más que una pieza llamativa y desconocida. Pregunta por porciones, ingredientes y tiempos con anticipación, sobre todo si el diseño o el relleno piden preparación especial."
+        },
+        {
+          "heading": "Deja el plan claro",
+          "text": "Confirma la hora de recoger, cómo servirlo y las instrucciones de conservación al consultar. Comparte referencias de diseño como punto de partida, sin asumir un resultado idéntico. Un plan claro le da a la panadería la información que necesita."
+        },
+        {
+          "heading": "Suma un toque personal",
+          "text": "Una nota escrita a mano, una canción favorita o unas flores sencillas le dan carácter a la reunión. Deja espacio para disfrutar la compañía en lugar de atender demasiados detalles. Al servir, que el pastel sea parte del momento, no el evento entero."
+        }
+      ]
+    },
+    "post-010": {
+      "title": "Una mañana en la panadería",
+      "excerpt": "Antes de servir el primer café, un ritmo conocido ya está tomando forma.",
+      "introduction": "Este diario de ejemplo imagina una mañana en Crumb & Oven: bandejas que encuentran su lugar, hogazas que se enfrían y el mostrador que se prepara para el día. Los detalles son pequeños, pero juntos marcan el tono para quien entra por la puerta.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Panadero revisando una bandeja junto al horno",
+      "sections": [
+        {
+          "heading": "Primero, la mesa de trabajo",
+          "text": "La jornada empieza con la preparación. Se acomodan las herramientas, se revisan los ingredientes y se evalúa la masa para la siguiente etapa. Una mesa ordenada le da espacio al panadero y facilita prestar atención al trabajo que tiene delante."
+        },
+        {
+          "heading": "Un ritmo de tareas distintas",
+          "text": "Hornear casi nunca es hacer una sola cosa de principio a fin sin interrupciones. Puede haber masa en reposo mientras otra tanda se forma y una bandeja se enfría. Parte del oficio está en ordenar esas etapas para que cada producto reciba la atención que necesita."
+        },
+        {
+          "heading": "Listos para la primera visita",
+          "text": "Cuando el mostrador se llena, la atención pasa a servir. Etiquetas claras y respuestas útiles hacen más fácil elegir. Una panadería acogedora no solo ofrece un buen pan: ayuda a encontrar algo que encaje con el día, ya sea que tengas un minuto o toda la mañana."
+        }
+      ]
+    },
+    "post-011": {
+      "title": "Por qué horneamos en tandas pequeñas",
+      "excerpt": "Una tanda más pequeña deja lugar para la atención, la observación y una selección que cambia cada día.",
+      "introduction": "Hornear en tandas pequeñas es una forma de organizar el trabajo alrededor de cantidades manejables de masa y una selección enfocada. Para una panadería como la de esta plantilla, ofrece un marco útil para equilibrar el oficio con un mostrador ocupado.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Manos formando una bola de masa sobre la mesa enharinada",
+      "sections": [
+        {
+          "heading": "Atención en cada etapa",
+          "text": "Trabajar con una tanda manejable le permite al panadero observar cómo se siente y se comporta la masa. El tamaño por sí solo no garantiza la calidad, pero puede sostener un proceso cuidadoso cuando se combina con buena planificación, recetas consistentes y un manejo atento."
+        },
+        {
+          "heading": "Una selección que puede cambiar",
+          "text": "Un mostrador enfocado deja lugar para los favoritos del día y para alguna novedad. También significa que un producto puede no estar disponible toda la jornada. Si vas a buscar algo en particular, revisa la selección actual y pregunta antes de ir."
+        },
+        {
+          "heading": "Una conversación más cercana",
+          "text": "Una selección más corta puede hacer más fácil explicar qué se ofrece y ayudar a elegir. Las preguntas sobre sabor, ingredientes, porciones y tiempos forman parte de esa conversación. La meta es una relación útil entre lo que la panadería hace y lo que su comunidad disfruta."
+        }
+      ]
+    },
+    "post-012": {
+      "title": "Tu próximo ritual de la tarde",
+      "excerpt": "Una pausa breve, un pastel favorito y una razón para alejarte del apuro.",
+      "introduction": "Un ritual de la tarde no tiene que ser ambicioso. Pueden ser unos minutos con una bebida caliente o un pastel compartido con alguien cerca. Repetir un gusto pequeño le da a un día común un momento que esperar.",
+      "author": "Equipo editorial de Crumb & Oven",
+      "imageAlt": "Roles de canela con un glaseado ligero",
+      "sections": [
+        {
+          "heading": "Elige algo conocido",
+          "text": "Un rol de canela, una galleta o una rebanada de pan pueden tener su lugar. Empieza con un sabor que sabes que te gusta y, de vez en cuando, prueba algo distinto. Una rutina pequeña funciona mejor cuando encaja contigo y no se siente como otra regla."
+        },
+        {
+          "heading": "Haz que sea fácil repetirlo",
+          "text": "Mantén la preparación simple y la porción acorde al momento. Si vas a compartir, corta el pastel antes de sentarte y lleva servilletas o platos. Cuantos menos arreglos tengas que atender, más fácil es hacer tiempo para la pausa."
+        },
+        {
+          "heading": "Que la pausa sea suficiente",
+          "text": "No tienes que convertir cada descanso en una actividad productiva. Nota el sabor, disfruta una conversación o simplemente aparta la vista de la pantalla un rato. El ritual puede cambiar con la estación, la compañía y lo que haya ese día en el mostrador."
+        }
+      ]
+    }
+  }
+}

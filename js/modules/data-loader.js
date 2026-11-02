@@ -1,4 +1,5 @@
 import { DATA_URL } from "../config.js";
+import { localizePayload } from "../locale-data.js";
 
 const cache = new Map();
 
@@ -6,7 +7,7 @@ function load(name) {
   if (!cache.has(name)) {
     const request = fetch(`${DATA_URL}${name}.json`).then((response) => {
       if (!response.ok) throw new Error(`No se pudo cargar ${name}.json (${response.status})`);
-      return response.json();
+      return response.json().then((data) => localizePayload(name, data));
     });
     // A failed request is not cached, so "Reintentar" fetches again.
     request.catch(() => cache.delete(name));

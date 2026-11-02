@@ -27,7 +27,7 @@
   
 </head>
   <body data-page="search">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <div class="announcement" id="announcement">
       <div class="container announcement__inner">
         <p>Demo website: business details, prices, and contact information are examples.</p>
@@ -43,49 +43,50 @@
             <span class="brand__tagline" data-site="tagline">Artisan Bakery</span>
           </span>
         </a>
-        <button id="site-search-toggle" class="site-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel" aria-label="Search the whole site"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#search"></use></svg><span class="visually-hidden">Search</span></button>
+        <div class="lang-switch" role="group" data-i18n-aria="lang.group" aria-label="Language"><button type="button" data-set-lang="es" lang="es">ES</button><button type="button" data-set-lang="en" lang="en">EN</button></div>
+        <button id="site-search-toggle" class="site-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel" data-i18n-aria="search.open" aria-label="Search the whole site"><svg class="icon" aria-hidden="true"><use href="assets/icons/icons.svg#search"></use></svg><span class="visually-hidden" data-i18n="search.submit">Search</span></button>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
           <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons/icons.svg#menu"></use></svg>
           <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons/icons.svg#close"></use></svg>
-          <span class="nav-toggle__label">Menu</span>
+          <span class="nav-toggle__label" data-i18n="menu">Menu</span>
         </button>
-        <nav id="menu" class="nav" aria-label="Main navigation">
+        <nav id="menu" class="nav" data-i18n-aria="nav.main" aria-label="Main navigation">
           <ul class="nav__list">
-            <li><a class="nav__link" data-nav="inicio" href="index.html">Home</a></li>
-            <li><a class="nav__link" data-nav="catalogo" href="catalogo.html">Catalog</a></li>
-              <li><a class="nav__link" data-nav="blog" href="blog.html">Blog</a></li>
+            <li><a class="nav__link" data-nav="inicio" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav__link" data-nav="catalogo" href="catalogo.html" data-i18n="nav.catalog">Catalog</a></li>
+              <li><a class="nav__link" data-nav="blog" href="blog.html" data-i18n="nav.blog">Blog</a></li>
           </ul>
           <div class="nav__end">
             <ul class="nav__list">
-              <li><a class="nav__link" data-nav="nosotros" href="nosotros.html">About</a></li>
-              <li><a class="nav__link" data-nav="contacto" href="contacto.html">Contact</a></li>
+              <li><a class="nav__link" data-nav="nosotros" href="nosotros.html" data-i18n="nav.about">About</a></li>
+              <li><a class="nav__link" data-nav="contacto" href="contacto.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <a class="btn btn--primary btn--sm nav__cta" href="catalogo.html">Browse catalog</a>
+            <a class="btn btn--primary btn--sm nav__cta" href="catalogo.html" data-i18n="nav.browse">Browse catalog</a>
           </div>
         </nav>
       </div>
     <div id="site-search-panel" class="site-search-panel" hidden><div class="container">
-  <form id="site-search-form" class="global-search-form" role="search" action="search.html" method="get" aria-label="Site search">
-    <label class="visually-hidden" for="site-search-query">Search the whole site</label>
-    <div class="global-search-control"><input id="site-search-query" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-suggestions" aria-describedby="site-search-hint" autocomplete="off" maxlength="200" placeholder="Search products, stories, and more…" required />
-    <button class="btn btn--primary" type="submit">Search</button></div>
-    <ul id="site-search-suggestions" class="site-search-suggestions" role="listbox" aria-label="Suggested searches" hidden></ul>
-  </form><p id="site-search-hint" class="site-search-hint">Search products, stories, and everything in between.</p>
+  <form id="site-search-form" class="global-search-form" role="search" action="search.html" method="get" data-i18n-aria="search.form" aria-label="Site search">
+    <label class="visually-hidden" for="site-search-query" data-i18n="search.open">Search the whole site</label>
+    <div class="global-search-control"><input id="site-search-query" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-suggestions" aria-describedby="site-search-hint" autocomplete="off" maxlength="200" data-i18n-placeholder="search.placeholder" placeholder="Search products, stories, and more…" required />
+    <button class="btn btn--primary" type="submit" data-i18n="search.submit">Search</button></div>
+    <ul id="site-search-suggestions" class="site-search-suggestions" role="listbox" data-i18n-aria="search.suggestions" aria-label="Suggested searches" hidden></ul>
+  </form><p id="site-search-hint" class="site-search-hint" data-i18n="search.hint">Search products, stories, and everything in between.</p>
 </div></div>
     </header>
 
     <main id="main" class="search-page container">
-  <p class="eyebrow">Find something good</p><h1>Search Results</h1>
-  <p>Products, stories, and a little more from our bakery.</p>
-  <form id="results-search-form" class="global-search-form" role="search" action="search.html" method="get" aria-label="Search the whole site">
-    <label class="visually-hidden" for="results-query">Search the whole site</label>
-    <div class="global-search-control"><input id="results-query" name="q" type="search" maxlength="200" placeholder="Search products, stories, and more…" required />
-    <button class="btn btn--primary" type="submit">Search</button></div>
+  <p class="eyebrow" data-i18n="search.eyebrow">Find something good</p><h1 data-i18n="search.title">Search Results</h1>
+  <p data-i18n="search.lead">Products, stories, and a little more from our bakery.</p>
+  <form id="results-search-form" class="global-search-form" role="search" action="search.html" method="get" data-i18n-aria="search.open" aria-label="Search the whole site">
+    <label class="visually-hidden" for="results-query" data-i18n="search.open">Search the whole site</label>
+    <div class="global-search-control"><input id="results-query" name="q" type="search" maxlength="200" data-i18n-placeholder="search.placeholder" placeholder="Search products, stories, and more…" required />
+    <button class="btn btn--primary" type="submit" data-i18n="search.submit">Search</button></div>
   </form>
-  <div id="search-type-filters" class="search-type-filters" role="group" aria-label="Filter search results by content type" hidden></div>
+  <div id="search-type-filters" class="search-type-filters" role="group" data-i18n-aria="search.filterTypes" aria-label="Filter search results by content type" hidden></div>
   <p id="search-status" role="status" aria-live="polite">Loading search…</p>
   <div id="search-results" class="search-results"></div>
-  <button id="search-load-more" class="btn btn--outline" type="button" hidden>Load more results</button>
+  <button id="search-load-more" class="btn btn--outline" type="button" hidden data-i18n="search.more">Load more results</button>
   <noscript><p>Site search needs JavaScript. You can also browse our <a href="catalogo.html">catalog</a>, <a href="blog.html">blog</a>, or <a href="nosotros.html">our story</a>.</p></noscript>
 </main>
     <footer class="site-footer">
@@ -99,38 +100,38 @@
             <span class="brand__tagline" data-site="tagline">Artisan Bakery</span>
           </span>
         </a>
-            <p class="footer__about">Artisan breads, sweet treats, and pastries baked fresh daily. This is an informational catalog; online checkout is not available.</p>
+            <p class="footer__about" data-i18n="footer.about">Artisan breads, sweet treats, and pastries baked fresh daily. This is an informational catalog; online checkout is not available.</p>
           </div>
           <div>
-            <h2 class="footer__title">Navigation</h2>
+            <h2 class="footer__title" data-i18n="footer.nav">Navigation</h2>
             <ul class="footer__list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="catalogo.html">Catalog</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="nosotros.html">About</a></li>
-              <li><a href="contacto.html">Contact</a></li>
-              <li><a href="styleguide.html">Style guide</a></li>
+              <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="catalogo.html" data-i18n="nav.catalog">Catalog</a></li>
+              <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+              <li><a href="nosotros.html" data-i18n="nav.about">About</a></li>
+              <li><a href="contacto.html" data-i18n="nav.contact">Contact</a></li>
+              <li><a href="styleguide.html" data-i18n="nav.style">Style guide</a></li>
             </ul>
           </div>
           <div>
-            <h2 class="footer__title">Contact</h2>
+            <h2 class="footer__title" data-i18n="footer.contact">Contact</h2>
             <ul class="footer__list">
               <li data-whatsapp-wrapper><a data-whatsapp href="contacto.html" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a data-site="phone" href="tel:+50500000000">+505 0000 0000</a></li>
               <li data-site="address">Address coming soon — sample location, Managua, Nicaragua</li>
-              <li><a data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener">View on Google Maps</a></li>
+              <li><a data-site="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Managua%2C%20Nicaragua" target="_blank" rel="noopener" data-i18n="footer.maps">View on Google Maps</a></li>
             </ul>
-            <h2 class="footer__title footer__title--spaced">Social</h2>
-            <ul class="footer__list" data-site="social"><li class="muted">Social links coming soon</li></ul>
+            <h2 class="footer__title footer__title--spaced" data-i18n="footer.social">Social</h2>
+            <ul class="footer__list" data-site="social"><li class="muted" data-i18n="social.soon">Social links coming soon</li></ul>
           </div>
           <div>
-            <h2 class="footer__title">Hours</h2>
+            <h2 class="footer__title" data-i18n="footer.hours">Hours</h2>
             <div data-site="hours"><ul class="hours"><li><span>Monday–Friday</span><span>6:30 AM – 7:00 PM</span></li><li><span>Saturday</span><span>7:00 AM – 7:00 PM</span></li><li><span>Sunday</span><span>7:00 AM – 1:00 PM</span></li></ul></div>
           </div>
         </div>
         <div class="footer__bottom">
-          <p>© <span data-site="year">2026</span> <span data-site="businessName">Crumb &amp; Oven</span>. All rights reserved.</p>
-          <p>Prices in US dollars (USD). Availability may change throughout the day.</p>
+          <p>© <span data-site="year">2026</span> <span data-site="businessName">Crumb &amp; Oven</span>. <span data-i18n="rights">All rights reserved.</span></p>
+          <p data-i18n="footer.prices">Prices in US dollars (USD). Availability may change throughout the day.</p>
         </div>
       </div>
     </footer>
