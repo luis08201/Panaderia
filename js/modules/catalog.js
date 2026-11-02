@@ -119,7 +119,7 @@ function renderChips() {
     );
   elements.chips.replaceChildren(
     h("legend", { class: "visually-hidden", text: t("catalog.legend") }),
-    chip("", "All"),
+    chip("", t("search.all")),
     ...categories.map((category) => chip(category.slug, category.name))
   );
   const active = elements.chips.querySelector('[aria-pressed="true"]');
