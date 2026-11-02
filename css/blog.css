@@ -23,6 +23,12 @@
 @media(max-width:599px) { .blog-hero { grid-template-columns:1fr; padding-block:3rem; }.blog-stamp { display:none; }.blog-hero h1 { font-size:clamp(2.7rem,10vw,3.5rem); }.blog-section { padding-block:2.5rem; }.blog-grid,.blog-grid--related { grid-template-columns:1fr; }.blog-tools { padding:1rem; }.blog-reading-layout { grid-template-columns:1fr; }.blog-contents { position:static; }.blog-contents nav { display:flex; flex-wrap:wrap; gap:.5rem 1rem; }.blog-contents nav a { font-size:.8rem; }.blog-article__cover { aspect-ratio:4/3; }.blog-article__head { padding-top:2.5rem; } }
 
 /* Journal search: native-feeling autocomplete with the bakery's own palette. */
+.blog-tools { display:grid; grid-template-columns:minmax(16rem,18rem) minmax(0,1fr); align-items:end; gap:.75rem 1.25rem; }
+.blog-tools .blog-chips { min-width:0; margin:0; padding:0; align-self:end; min-height:3.5rem; align-items:center; flex-wrap:wrap; overflow:visible; }
+.blog-tools .blog-chips .chip { padding-inline:.85rem; }
+.blog-filter-hint { grid-column:1 / -1; margin-top:0; }
+@media(max-width:991px) { .blog-tools { grid-template-columns:minmax(15rem,1fr) minmax(0,2fr); align-items:center; }.blog-tools .blog-chips { align-self:center; } }
+@media(max-width:767px) { .blog-tools { grid-template-columns:minmax(0,1fr); gap:1rem; } }
 .blog-search-form { position:relative; isolation:isolate; z-index:2; }
 .blog-search-form .field-label { margin-bottom:.65rem; font-size:1rem; }
 .blog-search-control { display:flex; align-items:center; gap:.3rem; padding:.3rem; border:2px solid var(--color-primary); border-radius:var(--radius-pill); background:var(--color-surface); transition:border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease); }
