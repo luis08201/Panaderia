@@ -1,6 +1,7 @@
 import { getSearchIndex } from './data-loader.js';
 import { h } from '../utils/dom.js';
 import { searchSite, SEARCH_TYPES } from '../utils/site-search.js';
+import { animateVisibility, animateResults } from '../utils/animation.js';
 
 export function initSiteSearch() {
   const toggle = document.querySelector('#site-search-toggle');
@@ -12,7 +13,7 @@ export function initSiteSearch() {
   const hint = document.querySelector('#site-search-hint');
   let matches = [], active = -1, revision = 0;
   const closeSuggestions = () => { list.hidden = true; input.setAttribute('aria-expanded','false'); input.removeAttribute('aria-activedescendant'); active = -1; };
-  const close = () => { revision++; panel.hidden = true; toggle.setAttribute('aria-expanded','false'); closeSuggestions(); };
+  const close = () => { revision++; toggle.setAttribute('aria-expanded','false'); animateVisibility(panel, false); closeSuggestions(); };
   const suggest = async () => {
     const request = ++revision;
     const query = input.value.trim();
@@ -21,7 +22,7 @@ export function initSiteSearch() {
     if (!query) return;
     try {
       const index = await getSearchIndex();
-      if (request !== revision || panel.hidden) return;
+      if (request !== revision || toggle.getAttribute('aria-expanded') !== 'true') return;
       matches = searchSite(index,query).slice(0,5);
       list.replaceChildren(...matches.map((item,i)=>h('li',{role:'option',id:`site-search-option-${i}`,'aria-selected':'false','data-search-option':i},h('span',{text:item.title}),h('small',{text:item.type}))));
       list.hidden = !matches.length;
@@ -30,9 +31,9 @@ export function initSiteSearch() {
     } catch { if (request === revision) hint.textContent = 'Press Enter to search the whole site.'; }
   };
   toggle.addEventListener('click',()=>{
-    if (!panel.hidden) { close(); return; }
+    if (toggle.getAttribute('aria-expanded') === 'true') { close(); return; }
     document.querySelector('.nav-toggle[aria-expanded="true"]')?.click();
-    panel.hidden = false; toggle.setAttribute('aria-expanded','true'); input.focus(); suggest();
+    animateVisibility(panel, true); toggle.setAttribute('aria-expanded','true'); input.focus(); suggest();
   });
   input.addEventListener('input', (event)=>{ if (!event.isComposing) suggest(); });
   input.addEventListener('compositionend',suggest);
@@ -74,6 +75,7 @@ export async function init() {
     const visible=filtered.slice(0,count);
     status.textContent = !query ? 'What are you looking for? Enter a word or phrase to explore the site.' : `${filtered.length} ${filtered.length===1?'result':'results'} for “${query}”${type ? ` in ${plural(type).toLowerCase()}` : ''}${filtered.length ? ` · Showing ${visible.length} of ${filtered.length}` : '. Try another word or choose All.'}`;
     results.replaceChildren(...visible.map((item)=>h('article',{class:'search-result'},h('p',{class:'search-result__type',text:item.type}),h('h2',{},h('a',{href:item.url,text:item.title})),h('p',{text:item.description}),h('a',{href:item.url,class:'search-result__link',text:`View ${item.type.toLowerCase()} →`,'aria-label':`View ${item.title}`}))));
+    animateResults(results);
     more.hidden=visible.length>=filtered.length;
   };
   const readUrl=()=>{const params=new URLSearchParams(location.search);input.value=(params.get('q')||'').slice(0,200);type=SEARCH_TYPES.includes(params.get('type'))?params.get('type'):'';count=12;};

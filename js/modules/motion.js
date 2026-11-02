@@ -13,8 +13,18 @@ let gsap;
 let ScrollTrigger;
 const pending = new Map();
 const listTriggers = new WeakMap();
+const animatedElements = new Set();
+window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', ({ matches }) => {
+  if (!matches) return;
+  ScrollTrigger?.getAll().forEach((trigger) => trigger.kill(true));
+  if (gsap && animatedElements.size) {
+    gsap.killTweensOf([...animatedElements]);
+    gsap.set([...animatedElements], { clearProps: 'opacity,transform' });
+  }
+  pending.clear();
+});
 
-const wanted = () => root.classList.contains("motion");
+const wanted = () => root.classList.contains("motion") && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const belowFold = (element) => {
   const rect = element.getBoundingClientRect();
@@ -45,6 +55,7 @@ export function initMotion() {
 }
 
 function start() {
+  if (!wanted()) return;
   ({ gsap, ScrollTrigger } = window);
   if (!gsap || !ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
@@ -61,27 +72,29 @@ function start() {
 
 function heroScroll() {
   if (!document.querySelector(".hero__frame")) return;
+  document.querySelectorAll('.hero__media, .hero__content').forEach((element) => animatedElements.add(element));
   // .hero__media is taller than the frame (components.css), so moving it never uncovers an edge.
   gsap.to(".hero__media", {
     yPercent: 6,
     ease: "none",
-    scrollTrigger: { trigger: ".hero__frame", start: "top top", end: "bottom top", scrub: true },
+    scrollTrigger: { trigger: ".hero__frame", start: "top top", end: "bottom top", scrub: .45 },
   });
   gsap.to(".hero__content", {
     y: -40,
     opacity: 0.35,
     ease: "none",
-    scrollTrigger: { trigger: ".hero__frame", start: "center center", end: "bottom top", scrub: true },
+    scrollTrigger: { trigger: ".hero__frame", start: "center center", end: "bottom top", scrub: .45 },
   });
 }
 
 function imageScroll() {
   for (const image of gsap.utils.toArray(".section .split__media img")) {
     if (image.closest(".about-hero")) continue;
+    animatedElements.add(image);
     gsap.fromTo(
       image,
       { scale: 1.15 },
-      { scale: 1, ease: "none", scrollTrigger: { trigger: image.parentElement, start: "top bottom", end: "bottom center", scrub: true } }
+      { scale: 1, ease: "none", scrollTrigger: { trigger: image.parentElement, start: "top bottom", end: "bottom center", scrub: .45 } }
     );
   }
 }
@@ -95,6 +108,7 @@ function headerShadow() {
 // Opacity and transform only (no visibility), so hidden items stay focusable; focusing one scrolls it in and reveals it.
 function revealOnScroll(elements, { stagger = 0.08, y = 32 } = {}) {
   if (!elements.length) return [];
+  elements.forEach((element) => animatedElements.add(element));
   gsap.set(elements, { opacity: 0, y });
   return ScrollTrigger.batch(elements, {
     start: "top 92%",
@@ -117,12 +131,14 @@ export function revealItems(list, { late = false, ...options } = {}) {
 }
 
 export function swapImage(container) {
-  if (!gsap) return;
-  gsap.fromTo(container.querySelector("img"), { opacity: 0.3, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.45 });
+  if (!gsap || !wanted()) return;
+  animatedElements.add(container.querySelector('img'));
+  gsap.fromTo(container.querySelector("img"), { opacity: 0.3, scale: 1.02 }, { opacity: 1, scale: 1, duration: 0.4, overwrite: true });
 }
 
 export function openMenu(nav) {
-  if (!gsap || DESKTOP.matches) return;
+  if (!gsap || DESKTOP.matches || !wanted()) return;
+  nav.querySelectorAll('.nav__link, .nav__cta').forEach((element) => animatedElements.add(element));
   gsap.from(nav.querySelectorAll(".nav__link, .nav__cta"), { opacity: 0, y: -10, duration: 0.35, stagger: 0.04, overwrite: true });
 }
 

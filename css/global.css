@@ -97,6 +97,9 @@ button:disabled {
   border-radius: 4px;
 }
 
+@keyframes surface-enter { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:translateY(0); } }
+.blog-search-panel:not([hidden]), .site-search-suggestions:not([hidden]), .nav.is-open { animation:surface-enter .24s var(--ease); }
+
 ::selection {
   background: var(--color-secondary);
   color: var(--color-dark);

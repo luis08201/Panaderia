@@ -4,6 +4,7 @@ import { filterBlogPosts, blogPostUrl, BLOG_PAGE_SIZE, paginateBlogPosts } from 
 import { initBlogSearch } from './blog-search.js';
 import { setMeta } from './seo.js';
 import { h } from '../utils/dom.js';
+import { animateResults } from '../utils/animation.js';
 
 export async function init({ site }) {
   const root = document.querySelector('#blog-root');
@@ -42,6 +43,7 @@ export async function init({ site }) {
       matching = filterBlogPosts(data.posts, { category, query });
       const page = paginateBlogPosts(matching, visibleCount);
       grid.innerHTML = page.visiblePosts.map((post) => blogCard(post)).join('');
+      animateResults(grid);
       root.querySelector('#blog-empty').hidden = page.total !== 0;
       count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} ${page.total === 1 ? 'article' : 'articles'}${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${query ? ` for “${query}”` : ''}`;
       pagination.hidden = page.total <= BLOG_PAGE_SIZE;
@@ -66,6 +68,7 @@ export async function init({ site }) {
       visibleCount += BLOG_PAGE_SIZE;
       const page = paginateBlogPosts(matching, visibleCount);
       grid.insertAdjacentHTML('beforeend', page.visiblePosts.slice(previousLength).map((post) => blogCard(post)).join(''));
+      animateResults(grid, [...grid.children].slice(previousLength));
       loadMore.hidden = !page.hasMore;
       progress.textContent = page.hasMore ? `You’ve seen ${page.visiblePosts.length} of ${page.total} stories.` : `You’re all caught up — ${page.total} stories.`;
       count.textContent = `Showing ${page.visiblePosts.length} of ${page.total} articles${category ? ` in ${data.categories.find((c) => c.slug === category).name}` : ''}${search.value.trim() ? ` for “${search.value.trim()}”` : ''}`;
