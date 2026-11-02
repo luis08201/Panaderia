@@ -625,7 +625,7 @@
   "promotions": {
     "promo-martes-pan-dulce": {
       "title": "Martes de pan dulce",
-      "description": "Todos los martes, 6 piezas de pan dulce surtido por C$ 120. Válido en tienda mientras haya existencias.",
+      "description": "Todos los martes, 6 piezas de pan dulce surtido por USD 3.28. Válido en tienda mientras haya existencias.",
       "startDate": "2026-01-01",
       "endDate": "2026-12-31",
       "linkLabel": "Ver pan dulce"
@@ -638,7 +638,7 @@
     },
     "promo-cafe-croissant": {
       "title": "Café y croissant",
-      "description": "Un café filtrado y un croissant de mantequilla por C$ 95, de lunes a viernes antes de las 10:00 a. m.",
+      "description": "Un café filtrado y un croissant de mantequilla por USD 2.59, de lunes a viernes antes de las 10:00 a. m.",
       "startDate": "2026-10-01",
       "endDate": "2026-11-30",
       "linkLabel": "Ver croissant"
@@ -770,7 +770,7 @@
     },
     "post-006": {
       "title": "Mantequilla, capas y un poco de paciencia",
-      "excerpt": "Unos pliegues y bastante cuidado le dan a un pastel familiar su carácter delicado.",
+      "excerpt": "Los pliegues y el reposo dan a la masa de hojaldre sus capas ligeras y delicadas.",
       "introduction": "El gusto de un croissant empieza con las primeras hojuelas crujientes. Detrás de ese momento cotidiano hay una secuencia cuidadosa de estirar, plegar, reposar y hornear. No hace falta hacerlo en casa para apreciar el trabajo de cada capa.",
       "author": "Equipo editorial de Crumb & Oven",
       "imageAlt": "Croissants dorados con capas hojaldradas",

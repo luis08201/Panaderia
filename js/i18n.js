@@ -1,6 +1,11 @@
 import { getLang, rememberLang } from "./locale-data.js";
 
 export const EN = {
+  "nav.template": "About this template",
+  "nav.setup": "Setup guide",
+  "demo.contactTitle": "This is a template preview",
+  "demo.contactDescription": "Contact buttons demonstrate the layout. No message or call is sent from this preview. When setting up your bakery, add your own phone and WhatsApp number and turn off the demo notice in Settings.",
+  "demo.close": "Back to the preview",
   "skip": "Skip to content",
   "nav.home": "Home",
   "nav.catalog": "Catalog",
@@ -212,6 +217,11 @@ export const EN = {
 };
 
 export const ES = {
+  "nav.template": "Sobre el template",
+  "nav.setup": "Guía de inicio",
+  "demo.contactTitle": "Esta es una vista previa del template",
+  "demo.contactDescription": "Estos botones muestran cómo funcionará el contacto. Esta demo no envía mensajes ni realiza llamadas. Al configurar tu panadería, agrega tus números de teléfono y WhatsApp y desactiva el aviso de demostración en Configuración.",
+  "demo.close": "Volver a la demo",
   "skip": "Saltar al contenido",
   "nav.home": "Inicio",
   "nav.catalog": "Catálogo",
@@ -361,8 +371,8 @@ export const ES = {
   "blog.kicker": "El diario de Crumb & Oven",
   "blog.eyebrow": "diario",
   "blog.heroTitle.html": "Cosas buenas,<br>que vale la pena <em>compartir.</em>",
-  "blog.heroIntro": "Historias del banco de trabajo, notas sobre buenos ingredientes e ideas para que lo cotidiano sepa mejor.",
-  "blog.stamp.html": "Del banco.<br>A tu mesa.",
+  "blog.heroIntro": "Historias de nuestro obrador, buenos ingredientes e ideas para disfrutar cada día.",
+  "blog.stamp.html": "De nuestro horno.<br>A tu mesa.",
   "blog.stampLabel": "El diario de la panadería",
   "blog.loadingTitle": "El diario está en camino",
   "blog.loading": "Cargando las historias más recientes…",

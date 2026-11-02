@@ -3,7 +3,7 @@ import { $, $$, h, setText } from "../utils/dom.js";
 import { openMenu } from "./motion.js";
 import { whatsappUrl } from "./whatsapp.js";
 
-const DESKTOP = window.matchMedia("(min-width: 992px)");
+const DESKTOP = window.matchMedia("(min-width: 1200px)");
 
 export function initMenu() {
   const toggle = $(".nav-toggle");
@@ -87,7 +87,7 @@ export function applySettings(settings) {
   }
 
   for (const link of $$("[data-site='phone']")) {
-    const href = telHref(settings.phone);
+    const href = settings.demoNotice || String(settings.phone).replace(/\D/g,'') === '50500000000' ? 'contacto.html?demo=contact' : telHref(settings.phone);
     if (href) {
       link.href = href;
       link.textContent = settings.phone;

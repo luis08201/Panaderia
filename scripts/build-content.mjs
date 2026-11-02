@@ -325,7 +325,7 @@ if (locale) {
   for (const product of products) {
     const copy = textCopy(locale.products?.[product.id]);
     if (!copy?.name) warnings.push(`Sin traducción al español: producto ${product.id}`);
-    else product.es = { ...copy, category: { name: locale.categories?.[product.categoryId]?.name || product.category.name } };
+    else product.es = { ...copy, imageAlt: copy.imageAlt || copy.name, category: { name: locale.categories?.[product.categoryId]?.name || product.category.name } };
   }
   for (const category of categories) {
     const copy = textCopy(locale.categories?.[category.id]);

@@ -39,3 +39,10 @@ test("every published content entry has a Spanish name or title", () => {
     assert.ok(copy.title && copy.introduction);
   }
 });
+
+test('Spanish sample promotions keep the USD prices from the English edition',()=>{
+  const es=read('content/locales/es.json');
+  assert.ok(!JSON.stringify(es.promotions).includes('C$'));
+  assert.ok(es.promotions['promo-cafe-croissant'].description.includes('2.59'));
+  assert.ok(es.promotions['promo-martes-pan-dulce'].description.includes('3.28'));
+});

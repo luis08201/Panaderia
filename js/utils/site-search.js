@@ -1,6 +1,7 @@
 import { normalize } from './normalize.js';
 
 export const SEARCH_TYPES = ['Product', 'Article', 'Page', 'Category'];
+export const searchTypeKey = (type, plural = false) => `type.${plural ? (type === 'Category' ? 'Categories' : type + 's') : type}`;
 export function searchSite(documents, query) {
   const terms = normalize(query).split(' ').filter(Boolean);
   if (!terms.length) return [];

@@ -19,6 +19,8 @@ const PUBLIC = [
   "blog.html",
   "article.html",
   "search.html",
+  "template.html",
+  "start-here.html",
   "favicon.svg",
   "css",
   "js",

@@ -5,6 +5,7 @@ import { initMotion, refreshMotion } from "./modules/motion.js";
 import { applySettings, initMenu } from "./modules/navigation.js";
 import { addBusinessJsonLd, setMeta } from "./modules/seo.js";
 import { initSiteSearch } from './modules/site-search.js';
+import { initDemoContacts } from './modules/demo-contacts.js';
 
 const PAGES = {
   inicio: () => import("./modules/home.js"),
@@ -32,6 +33,7 @@ async function start() {
   try {
     site = await getSite();
     applySettings(site.settings);
+    initDemoContacts(site.settings);
     bindContent(site.pages);
     if (page in PATHS) {
       const seo = site.settings.seo ?? {};

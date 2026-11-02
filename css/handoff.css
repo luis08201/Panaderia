@@ -1,0 +1,17 @@
+.handoff-header { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.5rem; padding-block:1.5rem; border-bottom:1px solid var(--color-border); }
+.handoff-header nav { display:flex; flex-wrap:wrap; gap:1rem; }
+.handoff-main { padding-block:4rem; }
+.handoff-main h1 { max-width:18ch; margin-bottom:1rem; }
+.handoff-main .lead { max-width:48rem; font-size:1.2rem; color:var(--color-text-muted); }
+.handoff-main section { padding-block:2.5rem; border-bottom:1px solid var(--color-border); }
+.handoff-main h2 { margin-bottom:1.25rem; }
+.handoff-main p+p { margin-top:.75rem; }
+.handoff-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; }
+.handoff-card { background:var(--color-surface); padding:1.5rem; border:1px solid var(--color-border); border-radius:var(--radius-l); }
+.handoff-card h3 { font-size:1.4rem; margin-bottom:.75rem; }
+.handoff-card ul,.handoff-main ol { padding-left:1.25rem; }
+.handoff-card li,.handoff-main ol li { margin-block:.6rem; }
+.handoff-links { display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.5rem; }
+.handoff-footer { padding-block:2rem; color:var(--color-text-muted); }
+.handoff-main code { overflow-wrap:anywhere; }
+@media(max-width:767px) { .handoff-grid { grid-template-columns:1fr; }.handoff-main { padding-block:2.5rem; } }

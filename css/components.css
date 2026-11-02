@@ -1,4 +1,16 @@
 /* Announcement bar */
+/* Keep header content in the document flow: translated navigation cannot overlap the brand. */
+@media (min-width:1200px) {
+  .site-header .site-header__inner { display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; gap:1rem; }
+  .site-header .site-header__inner .brand { position:static; transform:none; }
+  .site-header .nav { grid-column:2; grid-row:1; justify-content:center; gap:clamp(1rem,2vw,2rem); }
+  .site-header .lang-switch { grid-column:3; grid-row:1; margin:0; }
+  .site-header .site-search-toggle { grid-column:4; grid-row:1; margin:0; }
+}
+.demo-contact-dialog { max-width:min(30rem,calc(100% - 2rem)); margin:auto; padding:2rem; border:1px solid var(--color-border); border-radius:var(--radius-l); background:var(--color-background); color:var(--color-text); box-shadow:var(--shadow-m); }
+.demo-contact-dialog::backdrop { background:rgb(30 20 12 / .45); }
+.demo-contact-dialog h2 { font-size:1.75rem; margin-bottom:1rem; }
+.demo-contact-dialog .btn { margin-top:1.5rem; }
 .announcement {
   background: var(--color-primary);
   color: var(--color-on-dark);
@@ -55,7 +67,7 @@
 .search-result h2 a { text-decoration:none; }
 .search-result__type { color: var(--color-primary); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .5rem; }
 .search-result__link { display: inline-block; margin-top: 1rem; }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .lang-switch { order: 2; margin-left: .75rem; }
   .site-search-toggle { order: 2; margin-right: 0; margin-left: .5rem; }
   .site-header .nav__list, .site-header .nav__end { gap: clamp(.75rem,1.3vw,1.5rem); }
@@ -212,7 +224,7 @@
   margin-top: var(--space-m);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .site-header__inner {
     min-height: 5.25rem;
   }
@@ -269,7 +281,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .nav__end {
     display: grid;
   }

@@ -1,6 +1,6 @@
 {
-  "name": "panaderia-miga-y-horno",
-  "version": "0.1.0",
+  "name": "crumb-and-oven-html",
+  "version": "0.2.0",
   "private": true,
   "description": "Catálogo de panadería con HTML, CSS y JavaScript, administrado con Pages CMS.",
   "type": "module",
@@ -12,6 +12,7 @@
     "check": "node scripts/build-content.mjs --check",
     "build:content": "node scripts/build-content.mjs",
     "build": "node scripts/build-content.mjs && node scripts/build-site.mjs",
-    "test": "node --test"
+    "test": "node scripts/test.mjs",
+    "export:buyer": "node scripts/export-buyer.mjs"
   }
 }

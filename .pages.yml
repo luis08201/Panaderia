@@ -487,3 +487,1411 @@ content:
           - { name: title, label: Default title, type: string }
           - { name: description, label: Default description, type: text }
           - { name: ogImage, label: Social sharing image, type: image, options: { media: general } }
+
+  - name: spanish_copy
+    label: Contenido en español
+    type: file
+    path: content/locales/es.json
+    format: json
+    fields:
+      - name: "settings"
+        label: "Configuración"
+        type: object
+        fields:
+          - name: "tagline"
+            label: "tagline"
+            type: string
+          - name: "announcement"
+            label: "announcement"
+            type: object
+            fields:
+              - name: "text"
+                label: "text"
+                type: string
+              - name: "linkLabel"
+                label: "linkLabel"
+                type: string
+          - name: "whatsappMessage"
+            label: "whatsappMessage"
+            type: string
+          - name: "address"
+            label: "address"
+            type: string
+          - name: "hours"
+            label: "hours"
+            type: object
+            list: true
+            fields:
+              - name: "days"
+                label: "days"
+                type: string
+              - name: "time"
+                label: "time"
+                type: string
+          - name: "social"
+            label: "social"
+            type: object
+            list: true
+            fields:
+          - name: "availabilityNote"
+            label: "availabilityNote"
+            type: string
+          - name: "seo"
+            label: "Crumb & Oven | Panadería artesanal"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+      - name: "pages"
+        label: "Páginas"
+        type: object
+        fields:
+          - name: "home"
+            label: "home"
+            type: object
+            fields:
+              - name: "hero"
+                label: "Pan recién horneado, todos los días"
+                type: object
+                fields:
+                  - name: "eyebrow"
+                    label: "eyebrow"
+                    type: string
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+                  - name: "ctaLabel"
+                    label: "ctaLabel"
+                    type: string
+                  - name: "imageAlt"
+                    label: "imageAlt"
+                    type: string
+              - name: "categories"
+                label: "Categorías del catálogo"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+              - name: "featured"
+                label: "Favoritos de la casa"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+              - name: "fresh"
+                label: "Recién horneados"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+                  - name: "schedule"
+                    label: "schedule"
+                    type: string
+              - name: "promotions"
+                label: "Promociones"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+              - name: "story"
+                label: "Fermentación lenta y recetas de casa"
+                type: object
+                fields:
+                  - name: "eyebrow"
+                    label: "eyebrow"
+                    type: string
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+                  - name: "imageAlt"
+                    label: "imageAlt"
+                    type: string
+                  - name: "linkLabel"
+                    label: "linkLabel"
+                    type: string
+              - name: "visit"
+                label: "Visítanos"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+          - name: "nosotros"
+            label: "nosotros"
+            type: object
+            fields:
+              - name: "hero"
+                label: "Una panadería de barrio, hecha con calma"
+                type: object
+                fields:
+                  - name: "eyebrow"
+                    label: "eyebrow"
+                    type: string
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+                  - name: "imageAlt"
+                    label: "imageAlt"
+                    type: string
+              - name: "story"
+                label: "Nuestra historia"
+                type: object
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+              - name: "values"
+                label: "values"
+                type: object
+                list: true
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+              - name: "process"
+                label: "process"
+                type: object
+                list: true
+                fields:
+                  - name: "title"
+                    label: "title"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: string
+              - name: "gallery"
+                label: "gallery"
+                type: object
+                list: true
+                fields:
+                  - name: "alt"
+                    label: "alt"
+                    type: string
+      - name: "categories"
+        label: "Categorías del catálogo"
+        type: object
+        fields:
+          - name: "cat-pan-dulce"
+            label: "Pan dulce"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "cat-reposteria"
+            label: "Repostería"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "cat-bebidas"
+            label: "Bebidas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "cat-pan-artesanal"
+            label: "Pan artesanal"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "cat-pasteles"
+            label: "Pasteles"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "cat-galletas"
+            label: "Galletas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+      - name: "products"
+        label: "Productos"
+        type: object
+        fields:
+          - name: "prd-020"
+            label: "Rol de canela"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-011"
+            label: "Pastel de chocolate"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-001"
+            label: "Pan de masa madre"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-012"
+            label: "Cheesecake de maracuyá"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-003"
+            label: "Pan integral de semillas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-008"
+            label: "Pan de yema"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-022"
+            label: "Brownie de chocolate"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-028"
+            label: "Jugo de naranja"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+          - name: "prd-005"
+            label: "Focaccia de romero"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-002"
+            label: "Baguette clásica"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-015"
+            label: "Galletas con chispas de chocolate"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-004"
+            label: "Pan de molde casero"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-017"
+            label: "Galletas de avena y pasas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-021"
+            label: "Empanada de piña"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-010"
+            label: "Pastel tres leches"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-009"
+            label: "Cosa de horno"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-026"
+            label: "Chocolate caliente"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-018"
+            label: "Alfajores de dulce de leche"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-006"
+            label: "Pan de coco"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-027"
+            label: "Fresco de cacao"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-013"
+            label: "Pastel de zanahoria"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-007"
+            label: "Conchas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-016"
+            label: "Galletas de mantequilla"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-025"
+            label: "Cappuccino"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-024"
+            label: "Café filtrado"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+          - name: "prd-014"
+            label: "Pastel personalizado"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+          - name: "prd-019"
+            label: "Croissant de mantequilla"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+          - name: "prd-023"
+            label: "Tartaleta de frutas"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "shortDescription"
+                label: "shortDescription"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "unit"
+                label: "unit"
+                type: string
+              - name: "ingredients"
+                label: "ingredients"
+                type: string
+                list: true
+              - name: "allergens"
+                label: "allergens"
+                type: string
+                list: true
+      - name: "promotions"
+        label: "Promociones"
+        type: object
+        fields:
+          - name: "promo-martes-pan-dulce"
+            label: "Martes de pan dulce"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "startDate"
+                label: "startDate"
+                type: string
+              - name: "endDate"
+                label: "endDate"
+                type: string
+              - name: "linkLabel"
+                label: "linkLabel"
+                type: string
+          - name: "promo-fiestas-patrias"
+            label: "Rosquillas de septiembre"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+              - name: "startDate"
+                label: "startDate"
+                type: string
+              - name: "endDate"
+                label: "endDate"
+                type: string
+          - name: "promo-cafe-croissant"
+            label: "Café y croissant"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "description"
+                label: "description"
+                type: text
+              - name: "startDate"
+                label: "startDate"
+                type: string
+              - name: "endDate"
+                label: "endDate"
+                type: string
+              - name: "linkLabel"
+                label: "linkLabel"
+                type: string
+      - name: "blogCategories"
+        label: "Categorías del Blog"
+        type: object
+        fields:
+          - name: "blog-cat-basics"
+            label: "Bases del horneado"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "blog-cat-bakery"
+            label: "Desde la panadería"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "blog-cat-craft"
+            label: "Ingredientes y oficio"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+          - name: "blog-cat-sharing"
+            label: "Servir y compartir"
+            type: object
+            fields:
+              - name: "name"
+                label: "name"
+                type: string
+              - name: "description"
+                label: "description"
+                type: string
+      - name: "blogPosts"
+        label: "Artículos del Blog"
+        type: object
+        fields:
+          - name: "post-001"
+            label: "Una guía sencilla de la masa madre"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-002"
+            label: "Por qué el pan necesita enfriar"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-003"
+            label: "Conoce tu corteza"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-004"
+            label: "Lo que hay en un buen pan"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-005"
+            label: "Una mirada a los granos enteros"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-006"
+            label: "Mantequilla, capas y un poco de paciencia"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-007"
+            label: "Un desayuno para ir más despacio"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-008"
+            label: "El arte de una tabla de pan"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-009"
+            label: "Celebraciones pequeñas, detalles cuidadosos"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-010"
+            label: "Una mañana en la panadería"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-011"
+            label: "Por qué horneamos en tandas pequeñas"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: text
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text
+          - name: "post-012"
+            label: "Tu próximo ritual de la tarde"
+            type: object
+            fields:
+              - name: "title"
+                label: "title"
+                type: string
+              - name: "excerpt"
+                label: "excerpt"
+                type: string
+              - name: "introduction"
+                label: "introduction"
+                type: text
+              - name: "author"
+                label: "author"
+                type: string
+              - name: "imageAlt"
+                label: "imageAlt"
+                type: string
+              - name: "sections"
+                label: "sections"
+                type: object
+                list: true
+                fields:
+                  - name: "heading"
+                    label: "heading"
+                    type: string
+                  - name: "text"
+                    label: "text"
+                    type: text

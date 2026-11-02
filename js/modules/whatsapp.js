@@ -5,6 +5,7 @@ import { t } from "../i18n.js";
 export function whatsappUrl(number, message) {
   const digits = String(number ?? "").replace(/\D/g, "");
   if (!digits) return "";
+  if (digits === '50500000000') return 'contacto.html?demo=contact';
   return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
 }
 

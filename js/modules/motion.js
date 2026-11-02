@@ -5,7 +5,7 @@
 // Hero and product photos are never scaled or faded: Chrome would log a new LCP when their size changes.
 
 const root = document.documentElement;
-const DESKTOP = window.matchMedia("(min-width: 992px)");
+const DESKTOP = window.matchMedia("(min-width: 1200px)");
 const SCRIPTS = ["gsap.min.js", "ScrollTrigger.min.js"].map((file) => new URL(`../../assets/vendor/gsap/${file}`, import.meta.url).href);
 const REVEAL = ".section-head, .split, .info-card, .cta-band, .promo-list + .note, .demo-note, .values, .process";
 

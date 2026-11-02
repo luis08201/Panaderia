@@ -26,18 +26,20 @@ test('search index includes published CMS bodies and public pages with unique us
   try {
     mkdirSync(join(root,'public-data'));
     const write=(name,data)=>writeFileSync(join(root,'public-data',name+'.json'),JSON.stringify(data));
-    write('site',{pages:{home:{story:{text:'A family tradition'}}},settings:{address:'Public bakery address',whatsappMessage:'private-config-marker'}});
+    write('site',{pages:{home:{story:{text:'A family tradition'}},es:{home:{hero:{text:'Hogazas de masa madre'}},nosotros:{story:{text:'Nuestro obrador artesanal'}}}},settings:{address:'Public bakery address',whatsappMessage:'private-config-marker'}});
     write('products',[{name:'Loaf',slug:'loaf',category:{name:'Bread'},ingredients:['Rye'],allergens:['Gluten'],description:'Slow fermented',shortDescription:'Fresh bread'}]);
     write('categories',[{name:'Bread',slug:'bread',productCount:1},{name:'Empty',slug:'empty',productCount:0}]);
     write('blog',{posts:[{title:'A story',slug:'story',category:{name:'Craft'},excerpt:'From the oven',introduction:'A patient baker',sections:[{heading:'Crust',text:'Let the loaf cool fully'}]}]});
     write('promotions',[{title:'Weekend special',description:'Coffee and cake',startDate:'2000-01-01',endDate:'2999-01-01'},{title:'expired-promotion-marker',endDate:'2000-01-01'}]);
-    for(const page of ['index','catalogo','blog','nosotros','contacto','styleguide']) writeFileSync(join(root,page+'.html'),'<main><h1>Public content</h1><script>secretScriptMarker</script></main>');
+    for(const page of ['index','catalogo','blog','nosotros','contacto','styleguide','template','start-here']) writeFileSync(join(root,page+'.html'),'<main><h1>Public content</h1><script>secretScriptMarker</script></main>');
     const index=buildSearchIndex(root);
-    assert.equal(index.length,9);
+    assert.equal(index.length,11);
     assert.equal(new Set(index.map(d=>d.url)).size,index.length);
     assert.equal(searchSite(index,'rye')[0].type,'Product');
     assert.equal(searchSite(index,'cool fully')[0].type,'Article');
     assert.equal(searchSite(index,'family tradition')[0].title,'Home');
+    assert.equal(searchSite(index,'hogazas de masa madre')[0].title,'Home');
+    assert.equal(searchSite(index,'obrador artesanal')[0].title,'About');
     assert.equal(searchSite(index,'weekend special')[0].title,'Home');
     assert.equal(searchSite(index,'expired-promotion-marker').length,0);
     assert.equal(searchSite(index,'private-config-marker').length,0);

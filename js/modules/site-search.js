@@ -2,7 +2,7 @@ import { t } from '../i18n.js';
 import { withLang } from '../locale-data.js';
 import { getSearchIndex } from './data-loader.js';
 import { h } from '../utils/dom.js';
-import { searchSite, SEARCH_TYPES } from '../utils/site-search.js';
+import { searchSite, SEARCH_TYPES, searchTypeKey } from '../utils/site-search.js';
 import { animateVisibility, animateResults } from '../utils/animation.js';
 
 export function initSiteSearch() {
@@ -67,7 +67,7 @@ export async function init() {
   const results = document.querySelector('#search-results');
   const more = document.querySelector('#search-load-more');
   let index, type = '', count = 12, matches = [], filtered = [];
-  const typeName = (value, plural = false) => t(`type.${plural ? value + 's' : value}`);
+  const typeName = (value, plural = false) => t(searchTypeKey(value, plural));
   const render = () => {
     const query = input.value.trim().slice(0,200);
     matches = searchSite(index,query);
